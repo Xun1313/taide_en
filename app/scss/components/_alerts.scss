@@ -1,0 +1,26 @@
+﻿/**
+*
+* alertsUnit
+*
+**/
+.alertsUnit {
+    padding: 1.5vw 2vw;
+    @include border_radius(2vw);
+    background-color: #ccc;
+    font-size: 1.2vw;
+
+    @include screen_960 {
+        padding: 3vw 4vw;
+        @include border_radius(4vw);
+        background-color: #ccc;
+        font-size: 3vw;
+    }
+
+    &.tertiary {
+        background-color: $color_tertiary;
+    }
+
+    b {
+        font-weight: 700;
+    }
+}

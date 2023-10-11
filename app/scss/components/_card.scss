@@ -1,0 +1,1034 @@
+﻿/**
+*
+* card
+*
+**/
+.card {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+
+    @include screen_960 {
+        margin: 0 0;
+    }
+
+    &__item {
+        position: relative;
+        width: calc(33.3% - 2%);
+        background-color: $color_white;
+        margin: 2% 1%;
+
+        @include screen_960 {
+            width: 100%;
+            margin: 4% 0;
+        }
+
+        &.max {
+            width: calc(66.6% - 2%);
+            background-color: $color_tertiary;
+            @include border_radius(2vw);
+
+            @include screen_960 {
+                width: 100%;
+                margin: 4% 0;
+                @include border_radius(4vw);
+            }
+
+            .photo {
+                padding-bottom: 48%;
+                @include border_radius(0px, 0px, 0px, 0px);
+
+                .btn {
+                    display: none;
+                }
+            }
+
+            .infoCon {
+                padding: 1.5vw 2vw;
+                min-height: 10vw;
+
+                @include screen_960 {
+                    padding: 3vw 4vw;
+                }
+            }
+
+            .newsSwiper {
+                @include border_radius(2vw);
+
+                @include screen_960 {
+                    @include border_radius(4vw);
+                }
+            }
+        }
+
+        .photo {
+            position: relative;
+            background-color: #F5F5F5;
+            width: 100%;
+            padding-bottom: 94%;
+            @include border_radius(2vw);
+            overflow: hidden;
+
+            @include screen_960 {
+                @include border_radius(4vw);
+            }
+
+            a {
+                @include position(absolute, 0 0 0 0);
+                z-index: 1;
+            }
+
+            &>img {
+                @include position(absolute, 0 0 0 0);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .btn {
+                @include position(absolute, null -1px -1px null);
+                width: 7vw;
+                height: 6.5vw;
+                background: url(../../images/boxRb.svg) no-repeat right center / 100% auto;
+
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+
+                @include screen_960 {
+                    width: 15vw;
+                    height: 14.5vw;
+                }
+
+                img {
+                    width: 3.6vw;
+                    margin: 1px;
+
+                    @include screen_960 {
+                        width: 9vw;
+                    }
+                }
+            }
+        }
+
+        .infoCon {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 1vw 0;
+
+            @include screen_960 {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 2vw 0;
+            }
+
+            .tagUnit {
+                @include screen_960 {
+                    margin-top: 2vw;
+                }
+            }
+
+            h3 {
+                width: 70%;
+                min-height: 50px;
+                color: $color_black;
+                font-weight: 700;
+                @include text-ellipsis(25px, 1.4, 2);
+                font-size: 1.4vw;
+
+                @include screen_960 {
+                    width: 100%;
+                    font-size: 4.5vw;
+                }
+
+                a {
+                    color: $color_black;
+                }
+            }
+
+            .text {
+                margin-top: 1vw;
+                font-size: 1.05vw;
+                line-height: 1.4;
+
+                @include screen_960 {
+                    margin-top: 2vw;
+                    font-size: 3.8vw;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    &.resources {
+        .card__item {
+            &.max {
+                background-color: $color_green;
+
+                .photo {
+                    padding-bottom: 45.5%;
+                    cursor: pointer;
+                }
+
+                &>a {
+                    @include position(absolute, 0 0 0 0);
+                    z-index: 1;
+                }
+            }
+
+            .youtube-button {
+                cursor: pointer;
+            }
+
+            .infoCon {
+                align-items: flex-start;
+                flex-direction: column;
+
+                span {
+                    display: block;
+                }
+
+                h4 {
+                    font-size: 2vw;
+                    font-weight: 500;
+                    line-height: 1.4;
+
+                    @include screen_960 {
+                        font-size: 4.5vw;
+                    }
+                }
+
+                .btn {
+                    display: block;
+                    @include position(absolute, null -1px -1px null);
+                    width: 7vw;
+                    height: 6.5vw;
+                    background: url(../../images/boxRb.svg) no-repeat right center / 100% auto;
+
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+
+                    @include screen_960 {
+                        width: 15vw;
+                        height: 14.5vw;
+                    }
+
+                    img {
+                        width: 3.6vw;
+                        margin: 1px;
+
+                        @include screen_960 {
+                            width: 9vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+*
+* cardResources
+*
+**/
+.cardResources {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+
+    @include screen_960 {
+        margin: 0 0;
+    }
+
+    &__item {
+        position: relative;
+        width: calc(33.3% - 2%);
+        background-color: $color_white;
+        margin: 2% 1%;
+
+        @include screen_960 {
+            width: 100%;
+            margin: 4% 0;
+        }
+
+        &.youtube-button {
+            cursor: pointer;
+        }
+
+        .photo {
+            position: relative;
+            background-color: #F5F5F5;
+            width: 100%;
+            padding-bottom: 54%;
+            @include border_radius(2vw);
+            overflow: hidden;
+            cursor: pointer;
+
+            @include screen_960 {
+                @include border_radius(4vw);
+            }
+
+            &::after {
+                @include position(absolute, 0 0 0 0);
+                content: "";
+                z-index: 1;
+                background-color: rgba(0, 0, 0, .1)
+            }
+
+            &>img {
+                @include position(absolute, 0 0 0 0);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .btn {
+                @include position(absolute, null -1px -1px null);
+                width: 7vw;
+                height: 6.5vw;
+                background: url(../../images/boxRb.svg) no-repeat right center / 100% auto;
+                z-index: 2;
+
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+
+                @include screen_960 {
+                    width: 15vw;
+                    height: 14.5vw;
+                }
+
+                img {
+                    width: 3.6vw;
+                    margin: 1px;
+
+                    @include screen_960 {
+                        width: 9vw;
+                    }
+                }
+            }
+        }
+
+        .infoCon {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            padding: 1vw 0;
+
+            @include screen_960 {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 2vw 0;
+            }
+
+            h3 {
+                min-height: 50px;
+                color: $color_black;
+                font-weight: 700;
+                @include text-ellipsis(25px, 1.4, 2);
+                font-size: 1.4vw;
+
+                @include screen_960 {
+                    width: 100%;
+                    font-size: 4.5vw;
+                }
+
+                a {
+                    color: $color_black;
+                }
+            }
+        }
+    }
+}
+
+/**
+*
+* cardTeam
+*
+**/
+.cardTeam {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+
+    @include screen_960 {
+        margin: 0 0;
+    }
+
+    &__item {
+        position: relative;
+        width: calc(25% - 2%);
+        background-color: $color_white;
+        margin: 2% 1%;
+
+        @include screen_960 {
+            width: calc(50% - 2%);
+            margin: 4% 1%;
+        }
+
+        &.max {
+            width: calc(50% - 2%);
+        }
+
+        &.odd {
+            background-color: #D5B78E;
+            @include border_radius(2vw);
+
+            @include screen_960 {
+                @include border_radius(4vw);
+            }
+        }
+
+        &.even {
+            background-color: #D9DA65;
+            @include border_radius(2vw);
+
+            @include screen_960 {
+                @include border_radius(4vw);
+            }
+        }
+
+        .photo {
+            position: relative;
+            background-color: #F5F5F5;
+            width: 100%;
+            padding-bottom: 100%;
+            @include border_radius(2vw);
+            overflow: hidden;
+
+            @include screen_960 {
+                @include border_radius(4vw);
+            }
+
+            &>a {
+                @include position(absolute, 0 0 0 0);
+                z-index: 3;
+            }
+
+            &::after {
+                @include position(absolute, 0 0 0 0);
+                content: "";
+                z-index: 1;
+                background-color: rgba(0, 0, 0, .1)
+            }
+
+            &>img {
+                @include position(absolute, 0 0 0 0);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .infoCon {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 1vw 0;
+
+            @include screen_960 {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 2vw 0;
+            }
+
+            h3 {
+                min-height: 50px;
+                color: $color_black;
+                font-weight: 700;
+                @include text-ellipsis(25px, 1.4, 2);
+                font-size: 1.4vw;
+
+                @include screen_960 {
+                    width: 100%;
+                    font-size: 4.5vw;
+                }
+
+                a {
+                    color: $color_black;
+                }
+            }
+        }
+
+        .btn {
+            @include position(absolute, null -1px -1px null);
+            width: 7vw;
+            height: 6.5vw;
+            background: url(../../images/boxRb.svg) no-repeat right center / 100% auto;
+            z-index: 2;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            @include screen_960 {
+                width: 15vw;
+                height: 14.5vw;
+            }
+
+            img {
+                width: 3.6vw;
+                margin: 1px;
+
+                @include screen_960 {
+                    width: 9vw;
+                }
+            }
+        }
+    }
+}
+
+/**
+*
+* cardCourse
+*
+**/
+.cardCourse {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+
+    @include screen_960 {
+        margin: 0 0;
+    }
+
+    &__item {
+        position: relative;
+        width: calc(25% - 2%);
+        background-color: #f2eee8;
+        @include border_radius(2vw);
+        margin: 1% 1%;
+        padding: 2vw;
+
+        @include screen_960 {
+            width: 100%;
+            margin: 2% 0;
+            padding: 6vw 4vw;
+        }
+
+        &.max {
+            width: calc(50% - 2%);
+
+            @include screen_960 {
+                width: 100%;
+            }
+        }
+
+        h3 {
+            font-size: 1.4vw;
+            font-weight: bold;
+            line-height: 1.4;
+
+            @include screen_960 {
+                width: 100%;
+                font-size: 4vw;
+            }
+        }
+
+        h4 {
+            font-size: 1.4vw;
+            font-weight: 500;
+            line-height: 1.4;
+
+            @include screen_960 {
+                width: 100%;
+                font-size: 4vw;
+            }
+        }
+
+        .text {
+            margin-top: 1vw;
+            font-size: 1.05vw;
+            line-height: 1.4;
+
+            @include screen_960 {
+                font-size: 3vw;
+                margin-top: 2vw;
+            }
+        }
+
+        .btn {
+            @include position(absolute, null -1px -1px null);
+            width: 7vw;
+            height: 6.5vw;
+            background: url(../../images/boxRb.svg) no-repeat right center / 100% auto;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            @include screen_960 {
+                width: 15vw;
+                height: 14.5vw;
+            }
+
+            img {
+                width: 3.6vw;
+
+                @include screen_960 {
+                    width: 9vw;
+                }
+            }
+
+            a {
+                color: $color_black;
+            }
+
+            span {
+                font-size: 1vw;
+                font-weight: 500;
+                line-height: 1.4;
+                display: block;
+                text-align: right;
+                @include position(absolute, null null 1vw -4vw);
+
+                @include screen_960 {
+                    font-size: 3.5vw;
+                    bottom: 2vw;
+                    left: -16vw;
+                    width: 16vw;
+                }
+            }
+        }
+    }
+}
+
+
+/**
+*
+* cardTrainData
+*
+**/
+.cardTrainData {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+
+    @include screen_960 {
+        margin: 0 0;
+    }
+
+    &__item {
+        position: relative;
+        width: calc(25% - 2%);
+        background-color: #F2EEE8;
+        @include border_radius(2vw);
+        margin: 2% 1%;
+        padding: 2vw;
+        min-height: 26vw;
+
+        @include screen_960 {
+            width: 100%;
+            margin: 4% 0;
+            padding: 4vw;
+            min-height: 70vw;
+            @include border_radius(4vw);
+        }
+
+        .title {
+            font-size: 1vw;
+            font-weight: 500;
+            line-height: 1.6;
+
+            @include screen_960 {
+                font-size: 4vw;
+            }
+        }
+
+        h3 {
+            margin-top: 1vw;
+            color: $color_black;
+            font-size: 1.5vw;
+            font-weight: 500;
+            line-height: 1.4;
+
+            @include screen_960 {
+                margin-top: 4vw;
+                font-size: 7vw;
+            }
+        }
+
+        .dataCard {
+            margin-top: 1vw;
+            display: inline-block;
+            text-align: center;
+            font-size: 1vw;
+
+            @include screen_960 {
+                margin-top: 6vw;
+                font-size: 4vw;
+            }
+
+            span {
+                margin-bottom: .5vw;
+                display: block;
+
+                @include screen_960 {
+                    margin-bottom: 1vw;
+                }
+            }
+        }
+
+        .tagUnit {
+            position: absolute;
+            top: 1.5vw;
+            right: 1.5vw;
+
+            @include screen_960 {
+                top: 3vw;
+                right: 3vw;
+            }
+
+            &.secondary {
+                @include screen_960 {
+                    padding: 1.5vw 4vw;
+                }
+            }
+        }
+
+        .btn {
+            @include position(absolute, null -1px -1px null);
+            width: 7vw;
+            height: 6vw;
+            background: url(../../images/boxRb.svg) no-repeat right center / 100% auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            @include screen_960 {
+                width: 15vw;
+                height: 14.5vw;
+            }
+
+            img {
+                width: 3.6vw;
+
+                @include screen_960 {
+                    width: 9vw;
+                }
+            }
+
+            a {
+                color: $color_black;
+            }
+
+            span {
+                font-size: 1vw;
+                font-weight: 500;
+                line-height: 1.4;
+                display: block;
+                text-align: right;
+                @include position(absolute, null null 1vw -3.5vw);
+
+                @include screen_960 {
+                    font-size: 3.5vw;
+                    bottom: 2vw;
+                    left: -20.5vw;
+                    width: 22vw;
+                }
+            }
+        }
+    }
+}
+
+/**
+*
+* cardAbout
+*
+**/
+.cardAbout {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+
+    @include screen_960 {
+        margin: 0 0;
+    }
+
+    &__item {
+        position: relative;
+        width: calc(33.3% - 2%);
+        @include border_radius(2vw);
+        margin: 2% 1%;
+        padding: 2vw;
+        min-height: 29vw;
+
+        @include screen_960 {
+            width: 100%;
+            margin: 4% 0;
+            padding: 4vw;
+            min-height: 68vw;
+            @include border_radius(4vw);
+        }
+
+        &.max {
+            width: calc(66.6% - 2%);
+            background-color: $color_tertiary;
+            @include border_radius(2vw);
+            padding: 0;
+
+            @include screen_960 {
+                width: 100%;
+                margin: 0 0;
+                @include border_radius(4vw);
+            }
+
+            .photo {
+                padding-bottom: 48%;
+                @include border_radius(2vw);
+
+                @include screen_960 {
+                    padding-bottom: 0;
+                    @include border_radius(4vw);
+                }
+
+                .btn {
+                    display: none;
+                }
+            }
+
+            .infoCon {
+                padding: 1.5vw 2vw;
+                min-height: 10vw;
+
+                @include screen_960 {
+                    padding: 3vw 4vw;
+                }
+            }
+        }
+
+        .photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 94%;
+            @include border_radius(2vw);
+            overflow: hidden;
+
+            @include screen_960 {
+                @include border_radius(4vw);
+            }
+
+            &>img {
+                @include position(absolute, 0 0 0 0);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h2 {
+            font-size: 1.5vw;
+            font-weight: 500;
+            line-height: 1.4;
+
+            @include screen_960 {
+                font-size: 6vw;
+            }
+
+            &+.tagUnit {
+                margin-top: 1vw;
+            }
+        }
+
+        h3 {
+            margin-top: 2vw;
+            font-size: 1.2vw;
+            font-weight: 500;
+            line-height: 1.4;
+
+            @include screen_960 {
+                font-size: 5vw;
+            }
+
+            &+.text {
+                margin-top: 1vw;
+            }
+        }
+
+        .text {
+            margin-top: .5vw;
+            font-size: 1vw;
+            font-weight: 500;
+            line-height: 1.6;
+
+            @include screen_960 {
+                margin-top: 1.5vw;
+                font-size: 4vw;
+            }
+        }
+
+        .btn {
+            @include position(absolute, null -1px -1px null);
+            width: 7vw;
+            height: 6.5vw;
+            background: url(../../images/boxRb.svg) no-repeat right center / 100% auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            @include screen_960 {
+                width: 15vw;
+                height: 14.5vw;
+            }
+
+            img {
+                width: 3.6vw;
+
+                @include screen_960 {
+                    width: 9vw;
+                }
+            }
+
+            a {
+                color: $color_black;
+            }
+
+            span {
+                font-size: 1vw;
+                font-weight: 500;
+                line-height: 1.4;
+                display: block;
+                text-align: right;
+                @include position(absolute, null null 1vw -3.5vw);
+
+                @include screen_960 {
+                    font-size: 3.5vw;
+                    bottom: 2vw;
+                    left: -20vw;
+                    width: 22vw;
+                }
+            }
+        }
+    }
+}
+
+/**
+*
+* cardDownload
+*
+**/
+.cardDownload {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+
+    @include screen_960 {
+        margin: 0 0;
+    }
+
+    &__item {
+        position: relative;
+        width: calc(33.3% - 2%);
+        @include border_radius(2vw);
+        margin: 2% 1%;
+        padding: 2vw;
+        min-height: 29vw;
+        background-color: #EF7455;
+
+        @include screen_960 {
+            width: 100%;
+            margin: 4% 0;
+            padding: 4vw;
+            min-height: 48vw;
+            @include border_radius(4vw);
+        }
+
+        &.max {
+            width: calc(66.6% - 2%);
+            background-color: $color_tertiary;
+            @include border_radius(2vw);
+            padding: 0;
+
+            @include screen_960 {
+                width: 100%;
+                margin: 0 0;
+                min-height: 68vw;
+                @include border_radius(4vw);
+            }
+
+            .photo {
+                padding-bottom: 48%;
+                @include border_radius(2vw);
+
+                @include screen_960 {
+                    padding-bottom: 0;
+                    @include border_radius(4vw);
+                }
+
+                .btn {
+                    display: none;
+                }
+            }
+
+            .infoCon {
+                padding: 1.5vw 2vw;
+                min-height: 10vw;
+
+                @include screen_960 {
+                    padding: 3vw 4vw;
+                }
+            }
+        }
+
+        .photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 94%;
+            @include border_radius(2vw);
+            overflow: hidden;
+
+            @include screen_960 {
+                @include border_radius(4vw);
+            }
+
+            &>img {
+                @include position(absolute, 0 0 0 0);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        ul {
+            li {
+                font-size: 1.3vw;
+                font-weight: 500;
+                line-height: 1.6;
+
+                a {
+                    color: $color_black;
+                }
+
+                @include screen_960 {
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+}

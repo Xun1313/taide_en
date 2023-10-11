@@ -1,0 +1,64 @@
+﻿/**
+*
+* pageUnit
+*
+**/
+.pageUnit {
+    text-align: center;
+
+    @include screen_960 {
+        margin-top: 4vw;
+    }
+
+    &__bd {
+        @include border_radius(1vw);
+        background-color: $color_tertiary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .6vw;
+
+        @include screen_960 {
+            padding: 1vw 2vw;
+        }
+
+        a {
+            display: block;
+            margin: .5vw;
+            font-size: 1vw;
+            color: $color_black;
+            border-bottom: 1px $color_black solid;
+
+            @include screen_960 {
+                margin: 1.5vw;
+                font-size: 4vw;
+            }
+
+            &.active {
+                border-bottom: 1px $color_transparent solid;
+            }
+        }
+    }
+
+    ol {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            margin: .5vw;
+
+            @include screen_960 {
+                margin: 2vw;
+            }
+
+            img {
+                width: 3.6vw;
+
+                @include screen_960 {
+                    width: 12vw;
+                }
+            }
+        }
+    }
+}

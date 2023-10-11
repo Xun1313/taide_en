@@ -9,16 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "date-fns": "^2.30.0",
+    "jquery": "3.7.1",
+    "next": "^13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "sass": "^1.69.2",
+    "schema-dts": "^1.1.2",
+    "sharp": "^0.32.6",
+    "swiper": "10.0.4"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/jquery": "^3.5.25",
+    "@types/jqueryui": "^1.12.19",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "typescript": "^5"
   }
 }

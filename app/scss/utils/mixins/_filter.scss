@@ -1,0 +1,24 @@
+﻿/**
+*
+* filter
+*
+**/
+// grayscale 灰階
+// @include filter(grayscale, 50%);
+// sepia 懷舊
+// @include filter(sepia, 1);
+// opacity 不透明
+// @include filter(opacity, 0.2);
+// saturate 飽和
+// @include filter(saturate, 0.5);
+// brightness 亮度
+// @include filter(brightness, 2);
+// contrast 對比
+// @include filter(contrast, 2);
+// blur 模糊
+// @include filter(blur, 3px);
+// drop-shadow 陰影
+// @include filter(drop-shadow, 5px 5px 5px #333);
+@mixin filter($filter-type,$filter-amount) {
+    @include css3 (filter, unquote($filter-type+unquote('(#{$filter-amount})')) );
+}

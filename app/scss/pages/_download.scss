@@ -1,0 +1,227 @@
+﻿/**
+*
+* downloadUnit
+*
+**/
+.downloadUnit {
+    padding-top: 4vw;
+    padding-bottom: 6vw;
+
+    @include screen_960 {
+        padding-bottom: 4vw;
+    }
+
+    &__body {
+        max-width: 90%;
+        margin: auto;
+
+        @include screen_960 {
+            padding: 0 5vw;
+            max-width: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 4vw;
+            font-weight: 500;
+            line-height: 1.4;
+            color: #F0D7B4;
+
+            @include screen_960 {
+                font-size: 10vw;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+/**
+*
+* downloadDetail
+*
+**/
+.downloadDetail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 -1%;
+
+    @include screen_960 {
+        margin: 0 0;
+    }
+
+    &__left {
+        width: calc(66.6% - 2%);
+        margin: 2% 1%;
+        padding: 2vw;
+
+        @include screen_960 {
+            width: 100%;
+            margin: 4% 0;
+            padding: 4vw 0;
+        }
+
+        h2 {
+            font-size: 2vw;
+            font-weight: 500;
+            line-height: 1.4;
+
+            @include screen_960 {
+                font-size: 5vw;
+            }
+        }
+
+        .article__item {
+
+            &.even,
+            &+.article__item {
+                margin-top: 8vw;
+            }
+
+            .article__con {
+                margin-top: 4vw;
+
+                p {
+                    margin-bottom: 1em;
+                    font-size: 1.1vw;
+                    line-height: 1.6;
+
+                    @include screen_960 {
+                        font-size: 4vw;
+                        line-height: 1.7;
+                    }
+                }
+
+                img {
+                    margin: 2vw 0;
+
+                    @include screen_960 {
+                        margin: 4vw 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__right {
+        position: sticky;
+        top: 5vw;
+        width: calc(33.3% - 2%);
+        margin: 2% 1%;
+        padding: 2vw;
+
+        @include screen_960 {
+            position: relative;
+            top: auto;
+            width: 100%;
+            margin: 4% 0;
+            padding: 4vw 0;
+
+        }
+
+        h2 {
+            font-size: 2vw;
+            font-weight: 500;
+            line-height: 1.4;
+            color: #EF7455;
+
+            @include screen_960 {
+                font-size: 5vw;
+            }
+        }
+    }
+
+    &__table {
+        position: relative;
+        @include border_radius(2vw);
+        background-color: #F2EEE8;
+        padding: 1vw 1vw 6vw 1vw;
+        margin-top: 1vw;
+
+        @include screen_960 {
+            @include border_radius(4vw);
+            padding: 4vw 4vw 10vw 4vw;
+            margin-top: 2vw;
+        }
+
+        table {
+            width: 100%;
+
+            th {
+                font-size: 1.2vw;
+                font-weight: bold;
+                padding: .5vw 1vw 0 1vw;
+                text-align: left;
+
+                @include screen_960 {
+                    font-size: 4vw;
+                    padding: 1vw 2vw 0 2vw;
+                }
+            }
+
+            td {
+                font-size: 1vw;
+                line-height: 1.6;
+                padding: .5vw 1vw 1vw 1vw;
+
+                @include screen_960 {
+                    font-size: 3.5vw;
+                    padding: 1vw 2vw 2vw 2vw;
+                }
+            }
+        }
+
+        .btn {
+            @include position(absolute, null -1px -1px null);
+            width: 7vw;
+            height: 6vw;
+            background: url(../../images/boxRb.svg) no-repeat right center / 100% auto;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            @include screen_960 {
+                width: 15vw;
+                height: 14.5vw;
+            }
+
+            img {
+                width: 3.6vw;
+
+                @include screen_960 {
+                    width: 9vw;
+                }
+            }
+
+            a {
+                color: $color_black;
+            }
+
+            span {
+                font-size: 1vw;
+                font-weight: 500;
+                line-height: 1.4;
+                display: block;
+                text-align: right;
+                @include position(absolute, null null 1vw -7vw);
+
+                @include screen_960 {
+                    font-size: 3.5vw;
+                    bottom: 2vw;
+                    left: -29vw;
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}
