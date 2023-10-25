@@ -75,6 +75,7 @@ export default function RootLayout({
         </section>
         <script src="/js/jquery.min.js" defer async></script>
         <script src="/js/jquery.ui.min.js" defer async></script>
+        <script src="/js/isotope-docs.min.js" defer async></script>
       </body>
     </html>
   );

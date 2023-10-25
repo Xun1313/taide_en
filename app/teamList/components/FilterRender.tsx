@@ -376,8 +376,6 @@ const FilterRender = () => {
           </div>
         </div>
       </div>
-
-      <script src="/js/isotope-docs.min.js" defer></script>
     </>
   );
 };
