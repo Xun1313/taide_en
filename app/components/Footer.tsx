@@ -92,8 +92,7 @@ const Footer = () => {
           <div className="partnerUnit__item">
             <h3>指導單位</h3>
             <div>
-              <a href="#">
-                {" "}
+              <a>
                 <Image src={logoNstc} alt="NSTC" />
               </a>
             </div>
@@ -101,10 +100,10 @@ const Footer = () => {
           <div className="partnerUnit__item">
             <h3>執行單位</h3>
             <div>
-              <a href="#">
+              <a>
                 <Image src={logoNarlabs} alt="NARlabs" />
               </a>
-              <a href="#">
+              <a>
                 <Image src={logoModa} alt="moda" />
               </a>
             </div>

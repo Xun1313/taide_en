@@ -20,6 +20,7 @@
     "swiper": "10.0.4"
   },
   "devDependencies": {
+    "@types/isotope-layout": "^3.0.11",
     "@types/jquery": "^3.5.25",
     "@types/jqueryui": "^1.12.19",
     "@types/node": "^20",

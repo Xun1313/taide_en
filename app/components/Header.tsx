@@ -69,12 +69,12 @@ const Header = () => {
           </Link>
         </div>
         <div className="menuBtn mobile">
-          <a href="#">≡</a>
+          <a>≡</a>
         </div>
         <nav className="nav">
           <ul>
             <li className="btnSubNav">
-              <a href="#">認識TAIDE</a>
+              <a style={{ cursor: "pointer" }}>認識TAIDE</a>
               <div className="subNav">
                 <Link href="/aboutProject">計畫背景</Link>
                 <Link href="/aboutExpected">預期效益</Link>

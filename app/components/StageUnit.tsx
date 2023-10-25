@@ -50,11 +50,11 @@ const StageUnit = () => {
                       此階段為開發第一期目的為生成對抗網絡的深度學習技術
                     </span>
                     <div className="btn">
-                      <a href="#">
+                      <a style={{ cursor: "pointer" }}>
                         <span>了解更多</span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
-                    </div>
+                    </div>  
                   </div>
                 </div>
                 <div className="stageFoldUnit__item item2">
@@ -70,7 +70,7 @@ const StageUnit = () => {
                       此階段透過反覆生成並調整參數鑑別器則不斷辨別真假數據提高辨識且進化
                     </span>
                     <div className="btn">
-                      <a href="#">
+                      <a style={{ cursor: "pointer" }}>
                         <span>了解更多</span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
@@ -91,7 +91,7 @@ const StageUnit = () => {
                       此階段為展示強大的神經網絡模型用於自然語言、圖像、音頻處理等生成式任務
                     </span>
                     <div className="btn">
-                      <a href="#">
+                      <a style={{ cursor: "pointer" }}>
                         <span>了解更多</span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
@@ -112,7 +112,7 @@ const StageUnit = () => {
                       此階段為開發第一期目的為生成對抗網絡的深度學習技術
                     </span>
                     <div className="btn">
-                      <a href="#">
+                      <a style={{ cursor: "pointer" }}>
                         <span>了解更多</span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>

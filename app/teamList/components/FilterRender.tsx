@@ -18,10 +18,29 @@ import team_13 from "~/images/team/team_13.png";
 import team_14 from "~/images/team/team_14.png";
 import team_15 from "~/images/team/team_15.png";
 import team_16 from "~/images/team/team_16.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const FilterRender = () => {
   const [active, setActive] = useState("全部");
+  useEffect(() => {
+    $(document).ready(function () {
+      var $grid = $(".grid").isotope({
+        itemSelector: ".element-item",
+        layoutMode: "fitRows",
+      });
+      $(".filter-button-group").on("click", "button", function () {
+        var filterValue = $(this).attr("data-filter");
+        $grid.isotope({ filter: filterValue });
+      });
+    });
+
+    return () => {
+      $(document).ready(function () {
+        $(".filter-button-group").off("click");
+      });
+    };
+  }, []);
+
   return (
     <>
       <div data-js="filtering-demo">
