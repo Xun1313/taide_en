@@ -39,16 +39,14 @@ const nextConfig = {
   //     },
   //   ];
   // },
-  // async rewrites() {
-  //   return [
-  //     // These rewrites are checked after pages/public files
-  //     // are checked but before dynamic routes
-  //     {
-  //       source: "/public/api/:path*",
-  //       destination: "https://taide.tw/:path*",
-  //     },
-  //   ];
-  // },
+  async rewrites() {
+    return [
+      {
+        source: "/public/api/:path*",
+        destination: "https://taide.tw/:path*",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

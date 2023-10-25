@@ -4,6 +4,7 @@ import "swiper/css/pagination";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import BackTop from "~/components/BackTop";
+import Script from "next/script";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
@@ -63,6 +64,9 @@ export default function RootLayout({
           color="#000"
         />
         <meta name="msapplication-TileColor" content="#000000" />
+        <script src="/js/jquery.min.js" defer></script>
+        <script src="/js/jquery.ui.min.js" defer></script>
+        <script src="/js/isotope-docs.min.js" defer></script>
       </head>
       <body>
         <section className="wrapper">
@@ -73,9 +77,6 @@ export default function RootLayout({
           <Footer />
           <BackTop />
         </section>
-        <script src="/js/jquery.min.js" defer async></script>
-        <script src="/js/jquery.ui.min.js" defer async></script>
-        <script src="/js/isotope-docs.min.js" defer async></script>
       </body>
     </html>
   );

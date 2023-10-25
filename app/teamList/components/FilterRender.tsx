@@ -21,36 +21,72 @@ import team_16 from "~/images/team/team_16.png";
 import { useState } from "react";
 
 const FilterRender = () => {
-  const [active, setActive] = useState("全部")
+  const [active, setActive] = useState("全部");
   return (
     <>
       <div data-js="filtering-demo">
         <div className="tagList tagClick filter-button-group button-group js-radio-button-group">
-          <button className={`tagUnit secondary ${active === "全部" && "active"}`} data-filter="*" onClick={() => setActive("全部")}>
+          <button
+            className={`tagUnit secondary ${active === "全部" && "active"}`}
+            data-filter="*"
+            onClick={() => setActive("全部")}
+          >
             全部
           </button>
-          <button className={`tagUnit secondary ${active === "督導管理" && "active"}`} data-filter=".tag1" onClick={() => setActive("督導管理")}>
+          <button
+            className={`tagUnit secondary ${active === "督導管理" && "active"}`}
+            data-filter=".tag1"
+            onClick={() => setActive("督導管理")}
+          >
             督導管理
           </button>
-          <button className={`tagUnit secondary ${active === "執行管理" && "active"}`} data-filter=".tag2" onClick={() => setActive("執行管理")}>
+          <button
+            className={`tagUnit secondary ${active === "執行管理" && "active"}`}
+            data-filter=".tag2"
+            onClick={() => setActive("執行管理")}
+          >
             執行管理
           </button>
-          <button className={`tagUnit secondary ${active === "資料組" && "active"}`} data-filter=".tag3" onClick={() => setActive("資料組")}>
+          <button
+            className={`tagUnit secondary ${active === "資料組" && "active"}`}
+            data-filter=".tag3"
+            onClick={() => setActive("資料組")}
+          >
             資料組
           </button>
-          <button className={`tagUnit secondary ${active === "模型組" && "active"}`} data-filter=".tag4" onClick={() => setActive("模型組")}>
+          <button
+            className={`tagUnit secondary ${active === "模型組" && "active"}`}
+            data-filter=".tag4"
+            onClick={() => setActive("模型組")}
+          >
             模型組
           </button>
-          <button className={`tagUnit secondary ${active === "算力組" && "active"}`} data-filter=".tag5" onClick={() => setActive("算力組")}>
+          <button
+            className={`tagUnit secondary ${active === "算力組" && "active"}`}
+            data-filter=".tag5"
+            onClick={() => setActive("算力組")}
+          >
             算力組
           </button>
-          <button className={`tagUnit secondary ${active === "應用組" && "active"}`} data-filter=".tag6" onClick={() => setActive("應用組")}>
+          <button
+            className={`tagUnit secondary ${active === "應用組" && "active"}`}
+            data-filter=".tag6"
+            onClick={() => setActive("應用組")}
+          >
             應用組
           </button>
-          <button className={`tagUnit secondary ${active === "觀測組" && "active"}`} data-filter=".tag7" onClick={() => setActive("觀測組")}>
+          <button
+            className={`tagUnit secondary ${active === "觀測組" && "active"}`}
+            data-filter=".tag7"
+            onClick={() => setActive("觀測組")}
+          >
             觀測組
           </button>
-          <button className={`tagUnit secondary ${active === "評測組" && "active"}`} data-filter=".tag8" onClick={() => setActive("評測組")}>
+          <button
+            className={`tagUnit secondary ${active === "評測組" && "active"}`}
+            data-filter=".tag8"
+            onClick={() => setActive("評測組")}
+          >
             評測組
           </button>
         </div>

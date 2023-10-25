@@ -129,7 +129,7 @@ const TrainDataDetail = async ({
                 </div>
                 <div className="item radius">
                   <Image
-                    src={`${process.env.NEXT_PUBLIC_TRAIN_DATA_IMG_URL}/${id}`}
+                    src={`${process.env.TRAIN_DATA_IMG_URL}/${id}`}
                     alt={title}
                     width={500}
                     height={500}

@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/public/api/:path*",
-      "destination": "https://taide.tw/:path*"
-    }
-  ]
-}
