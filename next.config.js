@@ -1,12 +1,11 @@
 //const path = require('path');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "taide.tw",
+        protocol: process.env.PROTOCOL,
+        hostname: process.env.HOSTNAME,
       },
       {
         protocol: "https",
@@ -39,14 +38,18 @@ const nextConfig = {
   //     },
   //   ];
   // },
-  async rewrites() {
-    return [
-      {
-        source: "/public/api/:path*",
-        destination: "https://taide.tw/:path*",
-      },
-    ];
-  },
+  // async rewrites() {
+  //   return [
+  //     // {
+  //     //   source: "/public/api/:path*",
+  //     //   destination: "https://taide.tw/:path*",
+  //     // },
+  //     {
+  //       source: "/:path*",
+  //       destination: "https://taide.tw/:path*",
+  //     },
+  //   ];
+  // },
 };
 
 module.exports = nextConfig;

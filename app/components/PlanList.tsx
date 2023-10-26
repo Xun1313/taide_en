@@ -6,22 +6,6 @@ import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import Swiper from "swiper";
 
 const PlanList = () => {
-  // (async function () {
-  //   const res = await fetch(
-  //     `${process.env.NEXT_PUBLIC_API_URL}/public/api/latest-updates?accessToken=TAIDE_!@%23qweASDzxc456RTYfgjVBN`,
-  //     {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         accessToken: "TAIDE_!@#qweASDzxc456RTYfgjVBN",
-  //         frontSearchAll: "搜尋的關鍵字",
-  //         length: 1,
-  //         start: 1,
-  //       }),
-  //       cache: "no-store",
-  //     }
-  //   );
-  //   console.log(res);
-  // })()
   const swiperElement = useRef<HTMLDivElement>(null);
   interface swiperInterface {
     destroy: Function;

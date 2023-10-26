@@ -34,6 +34,9 @@ dependencies:
     version: 10.0.4
 
 devDependencies:
+  '@types/isotope-layout':
+    specifier: ^3.0.11
+    version: 3.0.11
   '@types/jquery':
     specifier: ^3.5.25
     version: 3.5.25
@@ -55,6 +58,9 @@ devDependencies:
   eslint-config-next:
     specifier: 13.5.4
     version: 13.5.4(eslint@8.51.0)(typescript@5.2.2)
+  node-cmd:
+    specifier: ^5.0.0
+    version: 5.0.0
   typescript:
     specifier: ^5
     version: 5.2.2
@@ -250,6 +256,10 @@ packages:
     dependencies:
       tslib: 2.6.2
     dev: false
+
+  /@types/isotope-layout@3.0.11:
+    resolution: {integrity: sha512-w9cnMu5TrW14u8q81FT9BKxIINKrrakp739GCgEPsLJ5cQFSv+ywObc0rQabdXrnOY7R2t0x7oOA95gG6apfSA==}
+    dev: true
 
   /@types/jquery@3.5.25:
     resolution: {integrity: sha512-gykx2c+OZf5nx2tv/5fDQqmvGgTiXshELy5jf9IgXPtVfSBl57IUYByN4osbwMXwJijWGOEYQABzGaFZE79A0Q==}
@@ -1818,6 +1828,11 @@ packages:
   /node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
     dev: false
+
+  /node-cmd@5.0.0:
+    resolution: {integrity: sha512-4sQTJmsS5uZKAPz/Df9fnIbmvOySfGdW+UreH4X5NcAOOpKjaE+K5wf4ehNBbZVPo0vQ36RkRnhhsXXJAT+Syw==}
+    engines: {node: '>=6.4.0'}
+    dev: true
 
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
