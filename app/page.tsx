@@ -1,16 +1,18 @@
-import {  WithContext } from "schema-dts";
+import { WithContext } from "schema-dts";
 
 import Image from "next/image";
+import Link from "next/link";
 import banner from "~/images/home/banner.gif";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 
-import photo5204902 from "~/images/news/photo_520490_2.png";
-import photo5204903 from "~/images/news/photo_520490_3.png";
-import photo5204904 from "~/images/news/photo_520490_4.png";
 import StageUnit from "~/components/StageUnit";
 import PlanList from "~/components/PlanList";
 import BannerSwiper from "~/components/BannerSwiper";
 import NewsListUnitSwiper from "~/components/NewsListUnitSwiper";
+import NewsResType from "~/newsList/types";
+import { format } from "date-fns";
+import { typeMapping } from "~/utils/common";
+
 // import type { Metadata } from 'next'
 // export const metadata: Metadata = {
 //   title: 'Create Next App',
@@ -27,6 +29,20 @@ const Home = async () => {
     url: process.env.WEBSITE_DOMAIN,
     datePublished: "2023-03-02",
   };
+  const newsListRes = await fetch(
+    `${process.env.API_URL}/latest-updates?accessToken=TAIDE_!@%23qweASDzxc456RTYfgjVBN`,
+    {
+      method: "POST",
+      body: JSON.stringify({
+        frontSearchAll: "",
+        length: 5,
+        start: 0,
+      }),
+      cache: "no-store",
+    }
+  );
+  const { issuePlanList }: NewsResType.NewsListType = await newsListRes.json();
+
   return (
     <>
       <article className="bannerUnit">
@@ -150,71 +166,33 @@ const Home = async () => {
           <h2>TAIDE最新動態</h2>
           <div className="newsListUnit__wrap">
             <div className="newsListUnit__item max">
-              <NewsListUnitSwiper />
+              <NewsListUnitSwiper bannerList={issuePlanList.slice(0, 2)} />
             </div>
-            <div className="newsListUnit__item">
-              <div className="photo">
-                <a href="newsDetail.html"></a>
-                <Image
-                  src={photo5204902}
-                  alt="臺版AI對話引擎年底釋大模型，奠定商業版發展基礎"
-                />
-                <div className="btn">
-                  <Image src={btnNextArrow} alt="arrow" />
+            {issuePlanList.slice(2).map((e) => (
+              <div className="newsListUnit__item" key={e.id}>
+                <div className="photo">
+                  <Link href={`/newsList/newsDetail/${e.id}`}></Link>
+                  <Image
+                    src={`${process.env.NEXT_PUBLIC_NEWS_IMG_URL}/${e.id}`}
+                    alt={e.title}
+                    width={500}
+                    height={500}
+                  />
+                  <div className="btn">
+                    <Image src={btnNextArrow} alt="arrow" />
+                  </div>
+                </div>
+                <div className="infoCon">
+                  <h3>
+                    <Link href={`/newsList/newsDetail/${e.id}`}>{e.title}</Link>
+                  </h3>
+                  <div className="date">
+                    {format(new Date(e.issueDate), "yyyy.MM.dd")}
+                  </div>
+                  <div className="tagUnit secondary">{typeMapping[e.type]}</div>
                 </div>
               </div>
-              <div className="infoCon">
-                <h3>
-                  <a href="newsDetail.html">
-                    臺版AI對話引擎年底釋大模型，奠定商業版發展基礎
-                  </a>
-                </h3>
-                <div className="date">2023.06.14</div>
-                <div className="tagUnit secondary">TAIDE新聞</div>
-              </div>
-            </div>
-            <div className="newsListUnit__item">
-              <div className="photo">
-                <a href="newsDetail.html"></a>
-                <Image
-                  src={photo5204903}
-                  alt="TAIDE對話引擎初步成果發表，產官學齊聚見證"
-                />
-                <div className="btn">
-                  <Image src={btnNextArrow} alt="arrow" />
-                </div>
-              </div>
-              <div className="infoCon">
-                <h3>
-                  <a href="newsDetail.html">
-                    TAIDE對話引擎初步成果發表，產官學齊聚見證
-                  </a>
-                </h3>
-                <div className="date">2023.06.14</div>
-                <div className="tagUnit secondary">TAIDE新聞</div>
-              </div>
-            </div>
-            <div className="newsListUnit__item">
-              <div className="photo">
-                <a href="newsDetail.html"></a>
-                <Image
-                  src={photo5204904}
-                  alt="臺版AI對話引擎年底釋大模型，奠定商業版發展基礎"
-                />
-                <div className="btn">
-                  <Image src={btnNextArrow} alt="arrow" />
-                </div>
-              </div>
-              <div className="infoCon">
-                <h3>
-                  <a href="newsDetail.html">
-                    臺版AI對話引擎年底釋大模型，奠定商業版發展基礎
-                  </a>
-                </h3>
-                <div className="date">2023.06.14</div>
-                <div className="tagUnit secondary">TAIDE新聞</div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </article>

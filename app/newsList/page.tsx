@@ -68,9 +68,6 @@ const NewsList = async ({
     totalPages,
     firstLink,
   }: NewsResType.NewsListType = await newsListRes.json();
-  console.log(keyword, "-------");
-
-  //console.log(searchParams.page, searchParams.keyword, Math.random());
 
   const RenderPage = () => {
     if (issuePlanList.length > 0) {

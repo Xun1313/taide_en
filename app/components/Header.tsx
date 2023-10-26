@@ -1,12 +1,19 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import logo from "~/images/logo.svg";
 
 // 標籤 hover 效果
 // 選到該頁面亮起
 const Header = () => {
+  const pathname = usePathname();
+  const handleHoverNavigation = (
+    linkList: string[],
+    className: string = "path"
+  ) => (linkList.includes(pathname.split("/")[1]) ? className : "");
+
   useEffect(() => {
     $(document).ready(function () {
       $(".btnSubNav").click(function () {
@@ -71,9 +78,15 @@ const Header = () => {
         <div className="menuBtn mobile">
           <a>≡</a>
         </div>
-        <nav className="nav">
+        <nav className={`nav ${handleHoverNavigation(["download"], "hover2")}`}>
           <ul>
-            <li className="btnSubNav">
+            <li
+              className={`btnSubNav ${handleHoverNavigation([
+                "aboutProject",
+                "aboutExpected",
+                "aboutStage",
+              ])}`}
+            >
               <a style={{ cursor: "pointer" }}>認識TAIDE</a>
               <div className="subNav">
                 <Link href="/aboutProject">計畫背景</Link>
@@ -81,19 +94,21 @@ const Header = () => {
                 <Link href="/aboutStage">階段進展</Link>
               </div>
             </li>
-            <li>
+            <li className={`${handleHoverNavigation(["teamList"])}`}>
               <Link href="/teamList">團隊陣容</Link>
             </li>
-            <li>
+            <li className={`${handleHoverNavigation(["resourcesList"])}`}>
               <Link href="/resourcesList">學習資源</Link>
             </li>
-            <li>
+            <li className={`${handleHoverNavigation(["newsList"])}`}>
               <Link href="/newsList?keyword=">最新動態</Link>
             </li>
-            <li>
+            <li className={`${handleHoverNavigation(["trainData"])}`}>
               <Link href="/trainData?type=0">訓練資料</Link>
             </li>
-            <li className="btnDownload">
+            <li
+              className={`btnDownload ${handleHoverNavigation(["download"])}`}
+            >
               <Link href="/download">TAIDE模型下載</Link>
             </li>
           </ul>
