@@ -67,6 +67,19 @@ export default function RootLayout({
         <script src="/js/jquery.min.js" defer></script>
         <script src="/js/jquery.ui.min.js" defer></script>
         <script src="/js/isotope-docs.min.js" defer></script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PYNQDHHXCT"
+          async
+        ></Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-PYNQDHHXCT');`,
+          }}
+        ></script>
       </head>
       <body>
         <section className="wrapper">
