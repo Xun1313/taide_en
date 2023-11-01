@@ -1,4 +1,4 @@
-import {  WithContext } from "schema-dts";
+import { WithContext } from "schema-dts";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -66,19 +66,23 @@ const NewsList = async ({
           <h1>最新動態</h1>
           <SearchInput />
           <div className="newsDetail">
-            <div className="tagUnit secondary solid">{typeMapping[type]}</div>
+            {typeMapping[type] && (
+              <div className="tagUnit secondary solid">{typeMapping[type]}</div>
+            )}
             <h2>{title}</h2>
             <div className="date">
               {format(new Date(issueDate), "yyyy.MM.dd")}
             </div>
             <div className="back">
-              <Link href="/newsList">返回最新動態列表</Link>
+              <Link href="/newsList?keyword=">返回最新動態列表</Link>
             </div>
-            <div className="alertsUnit tertiary">
-              <b>資料來源:</b>
-              <br />
-              {dataSource}
-            </div>
+            {dataSource && (
+              <div className="alertsUnit tertiary">
+                <b>資料來源:</b>
+                <br />
+                {dataSource}
+              </div>
+            )}
             <div className="photo">
               <Image
                 src={`${process.env.NEXT_PUBLIC_NEWS_IMG_URL}/${id}`}

@@ -64,9 +64,6 @@ export default function RootLayout({
           color="#000"
         />
         <meta name="msapplication-TileColor" content="#000000" />
-        <script src="/js/jquery.min.js" defer></script>
-        <script src="/js/jquery.ui.min.js" defer></script>
-        <script src="/js/isotope-docs.min.js" defer></script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PYNQDHHXCT"
           async
@@ -90,6 +87,9 @@ export default function RootLayout({
           <Footer />
           <BackTop />
         </section>
+        <script src="/js/jquery.min.js" defer={false}></script>
+        <script src="/js/jquery.ui.min.js" defer={false}></script>
+        <script src="/js/isotope-docs.min.js" defer={false}></script>
       </body>
     </html>
   );

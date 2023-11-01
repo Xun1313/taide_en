@@ -1,4 +1,4 @@
-import {  WithContext } from "schema-dts";
+import { WithContext } from "schema-dts";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -49,25 +49,27 @@ const NewsList = async ({
   };
   const length = 9;
   const keyword = searchParams.keyword || "";
+
   const newsListRes = await fetch(
-    `${process.env.API_URL}/latest-updates?accessToken=TAIDE_!@%23qweASDzxc456RTYfgjVBN`,
+    `${
+      process.env.API_URL
+    }/latest-updates?accessToken=TAIDE_!@%23qweASDzxc456RTYfgjVBN&frontSearchAll=${keyword}&length=${length}&start=${
+      searchParams.page ? (Number(searchParams.page) - 1) * length : 0
+    }`,
     {
       method: "POST",
-      body: JSON.stringify({
-        frontSearchAll: keyword,
-        length,
-        start: searchParams.page ? (Number(searchParams.page) - 1) * length : 0,
-      }),
       cache: "no-store",
     }
   );
 
-  const {
+  let {
     issuePlanList,
     pageNo,
     totalPages,
     firstLink,
   }: NewsResType.NewsListType = await newsListRes.json();
+  console.log(issuePlanList.length);
+  console.log("------------------");
 
   const RenderPage = () => {
     if (issuePlanList.length > 0) {
@@ -115,7 +117,7 @@ const NewsList = async ({
             無相關搜尋結果
           </h2>
           <div className="back">
-            <Link href="/newsList">返回最新動態列表</Link>
+            <Link href="/newsList?keyword=">返回最新動態列表</Link>
           </div>
         </div>
       );
@@ -141,47 +143,49 @@ const NewsList = async ({
           </div>
           <SearchInput keyword={searchParams.keyword} />
           <RenderPage />
-          <div className="pageUnit">
-            <ol>
-              <li className="prev">
-                {pageNo === 1 ? (
-                  <span>
-                    <Image src={btnPrevArrow} alt="prev" />
-                  </span>
-                ) : (
-                  <Link
-                    href={`/newsList?page=${pageNo - 1}&keyword=${keyword}`}
-                  >
-                    <Image src={btnPrevArrow} alt="prev" />
-                  </Link>
-                )}
-              </li>
-              <li className="pageUnit__bd">
-                {[...Array(totalPages)].map((e, i) => (
-                  <Link
-                    href={`/newsList?page=${i + 1}&keyword=${keyword}`}
-                    className={i + 1 === pageNo ? "active" : ""}
-                    key={i}
-                  >
-                    {i + 1}
-                  </Link>
-                ))}
-              </li>
-              <li className="next">
-                {pageNo === totalPages ? (
-                  <span>
-                    <Image src={btnNextArrow} alt="next" />
-                  </span>
-                ) : (
-                  <Link
-                    href={`/newsList?page=${pageNo + 1}&keyword=${keyword}`}
-                  >
-                    <Image src={btnNextArrow} alt="next" />
-                  </Link>
-                )}
-              </li>
-            </ol>
-          </div>
+          {pageNo > 1 && (
+            <div className="pageUnit">
+              <ol>
+                <li className="prev">
+                  {pageNo === 1 ? (
+                    <span>
+                      <Image src={btnPrevArrow} alt="prev" />
+                    </span>
+                  ) : (
+                    <Link
+                      href={`/newsList?page=${pageNo - 1}&keyword=${keyword}`}
+                    >
+                      <Image src={btnPrevArrow} alt="prev" />
+                    </Link>
+                  )}
+                </li>
+                <li className="pageUnit__bd">
+                  {[...Array(totalPages)].map((e, i) => (
+                    <Link
+                      href={`/newsList?page=${i + 1}&keyword=${keyword}`}
+                      className={i + 1 === pageNo ? "active" : ""}
+                      key={i}
+                    >
+                      {i + 1}
+                    </Link>
+                  ))}
+                </li>
+                <li className="next">
+                  {pageNo === totalPages ? (
+                    <span>
+                      <Image src={btnNextArrow} alt="next" />
+                    </span>
+                  ) : (
+                    <Link
+                      href={`/newsList?page=${pageNo + 1}&keyword=${keyword}`}
+                    >
+                      <Image src={btnNextArrow} alt="next" />
+                    </Link>
+                  )}
+                </li>
+              </ol>
+            </div>
+          )}
         </div>
       </article>
       <article className="contactUnit news">

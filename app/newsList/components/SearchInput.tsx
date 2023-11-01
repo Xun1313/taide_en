@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "TAIDE - 最新動態",
 };
 
-const SearchInput = ({ keyword }: NewsResType.QueryType) => {
+const SearchInput = ({ keyword = "" }: NewsResType.QueryType) => {
   const searchInput = useRef<HTMLInputElement>(null);
   const router = useRouter();
 

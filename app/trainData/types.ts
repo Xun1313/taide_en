@@ -24,7 +24,7 @@ namespace TrainDataResType {
     exampleData: string;
     fileItemList: {
       id: string;
-      filename: string;
+      fileName: string;
     }[];
   };
 

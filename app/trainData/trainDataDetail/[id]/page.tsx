@@ -1,4 +1,4 @@
-import {  WithContext } from "schema-dts";
+import { WithContext } from "schema-dts";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -69,7 +69,9 @@ const TrainDataDetail = async ({
         <div className="trainDataDetail__body">
           <h1>訓練資料</h1>
           <div className="trainDataDetail__wrap">
-            <div className="tagUnit secondary solid">{typeMapping[type]}</div>
+            {typeMapping[type] && (
+              <div className="tagUnit secondary solid">{typeMapping[type]}</div>
+            )}
             <h2>
               <span>{title}</span>
             </h2>
@@ -119,7 +121,7 @@ const TrainDataDetail = async ({
                           href={`${process.env.WEBSITE_DOMAIN}/fileItem/download?id=${e.id}`}
                           download
                         >
-                          {e.filename}
+                          {e.fileName}
                         </a>
                         <br />
                       </span>

@@ -1,4 +1,4 @@
-import {  WithContext } from "schema-dts";
+import { WithContext } from "schema-dts";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -38,21 +38,19 @@ const TrainData = async ({
     datePublished: "2023-03-02",
   };
   const trainDataListRes = await fetch(
-    `${process.env.API_URL}/trainData?accessToken=TAIDE_7ujm*IK9LP*UIOPJKL@wsx!qaz`,
+    `${
+      process.env.API_URL
+    }/trainData?accessToken=TAIDE_7ujm*IK9LP*UIOPJKL@wsx!qaz&type=${
+      Number(searchParams.type) || ""
+    }&length=99999999&start=0`,
     {
       method: "POST",
-      body: JSON.stringify({
-        type: searchParams.type,
-        length: 99999999,
-        start: 0,
-      }),
       cache: "no-store",
     }
   );
 
   const { trainDataList }: TrainDataResType.TrainDataType =
     await trainDataListRes.json();
-  console.log(searchParams.type, "----------");
 
   return (
     <>

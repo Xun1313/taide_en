@@ -30,14 +30,9 @@ const Home = async () => {
     datePublished: "2023-03-02",
   };
   const newsListRes = await fetch(
-    `${process.env.API_URL}/latest-updates?accessToken=TAIDE_!@%23qweASDzxc456RTYfgjVBN`,
+    `${process.env.API_URL}/latest-updates?accessToken=TAIDE_!@%23qweASDzxc456RTYfgjVBN&frontSearchAll=&length=5&start=0`,
     {
       method: "POST",
-      body: JSON.stringify({
-        frontSearchAll: "",
-        length: 5,
-        start: 0,
-      }),
       cache: "no-store",
     }
   );
@@ -186,10 +181,16 @@ const Home = async () => {
                   <h3>
                     <Link href={`/newsList/newsDetail/${e.id}`}>{e.title}</Link>
                   </h3>
-                  <div className="date">
-                    {format(new Date(e.issueDate), "yyyy.MM.dd")}
-                  </div>
-                  <div className="tagUnit secondary">{typeMapping[e.type]}</div>
+                  {e.issueDate && (
+                    <div className="date">
+                      {format(new Date(e.issueDate), "yyyy.MM.dd")}
+                    </div>
+                  )}
+                  {typeMapping[e.type] && (
+                    <div className="tagUnit secondary">
+                      {typeMapping[e.type]}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

@@ -25,10 +25,14 @@ const CardItem = ({ title, issueDate, id, type }: NewsResType.ItemType) => {
         <h3>
           <Link href={`/newsList/newsDetail/${id}`}>{title}</Link>
         </h3>
-        <div className="tagUnit date">
-          {format(new Date(issueDate), "yyyy.MM.dd")}
-        </div>
-        <div className="tagUnit secondary">{typeMapping[type]}</div>
+        {issueDate && (
+          <div className="tagUnit date">
+            {format(new Date(issueDate), "yyyy.MM.dd")}
+          </div>
+        )}
+        {typeMapping[type] && (
+          <div className="tagUnit secondary">{typeMapping[type]}</div>
+        )}
       </div>
     </div>
   );
