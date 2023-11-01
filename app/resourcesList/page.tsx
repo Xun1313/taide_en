@@ -6,7 +6,7 @@ import MainPage from "./component/MainPage";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "學習資源 - TAIDE推動台灣可信任生成式AI發展計畫",
+  title: "學習資源 - TAIDE推動臺灣可信任生成式AI發展計畫",
   description:
     "探索TAIDE的專屬學習資源，從基礎到專家級，助您在AI領域取得突破。踏上學習的新旅程！",
   openGraph: {

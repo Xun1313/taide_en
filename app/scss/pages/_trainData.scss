@@ -229,6 +229,7 @@
                 @include border_radius(2vw);
                 margin: 2% 1%;
                 background-color: #C7D97E;
+                word-break: break-all;
 
                 @include screen_960 {
                     @include border_radius(4vw);
@@ -282,7 +283,7 @@
 
                 &.radius {
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     justify-content: center;
                     background-color: #F2EEE8;
                 }

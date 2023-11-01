@@ -60,7 +60,7 @@ const BannerSwiper = () => {
             <div className="tagUnit grey">POINT 1</div>
             <h3>提升繁體中文表現</h3>
             <div className="text">
-              利用可信數據提升繁體中文生成式AI，整合大量互聯網文本和本土資源，奠定台灣自主生成式AI基礎，支持民間自行訓練。
+              利用可信數據提升繁體中文生成式AI，整合大量互聯網文本和本土資源，奠定臺灣自主生成式AI基礎，支持民間自行訓練。
             </div>
           </div>
         </div>

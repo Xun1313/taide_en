@@ -36,7 +36,7 @@ const BannerSwiper = () => {
     <div className="swiper newsSwiper" ref={swiperElement}>
       <div className="swiper-wrapper">
         <div className="swiper-slide">
-          <h2>健全台灣驗測環境</h2>
+          <h2>健全臺灣驗測環境</h2>
           <div className="tagUnit grey">POINT 6</div>
           <h3>產品開發驗測環境</h3>
           <div className="text">
@@ -45,7 +45,7 @@ const BannerSwiper = () => {
           </div>
         </div>
         <div className="swiper-slide">
-          <h2>健全台灣驗測環境</h2>
+          <h2>健全臺灣驗測環境</h2>
           <div className="tagUnit grey">POINT 6</div>
           <h3>建置評測中心</h3>
           <div className="text">

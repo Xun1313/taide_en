@@ -9,9 +9,9 @@ import Script from "next/script";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_DOMAIN as string),
-  title: "TAIDE - 推動台灣可信任生成式AI發展計畫",
+  title: "TAIDE - 推動臺灣可信任生成式AI發展計畫",
   description:
-    "深入了解TAIDE計畫的背後策略、目標和里程碑。台灣如何透過生成式AI技術，開創新的科技未來。",
+    "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
   icons: [
     { rel: "icon", url: "/favicon.ico" },
     { rel: "apple-touch-icon", url: "/favicon/apple-touch-icon.png" },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: process.env.WEBSITE_DOMAIN,
     title: "TAIDE",
     description:
-      "深入了解TAIDE計畫的背後策略、目標和里程碑。台灣如何透過生成式AI技術，開創新的科技未來。",
+      "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
     siteName: "TAIDE",
     images: [
       {

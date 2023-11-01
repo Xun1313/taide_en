@@ -10,12 +10,12 @@ import BannerSwiper2 from "./components/BannerSwiper2";
 import Accordion1 from "./components/Accordion1";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "預期效益 - TAIDE推動台灣可信任生成式AI發展計畫",
+  title: "預期效益 - TAIDE推動臺灣可信任生成式AI發展計畫",
   description:
-    "探索TAIDE的核心價值和其帶來的預期效益，了解其如何助推台灣AI產業到達新的巔峰。",
+    "探索TAIDE的核心價值和其帶來的預期效益，了解其如何助推臺灣AI產業到達新的巔峰。",
   openGraph: {
     description:
-      "探索TAIDE的核心價值和其帶來的預期效益，了解其如何助推台灣AI產業到達新的巔峰。",
+      "探索TAIDE的核心價值和其帶來的預期效益，了解其如何助推臺灣AI產業到達新的巔峰。",
   },
 };
 
@@ -23,9 +23,9 @@ const AboutExpected = async () => {
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "探索TAIDE的核心價值和其帶來的預期效益，了解其如何助推台灣AI產業到達新的巔峰。",
+    name: "探索TAIDE的核心價值和其帶來的預期效益，了解其如何助推臺灣AI產業到達新的巔峰。",
     additionalName:
-      "探索TAIDE的核心價值和其帶來的預期效益，了解其如何助推台灣AI產業到達新的巔峰。",
+      "探索TAIDE的核心價值和其帶來的預期效益，了解其如何助推臺灣AI產業到達新的巔峰。",
     url: process.env.WEBSITE_DOMAIN,
     datePublished: "2023-03-02",
   };

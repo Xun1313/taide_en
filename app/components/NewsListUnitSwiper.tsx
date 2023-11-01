@@ -55,10 +55,16 @@ const NewsListUnitSwiper = ({
             </div>
             <div className="infoCon">
               <h3>
-              <Link href={`/newsList/newsDetail/${e.id}`}>{e.title}</Link>
+                <Link href={`/newsList/newsDetail/${e.id}`}>{e.title}</Link>
               </h3>
-              <div className="date">{format(new Date(e.issueDate), "yyyy.MM.dd")}</div>
-              <div className="tagUnit secondary">{typeMapping[e.type]}</div>
+              {e.issueDate && (
+                <div className="date">
+                  {format(new Date(e.issueDate), "yyyy.MM.dd")}
+                </div>
+              )}
+              {typeMapping[e.type] && (
+                <div className="tagUnit secondary">{typeMapping[e.type]}</div>
+              )}
             </div>
           </div>
         ))}

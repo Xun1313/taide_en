@@ -2,7 +2,6 @@ import { WithContext } from "schema-dts";
 
 import Image from "next/image";
 import Link from "next/link";
-import banner from "~/images/home/banner.gif";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 
 import StageUnit from "~/components/StageUnit";
@@ -23,9 +22,9 @@ const Home = async () => {
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "深入了解TAIDE計畫的背後策略、目標和里程碑。台灣如何透過生成式AI技術，開創新的科技未來。",
+    name: "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
     additionalName:
-      "深入了解TAIDE計畫的背後策略、目標和里程碑。台灣如何透過生成式AI技術，開創新的科技未來。",
+      "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
     url: process.env.WEBSITE_DOMAIN,
     datePublished: "2023-03-02",
   };
@@ -44,7 +43,9 @@ const Home = async () => {
         <div className="bannerUnit__body">
           <div className="bannerUnit__wrap">
             <div className="bannerUnit__left">
-              <Image src={banner} alt="banner" />
+              <video width="320" height="240" autoPlay loop muted>
+                <source src="/video/banner.mp4" type="video/mp4" />
+              </video>
             </div>
             <div className="bannerUnit__right">
               <BannerSwiper />
@@ -74,7 +75,7 @@ const Home = async () => {
                   Data acquisition with annotation team
                 </div>
                 <div className="btn">
-                  <a href="/teamList">
+                  <a href="/teamList#tag3">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} alt="arrow" />
                   </a>
@@ -88,7 +89,7 @@ const Home = async () => {
                 </h3>
                 <div className="text">Core model training with RLHF group</div>
                 <div className="btn">
-                  <a href="/teamList">
+                  <a href="/teamList#tag4">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} alt="arrow" />
                   </a>
@@ -104,7 +105,7 @@ const Home = async () => {
                   High-speed computing resources and technical support team
                 </div>
                 <div className="btn">
-                  <a href="/teamList">
+                  <a href="/teamList#tag5">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} alt="arrow" />
                   </a>
@@ -120,7 +121,7 @@ const Home = async () => {
                   Application service platform construction and management team
                 </div>
                 <div className="btn">
-                  <a href="/teamList">
+                  <a href="/teamList#tag6">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} alt="arrow" />
                   </a>
@@ -141,6 +142,12 @@ const Home = async () => {
                 <div className="text">
                   International observation with specification group
                 </div>
+                <div className="btn">
+                  <a href="/teamList#tag7">
+                    <span>了解更多</span>
+                    <Image src={btnNextArrow} alt="arrow" />
+                  </a>
+                </div>
               </div>
               <div className="cardTeam__item even">
                 <h3>
@@ -150,6 +157,12 @@ const Home = async () => {
                 </h3>
                 <div className="text">
                   Evaluation system and Testing Environment Team
+                </div>
+                <div className="btn">
+                  <a href="/teamList#tag8">
+                    <span>了解更多</span>
+                    <Image src={btnNextArrow} alt="arrow" />
+                  </a>
                 </div>
               </div>
             </div>

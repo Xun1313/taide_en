@@ -7,12 +7,12 @@ import FilterRender from "./components/FilterRender";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "團隊陣容 - TAIDE推動台灣可信任生成式AI發展計畫",
+  title: "團隊陣容 - TAIDE推動臺灣可信任生成式AI發展計畫",
   description:
-    "深入了解TAIDE的菁英團隊，探索他們如何集結智慧，引領台灣AI技術走在全球前沿。",
+    "深入了解TAIDE的菁英團隊，探索他們如何集結智慧，引領臺灣AI技術走在全球前沿。",
   openGraph: {
     description:
-      "深入了解TAIDE的菁英團隊，探索他們如何集結智慧，引領台灣AI技術走在全球前沿。",
+      "深入了解TAIDE的菁英團隊，探索他們如何集結智慧，引領臺灣AI技術走在全球前沿。",
   },
 };
 
@@ -20,9 +20,9 @@ const TeamList = () => {
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "深入了解TAIDE的菁英團隊，探索他們如何集結智慧，引領台灣AI技術走在全球前沿。",
+    name: "深入了解TAIDE的菁英團隊，探索他們如何集結智慧，引領臺灣AI技術走在全球前沿。",
     additionalName:
-      "深入了解TAIDE的菁英團隊，探索他們如何集結智慧，引領台灣AI技術走在全球前沿。",
+      "深入了解TAIDE的菁英團隊，探索他們如何集結智慧，引領臺灣AI技術走在全球前沿。",
     url: process.env.WEBSITE_DOMAIN,
     datePublished: "2023-03-02",
   };

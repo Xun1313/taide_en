@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logoW from "~/images/logo_w.svg";
 import logoNstc from "~/images/logo_NSTC.png";
 import logoNarlabs from "~/images/logo_NARlabs.png";
@@ -9,7 +10,7 @@ const Footer = () => {
     <footer className="footer">
       <article className="footer__body">
         <div className="logo">
-          <a href="index.html">
+          <a style={{ cursor: "pointer" }}>
             <Image src={logoW} alt="TAIDE" />
           </a>
           推動可信任生成式AI發展先期計畫
@@ -19,35 +20,35 @@ const Footer = () => {
             <div className="sitemapUnit__item">
               <h3>認識TAIDE</h3>
               <p>
-                <a href="aboutProject.html">計畫背景</a>
+                <Link href="/aboutProject">計畫背景</Link>
               </p>
               <p>
-                <a href="aboutExpected.html">預期效益</a>
+                <Link href="/aboutExpected">預期效益</Link>
               </p>
               <p>
-                <a href="aboutStage.html">階段進展</a>
+                <Link href="/aboutStage">階段進展</Link>
               </p>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <a href="teamList.html">團隊陣容</a>
+                <Link href="/teamList">團隊陣容</Link>
               </h3>
               <h3>
-                <a href="resourcesList.html">學習資源</a>
+                <Link href="/resourcesList">學習資源</Link>
               </h3>
               <h3>
-                <a href="newsList.html">最新動態</a>
+                <Link href="/newsList">最新動態</Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <a href="trainData.html">訓練資料</a>
+                <Link href="/trainData">訓練資料</Link>
               </h3>
               <h3>
-                <a href="download.html">TAIDE模型下載</a>
+                <Link href="/download">TAIDE模型下載</Link>
               </h3>
               <p>
-                <a href="terms.html">條款與許可協議</a>
+                <Link href="/terms">條款與許可協議</Link>
               </p>
             </div>
           </div>
@@ -57,33 +58,33 @@ const Footer = () => {
             <div className="sitemapUnit__item">
               <h3>認識TAIDE</h3>
               <p>
-                <a href="aboutProject.html">計畫背景</a>
+                <Link href="/aboutProject">計畫背景</Link>
               </p>
               <p>
-                <a href="aboutExpected.html">預期效益</a>
+                <Link href="/aboutExpected">預期效益</Link>
               </p>
               <p>
-                <a href="aboutStage.html">階段進展</a>
+                <Link href="/aboutStage">階段進展</Link>
               </p>
               <h3>
-                <a href="teamList.html">團隊陣容</a>
+                <Link href="/teamList">團隊陣容</Link>
               </h3>
               <h3>
-                <a href="resourcesList.html">學習資源</a>
+                <Link href="/resourcesList">學習資源</Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <a href="newsList.html">最新動態</a>
+                <Link href="/newsList">最新動態</Link>
               </h3>
               <h3>
-                <a href="trainData.html">訓練資料</a>
+                <Link href="/trainData">訓練資料</Link>
               </h3>
               <h3>
-                <a href="download.html">TAIDE模型下載</a>
+                <Link href="/download">TAIDE模型下載</Link>
               </h3>
               <p>
-                <a href="terms.html">條款與許可協議</a>
+                <Link href="/terms">條款與許可協議</Link>
               </p>
             </div>
           </div>
@@ -92,7 +93,7 @@ const Footer = () => {
           <div className="partnerUnit__item">
             <h3>指導單位</h3>
             <div>
-              <a>
+              <a style={{ cursor: "pointer" }}>
                 <Image src={logoNstc} alt="NSTC" />
               </a>
             </div>
@@ -100,10 +101,10 @@ const Footer = () => {
           <div className="partnerUnit__item">
             <h3>執行單位</h3>
             <div>
-              <a>
+              <a style={{ cursor: "pointer" }}>
                 <Image src={logoNarlabs} alt="NARlabs" />
               </a>
-              <a>
+              <a style={{ cursor: "pointer" }}>
                 <Image src={logoModa} alt="moda" />
               </a>
             </div>

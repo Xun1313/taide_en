@@ -51,12 +51,6 @@ const PlanList = () => {
               <div className="text">
                 讓政府或業者後續可依照需求選擇適用的模型大小及衡量算力，自行訓練模型或建構內部應用之模型。
               </div>
-              <div className="btn">
-                <a href="trainData.html">
-                  <span>創新應用</span>
-                  <Image src={btnNextArrow} alt="arrow" />
-                </a>
-              </div>
             </div>
           </div>
           <div className="swiper-slide slide2">
@@ -67,12 +61,6 @@ const PlanList = () => {
               </h3>
               <div className="text">
                 提高模型在正體中文回應的能力及特定任務的表現。
-              </div>
-              <div className="btn">
-                <a href="aboutStage.html#stage">
-                  <span>創新應用</span>
-                  <Image src={btnNextArrow} alt="arrow" />
-                </a>
               </div>
             </div>
           </div>
@@ -85,12 +73,6 @@ const PlanList = () => {
               <div className="text">
                 提供模型發展所需算力，並奠定後續推廣應用基礎。
               </div>
-              <div className="btn">
-                <a href="resourcesList.html">
-                  <span>創新應用</span>
-                  <Image src={btnNextArrow} alt="arrow" />
-                </a>
-              </div>
             </div>
           </div>
           <div className="swiper-slide slide4">
@@ -100,12 +82,6 @@ const PlanList = () => {
                 <span>評測工具之發展</span>
               </h3>
               <div className="text">健全AI的發展環境與提升民眾的信任度。</div>
-              <div className="btn">
-                <a href="aboutExpected.html#expected">
-                  <span>創新應用</span>
-                  <Image src={btnNextArrow} alt="arrow" />
-                </a>
-              </div>
             </div>
           </div>
           <div className="swiper-slide slide1">
@@ -117,12 +93,6 @@ const PlanList = () => {
               <div className="text">
                 讓政府或業者後續可依照需求選擇適用的模型大小及衡量算力，自行訓練模型或建構內部應用之模型。
               </div>
-              <div className="btn">
-                <a href="trainData.html">
-                  <span>創新應用</span>
-                  <Image src={btnNextArrow} alt="arrow" />
-                </a>
-              </div>
             </div>
           </div>
           <div className="swiper-slide slide2">
@@ -133,12 +103,6 @@ const PlanList = () => {
               </h3>
               <div className="text">
                 提高模型在正體中文回應的能力及特定任務的表現。
-              </div>
-              <div className="btn">
-                <a href="aboutStage.html#stage">
-                  <span>創新應用</span>
-                  <Image src={btnNextArrow} alt="arrow" />
-                </a>
               </div>
             </div>
           </div>
@@ -151,12 +115,6 @@ const PlanList = () => {
               <div className="text">
                 提供模型發展所需算力，並奠定後續推廣應用基礎。
               </div>
-              <div className="btn">
-                <a href="resourcesList.html">
-                  <span>創新應用</span>
-                  <Image src={btnNextArrow} alt="arrow" />
-                </a>
-              </div>
             </div>
           </div>
           <div className="swiper-slide slide4">
@@ -166,12 +124,6 @@ const PlanList = () => {
                 <span>評測工具之發展</span>
               </h3>
               <div className="text">健全AI的發展環境與提升民眾的信任度。</div>
-              <div className="btn">
-                <a href="aboutExpected.html#expected">
-                  <span>創新應用</span>
-                  <Image src={btnNextArrow} alt="arrow" />
-                </a>
-              </div>
             </div>
           </div>
         </div>

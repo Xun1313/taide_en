@@ -8,12 +8,12 @@ import BannerSwiper from "./components/BannerSwiper";
 import StageUnit from "./components/StageUnit";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "階段進展與關鍵成果 - TAIDE推動台灣可信任生成式AI發展計畫",
+  title: "階段進展與關鍵成果 - TAIDE推動臺灣可信任生成式AI發展計畫",
   description:
-    "深入探索TAIDE的各階段進展，揭示其如何策略性地驅使台灣AI技術邁向新的高度。",
+    "深入探索TAIDE的各階段進展，揭示其如何策略性地驅使臺灣AI技術邁向新的高度。",
   openGraph: {
     description:
-      "深入探索TAIDE的各階段進展，揭示其如何策略性地驅使台灣AI技術邁向新的高度。",
+      "深入探索TAIDE的各階段進展，揭示其如何策略性地驅使臺灣AI技術邁向新的高度。",
   },
 };
 
@@ -21,9 +21,9 @@ const AboutStage = async () => {
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "深入探索TAIDE的各階段進展，揭示其如何策略性地驅使台灣AI技術邁向新的高度。",
+    name: "深入探索TAIDE的各階段進展，揭示其如何策略性地驅使臺灣AI技術邁向新的高度。",
     additionalName:
-      "深入探索TAIDE的各階段進展，揭示其如何策略性地驅使台灣AI技術邁向新的高度。",
+      "深入探索TAIDE的各階段進展，揭示其如何策略性地驅使臺灣AI技術邁向新的高度。",
     url: process.env.WEBSITE_DOMAIN,
     datePublished: "2023-03-02",
   };

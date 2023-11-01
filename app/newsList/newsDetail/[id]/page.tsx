@@ -15,12 +15,12 @@ const SearchInput = dynamic(
 );
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "最新動態 - TAIDE推動台灣可信任生成式AI發展計畫",
+  title: "最新動態 - TAIDE推動臺灣可信任生成式AI發展計畫",
   description:
-    "獨家深度解析TAIDE的最新發展，帶您貼近台灣AI產業的脈動。掌握核心資訊，立即了解！",
+    "獨家深度解析TAIDE的最新發展，帶您貼近臺灣AI產業的脈動。掌握核心資訊，立即了解！",
   openGraph: {
     description:
-      "獨家深度解析TAIDE的最新發展，帶您貼近台灣AI產業的脈動。掌握核心資訊，立即了解！",
+      "獨家深度解析TAIDE的最新發展，帶您貼近臺灣AI產業的脈動。掌握核心資訊，立即了解！",
   },
 };
 
@@ -34,9 +34,9 @@ const NewsList = async ({
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "獨家深度解析TAIDE的最新發展，帶您貼近台灣AI產業的脈動。掌握核心資訊，立即了解！",
+    name: "獨家深度解析TAIDE的最新發展，帶您貼近臺灣AI產業的脈動。掌握核心資訊，立即了解！",
     additionalName:
-      "獨家深度解析TAIDE的最新發展，帶您貼近台灣AI產業的脈動。掌握核心資訊，立即了解！",
+      "獨家深度解析TAIDE的最新發展，帶您貼近臺灣AI產業的脈動。掌握核心資訊，立即了解！",
     url: process.env.WEBSITE_DOMAIN,
     datePublished: "2023-03-02",
   };

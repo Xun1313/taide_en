@@ -22,16 +22,16 @@ const Accordion1 = () => {
 
   return (
     <div className="section section2">
-      <h2>打造台灣本土AI引擎</h2>
+      <h2>打造臺灣本土AI引擎</h2>
       <div className="tagUnit grey">首個本土AI引擎</div>
       <div className="row">
         <div className="infoCon">
           <div className="accordion">
             <div className="accordion__item">
-              <h3>專為台灣訂製</h3>
+              <h3>專為臺灣訂製</h3>
               <div className="accordion__con">
                 <p>
-                  建立台灣本土可信任的生成式AI對話引擎基礎模型，為政府和企業提供自主選擇的模型大小和計算資源，以滿足各自需求，從而訓練或構建內部應用程序模型。
+                  建立臺灣本土可信任的生成式AI對話引擎基礎模型，為政府和企業提供自主選擇的模型大小和計算資源，以滿足各自需求，從而訓練或構建內部應用程序模型。
                 </p>
               </div>
             </div>

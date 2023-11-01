@@ -10,7 +10,7 @@ import { typeMapping } from "~/utils/common";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "訓練資料 - TAIDE推動台灣可信任生成式AI發展計畫",
+  title: "訓練資料 - TAIDE推動臺灣可信任生成式AI發展計畫",
   description:
     "深入解析TAIDE的條款與許可協議，確保您在AI領域的安全應用。不可忽視的關鍵事項，立即掌握！",
   openGraph: {

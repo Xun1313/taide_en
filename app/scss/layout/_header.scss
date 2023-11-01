@@ -120,10 +120,10 @@
                     }
 
                     &.btnDownload {
-                        margin: 0 0 0 2.7vw;
+                        margin: 0 0 0 3.7vw;
 
                         @include screen_1160 {
-                            margin: 0 0 0 40px;
+                            margin: 0 0 0 54px;
                         }
 
                         @include screen_960 {
@@ -265,7 +265,7 @@
 
     .header__body .nav ul li.btnDownload {
         @include screen_1160 {
-            margin: 0 0 0 2.7vw;
+            margin: 0 0 0 3.7vw;
         }
     }
 }

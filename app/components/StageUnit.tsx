@@ -1,8 +1,7 @@
 "use client";
-
 import Image from "next/image";
+import Link from "next/link";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
-import bgStage from "~/images/home/bg_stage.gif";
 import { useEffect } from "react";
 
 const StageUnit = () => {
@@ -50,11 +49,11 @@ const StageUnit = () => {
                       此階段為開發第一期目的為生成對抗網絡的深度學習技術
                     </span>
                     <div className="btn">
-                      <a style={{ cursor: "pointer" }}>
+                      <Link href="/firstStage">
                         <span>了解更多</span>
                         <Image src={btnNextArrow} alt="arrow" />
-                      </a>
-                    </div>  
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 <div className="stageFoldUnit__item item2">
@@ -69,12 +68,12 @@ const StageUnit = () => {
                     <span>
                       此階段透過反覆生成並調整參數鑑別器則不斷辨別真假數據提高辨識且進化
                     </span>
-                    <div className="btn">
+                    {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
                         <span>了解更多</span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="stageFoldUnit__item item3">
@@ -90,12 +89,12 @@ const StageUnit = () => {
                     <span>
                       此階段為展示強大的神經網絡模型用於自然語言、圖像、音頻處理等生成式任務
                     </span>
-                    <div className="btn">
+                    {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
                         <span>了解更多</span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="stageFoldUnit__item item4">
@@ -111,19 +110,21 @@ const StageUnit = () => {
                     <span>
                       此階段為開發第一期目的為生成對抗網絡的深度學習技術
                     </span>
-                    <div className="btn">
+                    {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
                         <span>了解更多</span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="stageUnit__right">
-            <Image src={bgStage} alt="stage" style={{ height: "auto" }} />
+            <video width="320" height="240" autoPlay loop muted>
+              <source src="/video/bg_stage.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>

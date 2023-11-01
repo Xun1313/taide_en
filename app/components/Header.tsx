@@ -109,7 +109,7 @@ const Header = () => {
             <li
               className={`btnDownload ${handleHoverNavigation(["download"])}`}
             >
-              <Link href="/download">TAIDE模型下載</Link>
+              <Link href="/download">TAIDE模型</Link>
             </li>
           </ul>
         </nav>
