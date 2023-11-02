@@ -67,7 +67,7 @@ const AboutExpected = async () => {
           <div className="btn">
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
-              <Image src={btnNextArrow} alt="about" />
+              <Image src={btnNextArrow} alt="about" style={{ height: "auto" }} />
             </a>
           </div>
         </article>

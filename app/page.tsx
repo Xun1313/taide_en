@@ -77,7 +77,7 @@ const Home = async () => {
                 <div className="btn">
                   <a href="/teamList#tag3">
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} alt="arrow" />
+                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
                   </a>
                 </div>
               </div>
@@ -91,7 +91,7 @@ const Home = async () => {
                 <div className="btn">
                   <a href="/teamList#tag4">
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} alt="arrow" />
+                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
                   </a>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const Home = async () => {
                 <div className="btn">
                   <a href="/teamList#tag5">
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} alt="arrow" />
+                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
                   </a>
                 </div>
               </div>
@@ -123,7 +123,7 @@ const Home = async () => {
                 <div className="btn">
                   <a href="/teamList#tag6">
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} alt="arrow" />
+                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
                   </a>
                 </div>
               </div>
@@ -145,7 +145,7 @@ const Home = async () => {
                 <div className="btn">
                   <a href="/teamList#tag7">
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} alt="arrow" />
+                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
                   </a>
                 </div>
               </div>
@@ -161,7 +161,7 @@ const Home = async () => {
                 <div className="btn">
                   <a href="/teamList#tag8">
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} alt="arrow" />
+                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
                   </a>
                 </div>
               </div>
@@ -187,7 +187,7 @@ const Home = async () => {
                     height={500}
                   />
                   <div className="btn">
-                    <Image src={btnNextArrow} alt="arrow" />
+                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
                   </div>
                 </div>
                 <div className="infoCon">

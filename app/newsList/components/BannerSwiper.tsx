@@ -56,7 +56,7 @@ const BannerSwiper = ({
                 height={500}
               />
               <div className="btn">
-                <Image src={btnNextArrow} alt="arrow" />
+                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
               </div>
             </div>
             <div className="infoCon">

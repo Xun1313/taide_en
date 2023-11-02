@@ -410,7 +410,7 @@ const FilterRender = () => {
               <Image src={team_7} alt="莊庭瑞 Chuang, Tyng-Ruey" />
 
               <div className="btn">
-                <Image src={btnNextArrow} alt="arrow" />
+                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
               </div>
             </div>
             <div className="infoCon">
@@ -435,7 +435,7 @@ const FilterRender = () => {
               <Image src={team_8} alt="蔡宗翰 Tsai, Tzong-Han" />
 
               <div className="btn">
-                <Image src={btnNextArrow} alt="arrow" />
+                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
               </div>
             </div>
             <div className="infoCon">
@@ -460,7 +460,7 @@ const FilterRender = () => {
               <Image src={team_9} alt="許永真 Hsu, Yung-Jen" />
 
               <div className="btn">
-                <Image src={btnNextArrow} alt="arrow" />
+                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
               </div>
             </div>
             <div className="infoCon">
@@ -482,7 +482,7 @@ const FilterRender = () => {
               <Image src={team_10} alt="吳毅成 Wu, I-Chen" />
 
               <div className="btn">
-                <Image src={btnNextArrow} alt="arrow" />
+                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
               </div>
             </div>
             <div className="infoCon">
@@ -507,7 +507,7 @@ const FilterRender = () => {
               <Image src={team_11} alt="李宏毅 Lee, Hung-Yi" />
 
               <div className="btn">
-                <Image src={btnNextArrow} alt="arrow" />
+                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
               </div>
             </div>
             <div className="infoCon">
@@ -532,7 +532,7 @@ const FilterRender = () => {
               <Image src={team_12} alt="廖元甫 Liao, Yuan-Fu" />
 
               <div className="btn">
-                <Image src={btnNextArrow} alt="arrow" />
+                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
               </div>
             </div>
             <div className="infoCon">
@@ -573,7 +573,7 @@ const FilterRender = () => {
               <Image src={team_14} alt="吳俊興 Wu, Chun-Hsin" />
 
               <div className="btn">
-                <Image src={btnNextArrow} alt="arrow" />
+                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
               </div>
             </div>
             <div className="infoCon">

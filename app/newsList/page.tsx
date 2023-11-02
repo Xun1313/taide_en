@@ -173,13 +173,13 @@ const NewsList = async ({
                 <li className="next">
                   {pageNo === totalPages ? (
                     <span>
-                      <Image src={btnNextArrow} alt="next" />
+                      <Image src={btnNextArrow} style={{ height: "auto" }} alt="next" />
                     </span>
                   ) : (
                     <Link
                       href={`/newsList?page=${pageNo + 1}&keyword=${keyword}`}
                     >
-                      <Image src={btnNextArrow} alt="next" />
+                      <Image src={btnNextArrow} style={{ height: "auto" }} alt="next" />
                     </Link>
                   )}
                 </li>
@@ -197,7 +197,7 @@ const NewsList = async ({
           <div className="btn">
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
-              <Image src={btnNextArrow} alt="next" />
+              <Image src={btnNextArrow} style={{ height: "auto" }} alt="next" />
             </a>
           </div>
         </article>

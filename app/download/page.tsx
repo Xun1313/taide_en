@@ -1,11 +1,31 @@
+import { WithContext } from "schema-dts";
 import Image from "next/image";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import btnDownArrow from "~/images/icon/btn_downArrow.svg";
 import bg_download from "~/images/download/bg_download.png";
-import photo_860570_1 from "~/images/news/photo_860570_1.png";
-import Navigation from "./components/Navigation";
+
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "模型版本下載 - TAIDE推動臺灣可信任生成式AI發展計畫",
+  description:
+    "完整指南解鎖TAIDE模型版本的下載及應用秘密。讓AI技能升級，迅速上手與實踐！",
+  openGraph: {
+    description:
+      "完整指南解鎖TAIDE模型版本的下載及應用秘密。讓AI技能升級，迅速上手與實踐！",
+  },
+};
 
 const Download = () => {
+  const jsonLd: WithContext<any> = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "完整指南解鎖TAIDE模型版本的下載及應用秘密。讓AI技能升級，迅速上手與實踐！",
+    additionalName:
+      "完整指南解鎖TAIDE模型版本的下載及應用秘密。讓AI技能升級，迅速上手與實踐！",
+    url: process.env.WEBSITE_DOMAIN,
+    datePublished: "2023-03-02",
+  };
+
   return (
     <>
       <article className="downloadUnit">
@@ -361,26 +381,28 @@ const Download = () => {
                 <h2>·模型版本</h2>
                 <div className="downloadDetail__table">
                   <table>
-                    <tr>
-                      <th>模型版本</th>
-                      <th>釋出日期</th>
-                      <th>Tokens</th>
-                    </tr>
-                    <tr>
-                      <td>b-1-0-0</td>
-                      <td>-</td>
-                      <td>1.7B</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
+                    <tbody>
+                      <tr>
+                        <th>模型版本</th>
+                        <th>釋出日期</th>
+                        <th>Tokens</th>
+                      </tr>
+                      <tr>
+                        <td>b-1-0-0</td>
+                        <td>-</td>
+                        <td>1.7B</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
                   </table>
                   <div className="btn">
-                    <a href="https://huggingface.co/" target="_blank">
+                    <a href="https://huggingface.co/taide" target="_blank">
                       <span>Huggingface 連結</span>
-                      <Image src={btnDownArrow} alt="arrow" />
+                      <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
                     </a>
                   </div>
                 </div>
@@ -463,23 +485,25 @@ const Download = () => {
               <h2>·模型版本</h2>
               <div className="downloadDetail__table">
                 <table>
-                  <tr>
-                    <th>模型版本</th>
-                    <td>b-1-0-0</td>
-                  </tr>
-                  <tr>
-                    <th>釋出日期</th>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <th>Tokens</th>
-                    <td>1.7B</td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <th>模型版本</th>
+                      <td>b-1-0-0</td>
+                    </tr>
+                    <tr>
+                      <th>釋出日期</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Tokens</th>
+                      <td>1.7B</td>
+                    </tr>
+                  </tbody>
                 </table>
                 <div className="btn">
-                  <a href="https://huggingface.co/" target="_blank">
+                  <a href="https://huggingface.co/taide" target="_blank">
                     <span>Huggingface 連結</span>
-                    <Image src={btnDownArrow} alt="arrow" />
+                    <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
                   </a>
                 </div>
               </div>
@@ -496,11 +520,18 @@ const Download = () => {
           <div className="btn">
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
-              <Image src={btnNextArrow} alt="about" />
+              <Image src={btnNextArrow} style={{ height: "auto" }} alt="about" />
             </a>
           </div>
         </article>
       </article>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      ></script>
     </>
   );
 };

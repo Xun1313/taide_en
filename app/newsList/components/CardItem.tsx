@@ -18,7 +18,7 @@ const CardItem = ({ title, issueDate, id, type }: NewsResType.ItemType) => {
         />
 
         <div className="btn">
-          <Image src={btnNextArrow} alt="arrow" />
+          <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
         </div>
       </div>
       <div className="infoCon">

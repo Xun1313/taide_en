@@ -78,7 +78,7 @@ const TrainDataDetail = async ({
             <div className="trainDataDetail__item">
               <div className="btn">
                 <Link href="/trainData">
-                  <Image src={btnPrevArrow} alt="arrow" />
+                  <Image src={btnPrevArrow} style={{ height: "auto" }} alt="arrow" />
                   <span>返回訓練資料列表</span>
                 </Link>
               </div>
@@ -184,7 +184,7 @@ const TrainDataDetail = async ({
           <div className="btn">
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
-              <Image src={btnDownArrow} alt="arrow" />
+              <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
             </a>
           </div>
         </article>

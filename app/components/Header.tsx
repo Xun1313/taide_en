@@ -47,6 +47,16 @@ const Header = () => {
         }
       });
 
+      $("nav ul li a").click(function () {
+        if ($(".menuBtn").hasClass("on")) {
+          $(".menuBtn").removeClass("on");
+          $(".header").removeClass("open");
+        } else {
+          $(".menuBtn").addClass("on");
+          $(".menuBtn").closest(".header").addClass("open");
+        }
+      });
+
       $("html").on("mouseleave mouseout mousedown touchstart", function (e) {
         if ($(e.target).closest(".header").length <= 0) {
           $(".btnSubNav").removeClass("on");
@@ -62,6 +72,7 @@ const Header = () => {
         $(".btnSubNav").off("click");
         $(".btnDownload").unbind("mouseenter mouseleave");
         $(".menuBtn").off("click");
+        $("nav ul li a").off("click");
         $("html").off("mouseleave mouseout mousedown touchstart");
       });
     };
@@ -72,7 +83,7 @@ const Header = () => {
       <div className="header__body">
         <div className="logo">
           <Link href="/">
-            <Image src={logo} alt="logo" />
+            <Image src={logo} alt="logo" style={{ height: "auto" }} />
           </Link>
         </div>
         <div className="menuBtn mobile">

@@ -35,7 +35,7 @@ const ScrollArrow = ({ title = "了解更多", target = "section1" }) => {
         }}
       >
         <span>{title}</span>
-        <Image src={btnDownArrow} alt="arrow" />
+        <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
       </a>
     </div>
   );

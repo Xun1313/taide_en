@@ -112,7 +112,7 @@ const NewsList = async ({
           <div className="btn">
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
-              <Image src={btnNextArrow} alt="arrow" />
+              <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
             </a>
           </div>
         </article>
