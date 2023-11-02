@@ -45,7 +45,7 @@ const Footer = () => {
                 <Link href="/trainData">訓練資料</Link>
               </h3>
               <h3>
-                <Link href="/download">TAIDE模型下載</Link>
+                <Link href="/download">TAIDE模型</Link>
               </h3>
               <p>
                 <Link href="/terms">條款與許可協議</Link>
@@ -81,7 +81,7 @@ const Footer = () => {
                 <Link href="/trainData">訓練資料</Link>
               </h3>
               <h3>
-                <Link href="/download">TAIDE模型下載</Link>
+                <Link href="/download">TAIDE模型</Link>
               </h3>
               <p>
                 <Link href="/terms">條款與許可協議</Link>

@@ -3,8 +3,13 @@ import Image from "next/image";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import btnDownArrow from "~/images/icon/btn_downArrow.svg";
 import photo_500500_1 from "~/images/resources/photo_500500_1.png";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 const MainPage = () => {
+  const [active, setActive] = useState("");
+  const menuList = useMemo(
+    () => ["生成式 AI", "Machine Learning", "Deep Learning"],
+    []
+  );
   const lbb = useRef<HTMLDivElement>(null);
   const lbYtEmbed = useRef<HTMLDivElement>(null);
 
@@ -62,6 +67,7 @@ const MainPage = () => {
       }
 
       $(".jsToAI").click(function () {
+        setActive(menuList[0]);
         var headerH = $(".header").height() as number;
         const target: {
           offset: Function;
@@ -74,6 +80,7 @@ const MainPage = () => {
         );
       });
       $(".jsToMachine").click(function () {
+        setActive(menuList[1]);
         var headerH = $(".header").height() as number;
         const target: {
           offset: Function;
@@ -86,6 +93,7 @@ const MainPage = () => {
         );
       });
       $(".jsToDeep").click(function () {
+        setActive(menuList[2]);
         var headerH = $(".header").height() as number;
         const target: {
           offset: Function;
@@ -125,31 +133,46 @@ const MainPage = () => {
         <div className="resourcesTop__body">
           <h1>學習資源</h1>
           <div className="tagList">
-            <div className="tagUnit secondary jsToAI">
+            <div
+              className={`tagUnit secondary jsToAI ${
+                active === menuList[0] ? "active" : ""
+              }`}
+              id="tagUnit_1"
+            >
               <a
                 style={{
                   cursor: "pointer",
                 }}
               >
-                生成式 AI
+                {menuList[0]}
               </a>
             </div>
-            <div className="tagUnit secondary jsToMachine">
+            <div
+              className={`tagUnit secondary jsToMachine ${
+                active === menuList[1] ? "active" : ""
+              }`}
+              id="tagUnit_2"
+            >
               <a
                 style={{
                   cursor: "pointer",
                 }}
               >
-                Machine Learning
+                {menuList[1]}
               </a>
             </div>
-            <div className="tagUnit secondary jsToDeep">
+            <div
+              className={`tagUnit secondary jsToDeep ${
+                active === menuList[2] ? "active" : ""
+              }`}
+              id="tagUnit_3"
+            >
               <a
                 style={{
                   cursor: "pointer",
                 }}
               >
-                Deep Learning
+                {menuList[2]}
               </a>
             </div>
           </div>
@@ -168,7 +191,11 @@ const MainPage = () => {
                   <h3>用 ChatGPT 和 Midjourney來玩文字冒險遊戲</h3>
                   <div className="tagUnit secondary">生成式 AI</div>
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
               </div>
@@ -181,7 +208,11 @@ const MainPage = () => {
                 ></a>
                 <Image src={photo_500500_1} alt="李宏毅 Lee, Hung-Y" />
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -219,7 +250,11 @@ const MainPage = () => {
                       }}
                     >
                       <span>Download</span>
-                      <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
+                      <Image
+                        src={btnDownArrow}
+                        style={{ height: "auto" }}
+                        alt="arrow"
+                      />
                     </a>
                   </div>
                 </div>
@@ -232,7 +267,11 @@ const MainPage = () => {
                       }}
                     >
                       <span>Download</span>
-                      <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
+                      <Image
+                        src={btnDownArrow}
+                        style={{ height: "auto" }}
+                        alt="arrow"
+                      />
                     </a>
                   </div>
                 </div>
@@ -260,7 +299,11 @@ const MainPage = () => {
                   alt="ChatGPT 原理剖析 (1/3) — 對 ChatGPT 的常見誤解"
                 />
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -279,7 +322,11 @@ const MainPage = () => {
                   alt="ChatGPT 原理剖析 (3/3) — ChatGPT 所帶來的研究問題"
                 />
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -298,7 +345,11 @@ const MainPage = () => {
                   alt="用 ChatGPT 和 Midjourney 來玩文字冒險遊戲"
                 />
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -328,7 +379,11 @@ const MainPage = () => {
                     alt="ChatGPT 原理剖析 (1/3) — 對 ChatGPT 的常見誤解"
                   />
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
@@ -348,7 +403,11 @@ const MainPage = () => {
                   />
 
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
@@ -367,7 +426,11 @@ const MainPage = () => {
                     alt="用 ChatGPT 和 Midjourney 來玩文字冒險遊戲"
                   />
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
@@ -386,7 +449,11 @@ const MainPage = () => {
                     alt="ChatGPT 原理剖析 (1/3) — 對 ChatGPT 的常見誤解"
                   />
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
@@ -406,7 +473,11 @@ const MainPage = () => {
                   />
 
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
@@ -440,7 +511,11 @@ const MainPage = () => {
                 />
 
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -463,7 +538,11 @@ const MainPage = () => {
                 />
 
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -486,7 +565,11 @@ const MainPage = () => {
                 />
 
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -517,7 +600,11 @@ const MainPage = () => {
                   />
 
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
@@ -540,7 +627,11 @@ const MainPage = () => {
                   />
 
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
@@ -577,7 +668,11 @@ const MainPage = () => {
                 />
 
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -598,7 +693,11 @@ const MainPage = () => {
                   alt="Speech Recognition (1/7) - Overview"
                 />
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -618,7 +717,11 @@ const MainPage = () => {
                 />
 
                 <div className="btn">
-                  <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                  <Image
+                    src={btnNextArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                 </div>
               </div>
               <div className="infoCon">
@@ -648,7 +751,11 @@ const MainPage = () => {
                     alt="Deep Learning for Human Language Processing (Course Overview)"
                   />
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
