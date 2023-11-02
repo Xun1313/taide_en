@@ -26,20 +26,23 @@ import team_13 from "~/images/team/team_13.png";
 import team_14 from "~/images/team/team_14.png";
 import team_15 from "~/images/team/team_15.png";
 import team_16 from "~/images/team/team_16.png";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 const FilterRender = () => {
   const [active, setActive] = useState("全部");
-  const menuList = [
-    "全部",
-    "督導管理",
-    "執行管理",
-    "資料組",
-    "模型組",
-    "算力組",
-    "應用組",
-    "觀測組",
-    "評測組",
-  ];
+  const menuList = useMemo(
+    () => [
+      "全部",
+      "督導管理",
+      "執行管理",
+      "資料組",
+      "模型組",
+      "算力組",
+      "應用組",
+      "觀測組",
+      "評測組",
+    ],
+    []
+  );
 
   useEffect(() => {
     $(document).ready(function () {
@@ -69,9 +72,11 @@ const FilterRender = () => {
       } else if (path == "#tag7") {
         setActive(menuList[7]);
         $grid.isotope({ filter: ".tag7" });
+        $(".element-item.tag7").hide();
       } else if (path == "#tag8") {
         setActive(menuList[8]);
         $grid.isotope({ filter: ".tag8" });
+        $(".element-item.tag8").hide();
       }
     });
 
@@ -80,7 +85,19 @@ const FilterRender = () => {
         $(".filter-button-group").off("click");
       });
     };
-  }, []);
+  }, [menuList]);
+
+  useEffect(() => {
+    if (active === menuList[7] || active === menuList[8]) {
+      console.log(123);
+      $(document).ready(function () {
+        $(".grid").isotope({
+          itemSelector: ".element-item",
+          layoutMode: "fitRows",
+        });
+      });
+    }
+  }, [active]);
 
   return (
     <>
@@ -573,7 +590,11 @@ const FilterRender = () => {
             </div>
           </div>
 
-          <div className="cardTeam__item element-item tag7">
+          <div
+            className={`cardTeam__item element-item tag7 hide7 ${
+              active === menuList[7] ? "hide" : ""
+            }`}
+          >
             <div className="photo">
               <Image src={team_15} alt="協助AI法制化規劃" />
             </div>
@@ -588,7 +609,11 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag8">
+          <div
+            className={`cardTeam__item element-item tag8 hide8  ${
+              active === menuList[8] ? "hide" : ""
+            }`}
+          >
             <div className="photo">
               <Image src={team_15} alt="研發AI評測工具與建立驗測資料庫" />
             </div>

@@ -50,7 +50,7 @@ const StageUnit = () => {
                     </span>
                     <div className="btn">
                       <Link href="/firstStage">
-                        <span>了解更多</span>
+                        <span>了解更多 </span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </Link>
                     </div>
@@ -70,7 +70,7 @@ const StageUnit = () => {
                     </span>
                     {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
-                        <span>了解更多</span>
+                        <span>了解更多 </span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
                     </div> */}
@@ -91,7 +91,7 @@ const StageUnit = () => {
                     </span>
                     {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
-                        <span>了解更多</span>
+                        <span>了解更多 </span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
                     </div> */}
@@ -112,7 +112,7 @@ const StageUnit = () => {
                     </span>
                     {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
-                        <span>了解更多</span>
+                        <span>了解更多 </span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </a>
                     </div> */}

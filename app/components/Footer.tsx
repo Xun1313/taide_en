@@ -11,7 +11,7 @@ const Footer = () => {
       <article className="footer__body">
         <div className="logo">
           <a style={{ cursor: "pointer" }}>
-            <Image src={logoW} alt="TAIDE" />
+            <Image src={logoW} style={{ height: "auto" }} alt="TAIDE" />
           </a>
           推動可信任生成式AI發展先期計畫
         </div>
@@ -94,7 +94,7 @@ const Footer = () => {
             <h3>指導單位</h3>
             <div>
               <a style={{ cursor: "pointer" }}>
-                <Image src={logoNstc} alt="NSTC" />
+                <Image src={logoNstc} style={{ width: "auto" }} alt="NSTC" />
               </a>
             </div>
           </div>
@@ -102,10 +102,14 @@ const Footer = () => {
             <h3>執行單位</h3>
             <div>
               <a style={{ cursor: "pointer" }}>
-                <Image src={logoNarlabs} alt="NARlabs" />
+                <Image
+                  src={logoNarlabs}
+                  style={{ width: "auto" }}
+                  alt="NARlabs"
+                />
               </a>
               <a style={{ cursor: "pointer" }}>
-                <Image src={logoModa} alt="moda" />
+                <Image src={logoModa} style={{ width: "auto" }} alt="moda" />
               </a>
             </div>
           </div>

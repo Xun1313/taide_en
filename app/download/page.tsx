@@ -367,8 +367,8 @@ const Download = () => {
                       <th>Tokens</th>
                     </tr>
                     <tr>
-                      <td>b.1.0.0</td>
-                      <td>2023.09.08</td>
+                      <td>b-1-0-0</td>
+                      <td>-</td>
                       <td>1.7B</td>
                     </tr>
                     <tr>
@@ -469,7 +469,7 @@ const Download = () => {
                   </tr>
                   <tr>
                     <th>釋出日期</th>
-                    <td>2023-09-08</td>
+                    <td>-</td>
                   </tr>
                   <tr>
                     <th>Tokens</th>

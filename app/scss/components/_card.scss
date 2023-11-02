@@ -402,6 +402,10 @@
             }
         }
 
+        &.hide {
+            display: none;
+        }
+
         &.tag7,
         &.tag8 {
             .infoCon {
