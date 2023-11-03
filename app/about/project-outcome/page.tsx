@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AboutExpected = async () => {
+const ProjectOutcome = async () => {
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -83,4 +83,4 @@ const AboutExpected = async () => {
   );
 };
 
-export default AboutExpected;
+export default ProjectOutcome;

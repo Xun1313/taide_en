@@ -3,7 +3,7 @@ import Link from "next/link";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import { format } from "date-fns";
 import NewsResType from "../types";
-import { typeMapping } from "~/utils/common";
+import { newsListTypeMapping } from "~/utils/common";
 
 const CardItem = ({ title, issueDate, id, type }: NewsResType.ItemType) => {
   return (
@@ -30,8 +30,8 @@ const CardItem = ({ title, issueDate, id, type }: NewsResType.ItemType) => {
             {format(new Date(issueDate), "yyyy.MM.dd")}
           </div>
         )}
-        {typeMapping[type] && (
-          <div className="tagUnit secondary">{typeMapping[type]}</div>
+        {newsListTypeMapping[type] && (
+          <div className="tagUnit secondary">{newsListTypeMapping[type]}</div>
         )}
       </div>
     </div>

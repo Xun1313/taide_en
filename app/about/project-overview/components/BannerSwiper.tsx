@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useRef } from "react";
 
+import { useEffect, useRef } from "react";
 import Swiper from "swiper";
-import { Pagination } from "swiper/modules";
+import { Pagination,Autoplay } from "swiper/modules";
 import ScrollArrow from "~/components/ScrollArrow";
 
 const BannerSwiper = () => {
@@ -17,8 +17,7 @@ const BannerSwiper = () => {
   });
   useEffect(() => {
     swiperObj.current = new Swiper(swiperElement.current as HTMLDivElement, {
-      modules: [Pagination],
-
+      modules: [Pagination, Autoplay],
       loop: true,
       autoplay: {
         delay: 2500,
@@ -26,6 +25,7 @@ const BannerSwiper = () => {
       },
       pagination: {
         el: swiperPaginationElement.current,
+
         clickable: true,
       },
     });
@@ -40,27 +40,18 @@ const BannerSwiper = () => {
       <div className="swiper newsSwiper" ref={swiperElement}>
         <div className="swiper-wrapper">
           <div className="swiper-slide">
-            <h2>產業創新與客製應用</h2>
-            <div className="tagUnit grey">POINT 1</div>
-            <h3>客製化應用發展</h3>
+            <h2>萬物皆資訊，TAIDE 不缺席</h2>
             <div className="text">
-              高品質的訓練數據，滿足特定領域生成式AI需求，成為客製化AI的基礎。
+              生成式 AI
+              除了演算法的不斷精進、高速運算資源的擴充，還仰賴了網路上大量可公開的資訊，包括各種新聞、社交媒體用戶發布的文章、百科全書、辭典、教材、政府機關的公告文件等等，凡能數位化並公開上網的大量文本都可作為訓練資料。
             </div>
           </div>
           <div className="swiper-slide">
-            <h2>產業創新與客製應用</h2>
-            <div className="tagUnit grey">POINT 1</div>
-            <h3>產業技術交流</h3>
+            <h2>萬物皆資訊，TAIDE 不缺席</h2>
             <div className="text">
-              辦理產業與相關技術交流研討活動，提供本土企業於生成式AI之產業布局與領域整合參考，促進產業創新與發展。
-            </div>
-          </div>
-          <div className="swiper-slide">
-            <h2>產業創新與客製應用</h2>
-            <div className="tagUnit grey">POINT 1</div>
-            <h3>提升繁體中文表現</h3>
-            <div className="text">
-              利用可信數據提升繁體中文生成式AI，整合大量互聯網文本和本土資源，奠定臺灣自主生成式AI基礎，支持民間自行訓練。
+              因此，在建立可信任的生成式 AI
+              對話引擎基礎模型時，必須考慮本土化的需求，並專注於正體中文，選擇適合本土語言的語料庫、進行本土文化的語義理解、定制本土化的應用服務，尋找適合建立臺灣可信任的生成式
+              AI 之大型語料庫，確保語料庫的質量與適用性。
             </div>
           </div>
         </div>

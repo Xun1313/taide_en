@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
 };
 
-const Download = () => {
+const DownloadModal = () => {
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -536,4 +536,4 @@ const Download = () => {
   );
 };
 
-export default Download;
+export default DownloadModal;

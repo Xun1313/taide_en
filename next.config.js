@@ -3,16 +3,16 @@
 const nextConfig = {
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: process.env.PROTOCOL,
-        hostname: process.env.HOSTNAME,
-      },
-      {
-        protocol: "https",
-        hostname: "img.youtube.com",
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: process.env.PROTOCOL,
+    //     hostname: process.env.HOSTNAME,
+    //   },
+    //   {
+    //     protocol: "https",
+    //     hostname: "img.youtube.com",
+    //   },
+    // ],
   },
   // webpack: (config) => {
   //   config.resolve.alias["~"] = path.join(__dirname, "app");

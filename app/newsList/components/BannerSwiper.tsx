@@ -4,11 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Swiper from "swiper";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import { format } from "date-fns";
 import NewsResType from "../types";
-import { typeMapping } from "~/utils/common";
+import { newsListTypeMapping } from "~/utils/common";
 
 const BannerSwiper = ({
   bannerList,
@@ -26,7 +26,7 @@ const BannerSwiper = ({
   });
   useEffect(() => {
     swiperObj.current = new Swiper(swiperElement.current as HTMLDivElement, {
-      modules: [Pagination],
+      modules: [Pagination, Autoplay],
 
       loop: true,
       autoplay: {
@@ -56,7 +56,11 @@ const BannerSwiper = ({
                 height={500}
               />
               <div className="btn">
-                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
               </div>
             </div>
             <div className="infoCon">
@@ -68,8 +72,8 @@ const BannerSwiper = ({
                   {format(new Date(e.issueDate), "yyyy.MM.dd")}
                 </div>
               )}
-              {typeMapping[e.type] && (
-                <div className="tagUnit secondary">{typeMapping[e.type]}</div>
+              {newsListTypeMapping[e.type] && (
+                <div className="tagUnit secondary">{newsListTypeMapping[e.type]}</div>
               )}
             </div>
           </div>

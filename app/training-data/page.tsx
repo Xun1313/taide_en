@@ -6,7 +6,7 @@ import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import btnDownArrow from "~/images/icon/btn_downArrow.svg";
 import iconData from "~/images/icon/icon_data.svg";
 import TrainDataResType from "./types";
-import { typeMapping } from "~/utils/common";
+import { trainDataTypeMapping } from "~/utils/common";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   },
 };
 
-const TrainData = async ({
+const TrainingData = async ({
   searchParams,
 }: {
   searchParams: TrainDataResType.QueryType;
 }) => {
   const trainDataTypeList: Record<string, string> = {
     "0": "全類別",
-    ...typeMapping,
+    ...trainDataTypeMapping,
   };
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
@@ -65,7 +65,7 @@ const TrainData = async ({
                 }`}
                 key={trainDataTypeList[e]}
               >
-                <Link href={`/trainData?type=${e}`}>
+                <Link href={`/training-data?type=${e}`}>
                   {trainDataTypeList[e]}
                 </Link>
               </div>
@@ -90,7 +90,7 @@ const TrainData = async ({
                   </a>
                 )}
                 <div className="btn">
-                  <Link href={`/trainData/trainDataDetail/${e.id}`}>
+                  <Link href={`/training-data/${e.id}`}>
                     <span>更多資料</span>
                     <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
                   </Link>
@@ -125,4 +125,4 @@ const TrainData = async ({
   );
 };
 
-export default TrainData;
+export default TrainingData;

@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
-import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import Swiper from "swiper";
+import { Autoplay } from "swiper/modules";
 
 const PlanList = () => {
   const swiperElement = useRef<HTMLDivElement>(null);
@@ -15,9 +14,14 @@ const PlanList = () => {
   });
   useEffect(() => {
     swiperObj.current = new Swiper(swiperElement.current as HTMLDivElement, {
+      modules: [Autoplay],
       loop: true,
       slidesPerView: 3,
       spaceBetween: 15,
+      autoplay: {
+        delay: 2500,
+        // disableOnInteraction: false
+      },
       breakpoints: {
         320: {
           slidesPerView: 2,

@@ -89,20 +89,20 @@ const Header = () => {
         <div className="menuBtn mobile">
           <a>≡</a>
         </div>
-        <nav className={`nav ${handleHoverNavigation(["download"], "hover2")}`}>
+        <nav className={`nav ${handleHoverNavigation(["download-modal"], "hover2")}`}>
           <ul>
             <li
               className={`btnSubNav ${handleHoverNavigation([
-                "aboutProject",
-                "aboutExpected",
-                "aboutStage",
+                "project-overview",
+                "project-outcome",
+                "project-progress",
               ])}`}
             >
               <a style={{ cursor: "pointer" }}>認識TAIDE</a>
               <div className="subNav">
-                <Link href="/aboutProject">計畫背景</Link>
-                <Link href="/aboutExpected">預期效益</Link>
-                <Link href="/aboutStage">階段進展</Link>
+                <Link href="/about/project-overview">計畫背景</Link>
+                <Link href="/about/project-outcome">預期效益</Link>
+                <Link href="/about/project-progress">階段進展</Link>
               </div>
             </li>
             <li className={`${handleHoverNavigation(["teamList"])}`}>
@@ -114,13 +114,13 @@ const Header = () => {
             <li className={`${handleHoverNavigation(["newsList"])}`}>
               <Link href="/newsList?keyword=">最新動態</Link>
             </li>
-            <li className={`${handleHoverNavigation(["trainData"])}`}>
-              <Link href="/trainData?type=0">訓練資料</Link>
+            <li className={`${handleHoverNavigation(["training-data"])}`}>
+              <Link href="/training-data?type=0">訓練資料</Link>
             </li>
             <li
-              className={`btnDownload ${handleHoverNavigation(["download"])}`}
+              className={`btnDownload ${handleHoverNavigation(["download-modal"])}`}
             >
-              <Link href="/download">TAIDE模型</Link>
+              <Link href="/download-modal">TAIDE模型</Link>
             </li>
           </ul>
         </nav>

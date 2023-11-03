@@ -68,8 +68,6 @@ const NewsList = async ({
     totalPages,
     firstLink,
   }: NewsResType.NewsListType = await newsListRes.json();
-  console.log(issuePlanList.length);
-  console.log("------------------");
 
   const RenderPage = () => {
     if (issuePlanList.length > 0) {

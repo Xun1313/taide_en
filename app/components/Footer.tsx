@@ -20,13 +20,13 @@ const Footer = () => {
             <div className="sitemapUnit__item">
               <h3>認識TAIDE</h3>
               <p>
-                <Link href="/aboutProject">計畫背景</Link>
+                <Link href="/about/project-overview">計畫背景</Link>
               </p>
               <p>
-                <Link href="/aboutExpected">預期效益</Link>
+                <Link href="/about/project-outcome">預期效益</Link>
               </p>
               <p>
-                <Link href="/aboutStage">階段進展</Link>
+                <Link href="/about/project-progress">階段進展</Link>
               </p>
             </div>
             <div className="sitemapUnit__item">
@@ -42,10 +42,10 @@ const Footer = () => {
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href="/trainData">訓練資料</Link>
+                <Link href="/training-data">訓練資料</Link>
               </h3>
               <h3>
-                <Link href="/download">TAIDE模型</Link>
+                <Link href="/download-modal">TAIDE模型</Link>
               </h3>
               <p>
                 <Link href="/terms">條款與許可協議</Link>
@@ -58,13 +58,13 @@ const Footer = () => {
             <div className="sitemapUnit__item">
               <h3>認識TAIDE</h3>
               <p>
-                <Link href="/aboutProject">計畫背景</Link>
+                <Link href="/about/project-overview">計畫背景</Link>
               </p>
               <p>
-                <Link href="/aboutExpected">預期效益</Link>
+                <Link href="/about/project-outcome">預期效益</Link>
               </p>
               <p>
-                <Link href="/aboutStage">階段進展</Link>
+                <Link href="/about/project-progress">階段進展</Link>
               </p>
               <h3>
                 <Link href="/teamList">團隊陣容</Link>
@@ -78,10 +78,10 @@ const Footer = () => {
                 <Link href="/newsList">最新動態</Link>
               </h3>
               <h3>
-                <Link href="/trainData">訓練資料</Link>
+                <Link href="/training-data">訓練資料</Link>
               </h3>
               <h3>
-                <Link href="/download">TAIDE模型</Link>
+                <Link href="/download-modal">TAIDE模型</Link>
               </h3>
               <p>
                 <Link href="/terms">條款與許可協議</Link>

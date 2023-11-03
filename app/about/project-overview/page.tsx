@@ -1,4 +1,4 @@
-import {  WithContext } from "schema-dts";
+import { WithContext } from "schema-dts";
 
 import Image from "next/image";
 import aboutProjectBanner from "~/images/about/aboutProject_banner.png";
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-const AboutProject = async () => {
+const ProjectOverview = async () => {
   const jsonLd: WithContext<any> = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -159,7 +159,11 @@ const AboutProject = async () => {
           <div className="btn">
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
-              <Image src={btnNextArrow} alt="arrow" style={{ height: "auto" }} />
+              <Image
+                src={btnNextArrow}
+                alt="arrow"
+                style={{ height: "auto" }}
+              />
             </a>
           </div>
         </article>
@@ -175,4 +179,4 @@ const AboutProject = async () => {
   );
 };
 
-export default AboutProject;
+export default ProjectOverview;

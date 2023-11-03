@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import NewsResType from "../../types";
 import { format } from "date-fns";
-import { typeMapping } from "~/utils/common";
+import { newsListTypeMapping } from "~/utils/common";
 
 const SearchInput = dynamic(
   () =>
@@ -66,8 +66,8 @@ const NewsList = async ({
           <h1>最新動態</h1>
           <SearchInput />
           <div className="newsDetail">
-            {typeMapping[type] && (
-              <div className="tagUnit secondary solid">{typeMapping[type]}</div>
+            {newsListTypeMapping[type] && (
+              <div className="tagUnit secondary solid">{newsListTypeMapping[type]}</div>
             )}
             <h2>{title}</h2>
             <div className="date">
@@ -112,7 +112,11 @@ const NewsList = async ({
           <div className="btn">
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
-              <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+              <Image
+                src={btnNextArrow}
+                style={{ height: "auto" }}
+                alt="arrow"
+              />
             </a>
           </div>
         </article>

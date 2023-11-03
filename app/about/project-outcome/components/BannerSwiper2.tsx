@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Swiper from "swiper";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const BannerSwiper = () => {
   const swiperElement = useRef<HTMLDivElement>(null);
@@ -16,7 +16,7 @@ const BannerSwiper = () => {
   });
   useEffect(() => {
     swiperObj.current = new Swiper(swiperElement.current as HTMLDivElement, {
-      modules: [Pagination],
+      modules: [Pagination, Autoplay],
 
       loop: true,
       autoplay: {

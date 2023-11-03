@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import btnPrevArrow from "~/images/icon/btn_prevArrow.svg";
 import btnDownArrow from "~/images/icon/btn_downArrow.svg";
-import TrainDataResType from "../../types";
+import TrainDataResType from "../types";
 import {
-  typeMapping,
+  trainDataTypeMapping,
   authorizeMethodMapping,
   formatMapping,
 } from "~/utils/common";
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-const TrainDataDetail = async ({
+const TrainingDataDetail = async ({
   params,
 }: {
   params: {
@@ -69,15 +69,15 @@ const TrainDataDetail = async ({
         <div className="trainDataDetail__body">
           <h1>訓練資料</h1>
           <div className="trainDataDetail__wrap">
-            {typeMapping[type] && (
-              <div className="tagUnit secondary solid">{typeMapping[type]}</div>
+            {trainDataTypeMapping[type] && (
+              <div className="tagUnit secondary solid">{trainDataTypeMapping[type]}</div>
             )}
             <h2>
               <span>{title}</span>
             </h2>
             <div className="trainDataDetail__item">
               <div className="btn">
-                <Link href="/trainData">
+                <Link href="/training-data">
                   <Image src={btnPrevArrow} style={{ height: "auto" }} alt="arrow" />
                   <span>返回訓練資料列表</span>
                 </Link>
@@ -200,4 +200,4 @@ const TrainDataDetail = async ({
   );
 };
 
-export default TrainDataDetail;
+export default TrainingDataDetail;

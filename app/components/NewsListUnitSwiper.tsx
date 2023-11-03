@@ -8,7 +8,7 @@ import Swiper from "swiper";
 import { Pagination } from "swiper/modules";
 import NewsResType from "~/newsList/types";
 import { format } from "date-fns";
-import { typeMapping } from "~/utils/common";
+import { newsListTypeMapping } from "~/utils/common";
 
 const NewsListUnitSwiper = ({
   bannerList,
@@ -62,8 +62,8 @@ const NewsListUnitSwiper = ({
                   {format(new Date(e.issueDate), "yyyy.MM.dd")}
                 </div>
               )}
-              {typeMapping[e.type] && (
-                <div className="tagUnit secondary">{typeMapping[e.type]}</div>
+              {newsListTypeMapping[e.type] && (
+                <div className="tagUnit secondary">{newsListTypeMapping[e.type]}</div>
               )}
             </div>
           </div>
