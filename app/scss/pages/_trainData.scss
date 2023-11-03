@@ -286,6 +286,11 @@
                     align-items: flex-start;
                     justify-content: center;
                     background-color: #F2EEE8;
+                    padding: 2vw;
+
+                    @include screen_960 {
+                        padding: 4vw;
+                    }
                 }
             }
         }

@@ -67,12 +67,16 @@ const NewsList = async ({
           <SearchInput />
           <div className="newsDetail">
             {newsListTypeMapping[type] && (
-              <div className="tagUnit secondary solid">{newsListTypeMapping[type]}</div>
+              <div className="tagUnit secondary solid">
+                {newsListTypeMapping[type]}
+              </div>
             )}
             <h2>{title}</h2>
-            <div className="date">
-              {format(new Date(issueDate), "yyyy.MM.dd")}
-            </div>
+            {issueDate && (
+              <div className="date">
+                {format(new Date(issueDate), "yyyy.MM.dd")}
+              </div>
+            )}
             <div className="back">
               <Link href="/newsList?keyword=">返回最新動態列表</Link>
             </div>
@@ -89,15 +93,18 @@ const NewsList = async ({
                 alt={title}
                 width={500}
                 height={500}
-                style={{ width: "100%", height: "auto" }}
               />
             </div>
             <div className="tagRight">
-              {relatedKeywordsArray.map((e) => (
-                <div className="tagUnit secondary" key={e}>
-                  {e}
-                </div>
-              ))}
+              {relatedKeywordsArray.map(
+                (e) =>
+                  e !== " " &&
+                  e !== "" && (
+                    <div className="tagUnit secondary" key={e}>
+                      {e}
+                    </div>
+                  )
+              )}
             </div>
             <div dangerouslySetInnerHTML={{ __html: content }}></div>
           </div>
