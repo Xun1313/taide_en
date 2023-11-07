@@ -56,7 +56,7 @@ const NewsList = async ({
     dataSource,
     id,
     relatedKeywordsArray = [],
-    content = "",
+    contentApi = "",
   }: NewsResType.ItemType = await newsDetailRes.json();
 
   return (
@@ -106,7 +106,7 @@ const NewsList = async ({
                   )
               )}
             </div>
-            <div dangerouslySetInnerHTML={{ __html: content }}></div>
+            <div dangerouslySetInnerHTML={{ __html: contentApi }}></div>
           </div>
         </div>
       </article>

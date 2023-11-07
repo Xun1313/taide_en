@@ -15,7 +15,7 @@ namespace NewsResType {
     type: string;
     dataSource?: string;
     relatedKeywordsArray?: string[];
-    content?: string;
+    contentApi?: string;
   };
 
   export type QueryType = {
