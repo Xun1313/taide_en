@@ -1,5 +1,8 @@
 //const path = require('path');
 /** @type {import('next').NextConfig} */
+const CopyPlugin = require("copy-webpack-plugin");
+const path = require("path");
+
 const nextConfig = {
   images: {
     unoptimized: true,
@@ -13,6 +16,23 @@ const nextConfig = {
     //     hostname: "img.youtube.com",
     //   },
     // ],
+  },
+  webpack: (config, { dev }) => {
+    if (dev) {
+      return config;
+    } else {
+      config.plugins.push(
+        new CopyPlugin({
+          patterns: [
+            {
+              from: path.join(__dirname, ".next"),
+              to: path.join(__dirname, "public"),
+            },
+          ],
+        })
+      );
+      return config;
+    }
   },
   // webpack: (config) => {
   //   config.resolve.alias["~"] = path.join(__dirname, "app");

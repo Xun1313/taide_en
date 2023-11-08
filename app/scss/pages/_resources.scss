@@ -82,6 +82,27 @@
             max-width: 100%;
         }
 
+        .tagList {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            @include screen_960 {
+                padding-top: 2vw;
+            }
+
+            .tagUnit {
+                margin: 2vw .5vw;
+                line-height: 1.8vw;
+
+                @include screen_960 {
+                    margin: 1vw .5vw;
+                    line-height: 5.8vw;
+                }
+            }
+        }
+
     }
 
     &__hd {

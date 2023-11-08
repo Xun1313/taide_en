@@ -89,7 +89,12 @@ const Header = () => {
         <div className="menuBtn mobile">
           <a>≡</a>
         </div>
-        <nav className={`nav ${handleHoverNavigation(["download-modal"], "hover2")}`}>
+        <nav
+          className={`nav ${handleHoverNavigation(
+            ["download-modal"],
+            "hover2"
+          )}`}
+        >
           <ul>
             <li
               className={`btnSubNav ${handleHoverNavigation([
@@ -108,7 +113,12 @@ const Header = () => {
             <li className={`${handleHoverNavigation(["teamList"])}`}>
               <Link href="/teamList">團隊陣容</Link>
             </li>
-            <li className={`${handleHoverNavigation(["resourcesList"])}`}>
+            <li
+              className={`${handleHoverNavigation([
+                "resourcesList",
+                "resourcesList2",
+              ])}`}
+            >
               <Link href="/resourcesList">學習資源</Link>
             </li>
             <li className={`${handleHoverNavigation(["newsList"])}`}>
@@ -118,7 +128,9 @@ const Header = () => {
               <Link href="/training-data?type=0">訓練資料</Link>
             </li>
             <li
-              className={`btnDownload ${handleHoverNavigation(["download-modal"])}`}
+              className={`btnDownload ${handleHoverNavigation([
+                "download-modal",
+              ])}`}
             >
               <Link href="/download-modal">TAIDE模型</Link>
             </li>
