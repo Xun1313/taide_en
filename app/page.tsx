@@ -44,7 +44,7 @@ const Home = async () => {
           <div className="bannerUnit__wrap">
             <div className="bannerUnit__left">
               <video width="320" height="240" autoPlay loop muted>
-                <source src="/video/banner.mp4" type="video/mp4" />
+                <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}/video/banner.mp4`} type="video/mp4" />
               </video>
             </div>
             <div className="bannerUnit__right">

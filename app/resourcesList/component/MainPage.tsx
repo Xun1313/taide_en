@@ -209,7 +209,9 @@ const MainPage = () => {
                 <div className="cardCourse__item">
                   <h4>課程投影片.zip</h4>
                   <div className="btn">
-                    <a href="/resources/課程投影片.zip">
+                    <a
+                      href={`${process.env.NEXT_PUBLIC_BASE_PATH}/resources/課程投影片.zip`}
+                    >
                       <span>Download</span>
                       <Image
                         src={btnDownArrow}
@@ -222,7 +224,9 @@ const MainPage = () => {
                 <div className="cardCourse__item">
                   <h4>課程模型.zip</h4>
                   <div className="btn">
-                    <a href="/resources/課程模型.zip">
+                    <a
+                      href={`${process.env.NEXT_PUBLIC_BASE_PATH}/resources/課程模型.zip`}
+                    >
                       <span>Download</span>
                       <Image
                         src={btnDownArrow}

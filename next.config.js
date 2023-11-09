@@ -1,9 +1,10 @@
 //const path = require('path');
 /** @type {import('next').NextConfig} */
-const CopyPlugin = require("copy-webpack-plugin");
-const path = require("path");
+// const CopyPlugin = require("copy-webpack-plugin");
+// const path = require("path");
 
 const nextConfig = {
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   images: {
     unoptimized: true,
     // remotePatterns: [
@@ -17,23 +18,23 @@ const nextConfig = {
     //   },
     // ],
   },
-  webpack: (config, { dev }) => {
-    if (dev) {
-      return config;
-    } else {
-      config.plugins.push(
-        new CopyPlugin({
-          patterns: [
-            {
-              from: path.join(__dirname, ".next"),
-              to: path.join(__dirname, "public"),
-            },
-          ],
-        })
-      );
-      return config;
-    }
-  },
+  // webpack: (config, { dev }) => {
+  //   if (dev) {
+  //     return config;
+  //   } else {
+  //     config.plugins.push(
+  //       new CopyPlugin({
+  //         patterns: [
+  //           {
+  //             from: path.join(__dirname, "public"),
+  //             to: path.join(__dirname, ".next"),
+  //           },
+  //         ],
+  //       })
+  //     );
+  //     return config;
+  //   }
+  // },
   // webpack: (config) => {
   //   config.resolve.alias["~"] = path.join(__dirname, "app");
   //   return config;

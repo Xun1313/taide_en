@@ -13,8 +13,11 @@ export const metadata: Metadata = {
   description:
     "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
   icons: [
-    { rel: "icon", url: "/favicon.ico" },
-    { rel: "apple-touch-icon", url: "/favicon/apple-touch-icon.png" },
+    { rel: "icon", url: `${process.env.NEXT_PUBLIC_BASE_PATH}/favicon.ico` },
+    {
+      rel: "apple-touch-icon",
+      url: `${process.env.NEXT_PUBLIC_BASE_PATH}/apple-touch-icon.png`,
+    },
   ],
   openGraph: {
     type: "website",
@@ -25,13 +28,13 @@ export const metadata: Metadata = {
     siteName: "TAIDE",
     images: [
       {
-        url: "ogimg.png",
+        url: `${process.env.NEXT_PUBLIC_BASE_PATH}/ogimg.png`,
       },
     ],
     locale: "zh-TW",
   },
   themeColor: "#ffffff",
-  manifest: "/favicon/site.webmanifest",
+  manifest: `${process.env.NEXT_PUBLIC_BASE_PATH}/favicon/site.webmanifest`,
 };
 
 export default function RootLayout({
@@ -50,17 +53,17 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon/favicon-32x32.png"
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH}/favicon/favicon-32x32.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon/favicon-16x16.png"
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH}/favicon/favicon-16x16.png`}
         />
         <link
           rel="mask-icon"
-          href="/favicon/safari-pinned-tab.svg"
+          href={`${process.env.NEXT_PUBLIC_BASE_PATH}/favicon/safari-pinned-tab.svg`}
           color="#000"
         />
         <meta name="msapplication-TileColor" content="#000000" />
@@ -87,9 +90,18 @@ export default function RootLayout({
           <Footer />
           <BackTop />
         </section>
-        <script src="/js/jquery.min.js" defer={false}></script>
-        <script src="/js/jquery.ui.min.js" defer={false}></script>
-        <script src="/js/isotope-docs.min.js" defer={false}></script>
+        <script
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/js/jquery.min.js`}
+          defer={false}
+        ></script>
+        <script
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/js/jquery.ui.min.js`}
+          defer={false}
+        ></script>
+        <script
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/js/isotope-docs.min.js`}
+          defer={false}
+        ></script>
       </body>
     </html>
   );
