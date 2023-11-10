@@ -44,7 +44,7 @@ const Home = async () => {
           <div className="bannerUnit__wrap">
             <div className="bannerUnit__left">
               <video width="320" height="240" autoPlay loop muted>
-                <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}/video/banner.mp4`} type="video/mp4" />
+                <source src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/banner.mp4`} type="video/mp4" />
               </video>
             </div>
             <div className="bannerUnit__right">
@@ -179,7 +179,7 @@ const Home = async () => {
             {issuePlanList.slice(2).map((e) => (
               <div className="newsListUnit__item" key={e.id}>
                 <div className="photo">
-                  <Link href={`/newsList/newsDetail/${e.id}`}></Link>
+                  <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}></Link>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_NEWS_IMG_URL}/${e.id}`}
                     alt={e.title}
@@ -192,7 +192,7 @@ const Home = async () => {
                 </div>
                 <div className="infoCon">
                   <h3>
-                    <Link href={`/newsList/newsDetail/${e.id}`}>{e.title}</Link>
+                    <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}>{e.title}</Link>
                   </h3>
                   {e.issueDate && (
                     <div className="date">

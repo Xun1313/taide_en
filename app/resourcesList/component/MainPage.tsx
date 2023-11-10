@@ -135,10 +135,18 @@ const MainPage = () => {
           <h1>學習資源</h1>
           <div className="tagList">
             <div className="tagUnit secondary active">
-              <Link href="/resourcesList">李宏毅</Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resourcesList`}
+              >
+                李宏毅
+              </Link>
             </div>
             <div className="tagUnit secondary">
-              <Link href="/resourcesList2">蔡宗翰</Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resourcesList2`}
+              >
+                蔡宗翰
+              </Link>
             </div>
           </div>
           <div className="card resources">
@@ -210,7 +218,7 @@ const MainPage = () => {
                   <h4>課程投影片.zip</h4>
                   <div className="btn">
                     <a
-                      href={`${process.env.NEXT_PUBLIC_BASE_PATH}/resources/課程投影片.zip`}
+                      href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resources/課程投影片.zip`}
                     >
                       <span>Download</span>
                       <Image
@@ -225,7 +233,7 @@ const MainPage = () => {
                   <h4>課程模型.zip</h4>
                   <div className="btn">
                     <a
-                      href={`${process.env.NEXT_PUBLIC_BASE_PATH}/resources/課程模型.zip`}
+                      href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resources/課程模型.zip`}
                     >
                       <span>Download</span>
                       <Image

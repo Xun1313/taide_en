@@ -78,7 +78,11 @@ const NewsList = async ({
               </div>
             )}
             <div className="back">
-              <Link href="/newsList?keyword=">返回最新動態列表</Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList?keyword=`}
+              >
+                返回最新動態列表
+              </Link>
             </div>
             {dataSource && (
               <div className="alertsUnit tertiary">

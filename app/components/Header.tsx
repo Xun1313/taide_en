@@ -82,7 +82,7 @@ const Header = () => {
     <header className="header">
       <div className="header__body">
         <div className="logo">
-          <Link href="/">
+          <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/`}>
             <Image src={logo} alt="logo" style={{ height: "auto" }} />
           </Link>
         </div>
@@ -105,13 +105,27 @@ const Header = () => {
             >
               <a style={{ cursor: "pointer" }}>認識TAIDE</a>
               <div className="subNav">
-                <Link href="/about/project-overview">計畫背景</Link>
-                <Link href="/about/project-outcome">預期效益</Link>
-                <Link href="/about/project-progress">階段進展</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-overview`}
+                >
+                  計畫背景
+                </Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-outcome`}
+                >
+                  預期效益
+                </Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-progress`}
+                >
+                  階段進展
+                </Link>
               </div>
             </li>
             <li className={`${handleHoverNavigation(["teamList"])}`}>
-              <Link href="/teamList">團隊陣容</Link>
+              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList`}>
+                團隊陣容
+              </Link>
             </li>
             <li
               className={`${handleHoverNavigation([
@@ -119,20 +133,36 @@ const Header = () => {
                 "resourcesList2",
               ])}`}
             >
-              <Link href="/resourcesList">學習資源</Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resourcesList`}
+              >
+                學習資源
+              </Link>
             </li>
             <li className={`${handleHoverNavigation(["newsList"])}`}>
-              <Link href="/newsList?keyword=">最新動態</Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList?keyword=`}
+              >
+                最新動態
+              </Link>
             </li>
             <li className={`${handleHoverNavigation(["training-data"])}`}>
-              <Link href="/training-data?type=0">訓練資料</Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data?type=0`}
+              >
+                訓練資料
+              </Link>
             </li>
             <li
               className={`btnDownload ${handleHoverNavigation([
                 "download-modal",
               ])}`}
             >
-              <Link href="/download-modal">TAIDE模型</Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-modal`}
+              >
+                TAIDE模型
+              </Link>
             </li>
           </ul>
         </nav>

@@ -115,7 +115,11 @@ const NewsList = async ({
             無相關搜尋結果
           </h2>
           <div className="back">
-            <Link href="/newsList?keyword=">返回最新動態列表</Link>
+            <Link
+              href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList?keyword=`}
+            >
+              返回最新動態列表
+            </Link>
           </div>
         </div>
       );
@@ -135,7 +139,11 @@ const NewsList = async ({
                 }`}
                 key={e}
               >
-                <Link href={`/newsList?keyword=${e}`}>{e}</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList?keyword=${e}`}
+                >
+                  {e}
+                </Link>
               </div>
             ))}
           </div>
@@ -151,7 +159,9 @@ const NewsList = async ({
                     </span>
                   ) : (
                     <Link
-                      href={`/newsList?page=${pageNo - 1}&keyword=${keyword}`}
+                      href={`${
+                        process.env.NEXT_PUBLIC_ASSET_PREFIX
+                      }/newsList?page=${pageNo - 1}&keyword=${keyword}`}
                     >
                       <Image src={btnPrevArrow} alt="prev" />
                     </Link>
@@ -160,7 +170,9 @@ const NewsList = async ({
                 <li className="pageUnit__bd">
                   {[...Array(totalPages)].map((e, i) => (
                     <Link
-                      href={`/newsList?page=${i + 1}&keyword=${keyword}`}
+                      href={`${
+                        process.env.NEXT_PUBLIC_ASSET_PREFIX
+                      }/newsList?page=${i + 1}&keyword=${keyword}`}
                       className={i + 1 === pageNo ? "active" : ""}
                       key={i}
                     >
@@ -171,13 +183,23 @@ const NewsList = async ({
                 <li className="next">
                   {pageNo === totalPages ? (
                     <span>
-                      <Image src={btnNextArrow} style={{ height: "auto" }} alt="next" />
+                      <Image
+                        src={btnNextArrow}
+                        style={{ height: "auto" }}
+                        alt="next"
+                      />
                     </span>
                   ) : (
                     <Link
-                      href={`/newsList?page=${pageNo + 1}&keyword=${keyword}`}
+                      href={`${
+                        process.env.NEXT_PUBLIC_ASSET_PREFIX
+                      }/newsList?page=${pageNo + 1}&keyword=${keyword}`}
                     >
-                      <Image src={btnNextArrow} style={{ height: "auto" }} alt="next" />
+                      <Image
+                        src={btnNextArrow}
+                        style={{ height: "auto" }}
+                        alt="next"
+                      />
                     </Link>
                   )}
                 </li>

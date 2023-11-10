@@ -33,7 +33,7 @@ const FirstStage = () => {
           <h1>階段ㄧ 展示中模型</h1>
           <div className="newsDetail">
             <div className="back">
-              <Link href="/newsList">回上頁</Link>
+              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList`}>回上頁</Link>
             </div>
             <hr />
             <br />

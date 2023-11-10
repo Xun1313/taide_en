@@ -65,7 +65,7 @@ const TrainingData = async ({
                 }`}
                 key={trainDataTypeList[e]}
               >
-                <Link href={`/training-data?type=${e}`}>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data?type=${e}`}>
                   {trainDataTypeList[e]}
                 </Link>
               </div>
@@ -90,7 +90,7 @@ const TrainingData = async ({
                   </a>
                 )}
                 <div className="btn">
-                  <Link href={`/training-data/${e.id}`}>
+                  <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data/${e.id}`}>
                     <span>更多資料</span>
                     <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
                   </Link>

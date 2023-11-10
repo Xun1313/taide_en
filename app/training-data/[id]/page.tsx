@@ -70,15 +70,23 @@ const TrainingDataDetail = async ({
           <h1>訓練資料</h1>
           <div className="trainDataDetail__wrap">
             {trainDataTypeMapping[type] && (
-              <div className="tagUnit secondary solid">{trainDataTypeMapping[type]}</div>
+              <div className="tagUnit secondary solid">
+                {trainDataTypeMapping[type]}
+              </div>
             )}
             <h2>
               <span>{title}</span>
             </h2>
             <div className="trainDataDetail__item">
               <div className="btn">
-                <Link href="/training-data">
-                  <Image src={btnPrevArrow} style={{ height: "auto" }} alt="arrow" />
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data`}
+                >
+                  <Image
+                    src={btnPrevArrow}
+                    style={{ height: "auto" }}
+                    alt="arrow"
+                  />
                   <span>返回訓練資料列表</span>
                 </Link>
               </div>
@@ -184,7 +192,11 @@ const TrainingDataDetail = async ({
           <div className="btn">
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
-              <Image src={btnDownArrow} style={{ height: "auto" }} alt="arrow" />
+              <Image
+                src={btnDownArrow}
+                style={{ height: "auto" }}
+                alt="arrow"
+              />
             </a>
           </div>
         </article>

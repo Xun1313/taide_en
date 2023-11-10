@@ -9,7 +9,7 @@ const CardItem = ({ title, issueDate, id, type }: NewsResType.ItemType) => {
   return (
     <div className="card__item">
       <div className="photo">
-        <Link href={`/newsList/newsDetail/${id}`}></Link>
+        <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${id}`}></Link>
         <Image
           src={`${process.env.NEXT_PUBLIC_NEWS_IMG_URL}/${id}`}
           alt={title}
@@ -23,7 +23,7 @@ const CardItem = ({ title, issueDate, id, type }: NewsResType.ItemType) => {
       </div>
       <div className="infoCon">
         <h3>
-          <Link href={`/newsList/newsDetail/${id}`}>{title}</Link>
+          <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${id}`}>{title}</Link>
         </h3>
         {issueDate && (
           <div className="tagUnit date">

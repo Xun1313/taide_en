@@ -48,7 +48,7 @@ const BannerSwiper = ({
         {bannerList.map((e) => (
           <div className="swiper-slide" key={e.id}>
             <div className="photo">
-              <Link href={`/newsList/newsDetail/${e.id}`}></Link>
+              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}></Link>
               <Image
                 src={`${process.env.NEXT_PUBLIC_NEWS_IMG_URL}/${e.id}`}
                 alt={e.title}
@@ -65,7 +65,7 @@ const BannerSwiper = ({
             </div>
             <div className="infoCon">
               <h3>
-                <Link href={`/newsList/newsDetail/${e.id}`}>{e.title}</Link>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}>{e.title}</Link>
               </h3>
               {e.issueDate && (
                 <div className="tagUnit date">

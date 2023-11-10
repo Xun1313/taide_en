@@ -49,7 +49,7 @@ const StageUnit = () => {
                       此階段為開發第一期目的為生成對抗網絡的深度學習技術
                     </span>
                     <div className="btn">
-                      <Link href="/firstStage">
+                      <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/firstStage`}>
                         <span>了解更多 </span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </Link>
@@ -123,7 +123,7 @@ const StageUnit = () => {
           </div>
           <div className="stageUnit__right">
             <video width="320" height="240" autoPlay loop muted>
-              <source src={`${process.env.NEXT_PUBLIC_BASE_PATH}/video/bg_stage.mp4`} type="video/mp4" />
+              <source src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/bg_stage.mp4`} type="video/mp4" />
             </video>
           </div>
         </div>
