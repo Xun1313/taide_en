@@ -75,10 +75,10 @@ const Home = async () => {
                   Data acquisition with annotation team
                 </div>
                 <div className="btn">
-                  <a href="/teamList#tag3">
+                  <Link href="/teamList#tag3">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="cardTeam__item odd">
@@ -89,10 +89,10 @@ const Home = async () => {
                 </h3>
                 <div className="text">Core model training with RLHF group</div>
                 <div className="btn">
-                  <a href="/teamList#tag4">
+                  <Link href="/teamList#tag4">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="cardTeam__item odd">
@@ -105,10 +105,10 @@ const Home = async () => {
                   High-speed computing resources and technical support team
                 </div>
                 <div className="btn">
-                  <a href="/teamList#tag5">
+                  <Link href="/teamList#tag5">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="cardTeam__item odd">
@@ -121,10 +121,10 @@ const Home = async () => {
                   Application service platform construction and management team
                 </div>
                 <div className="btn">
-                  <a href="/teamList#tag6">
+                  <Link href="/teamList#tag6">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -143,10 +143,10 @@ const Home = async () => {
                   International observation with specification group
                 </div>
                 <div className="btn">
-                  <a href="/teamList#tag7">
+                  <Link href="/teamList#tag7">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="cardTeam__item even">
@@ -159,10 +159,10 @@ const Home = async () => {
                   Evaluation system and Testing Environment Team
                 </div>
                 <div className="btn">
-                  <a href="/teamList#tag8">
+                  <Link href="/teamList#tag8">
                     <span>了解更多</span>
                     <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

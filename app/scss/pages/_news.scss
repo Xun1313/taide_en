@@ -169,15 +169,15 @@
         overflow: hidden;
         margin-top: 1vw;
 
-        img {
-            width: 100% !important;
-            height: auto !important;
-        }
-
         @include screen_960 {
             @include border_radius(4vw);
             margin-top: 4vw;
         }
+    }
+
+    img {
+        width: 100% !important;
+        height: auto !important;
     }
 
     .tagRight {

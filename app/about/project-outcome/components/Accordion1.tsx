@@ -137,33 +137,29 @@ const Accordion1 = () => {
         </div>
       </div>
       <div className="section section4">
-        <h2>優化運算環境效能</h2>
+        <h2>可信任的AI合作夥伴</h2>
         <div className="tagUnit grey">POINT 5</div>
         <div className="row">
           <div className="infoCon">
             <div className="accordion">
               <div className="accordion__item">
-                <h3>大型語言模型訓練架構</h3>
+                <h3>AI法制化</h3>
                 <div className="accordion__con">
                   <p>
-                    完成分散式大型語言模型訓練架構，加速訓練排程、性能、更大尺度之模型容量與擴展性。
+                    瞭解人工智慧技術上的能與不能，以及可能帶來的正面用途及負面影響，並能實際參與規劃相關規範、技術開發、國際標準趨式等層面，掌握人工智慧發展全面向的角度，有助於末來開發
+                    Al、使用 Al、應用 AI 之綜效。
                   </p>
                 </div>
               </div>
               <div className="accordion__item">
-                <h3>AI模型分散式訓練框架</h3>
+                <h3>整備AI發展量能</h3>
                 <div className="accordion__con">
                   <p>
-                    完成基於跨節點、分散式架構之可信任生成式 AI
-                    模型建置、預訓練、微調與性能調教。
-                  </p>
-                </div>
-              </div>
-              <div className="accordion__item">
-                <h3>完備算力資源</h3>
-                <div className="accordion__con">
-                  <p>
-                    完成分散式大型語言模型訓練架構，加速訓練排程、性能、更大尺度之模型容量與擴展性。
+                    借鏡各國 Al 規範與法制方向，並同步考量臺灣相關產業 LLM
+                    發展現況與需求，研提
+                    Al政策規範發展分析報告，並提出臺灣產業發展建議，以協助臺灣發展
+                    Al相關技術、產品或服務之依據，作為臺灣發展可信任 Al
+                    技術或產業發展之基礎。
                   </p>
                 </div>
               </div>
