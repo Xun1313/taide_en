@@ -44,7 +44,10 @@ const Home = async () => {
           <div className="bannerUnit__wrap">
             <div className="bannerUnit__left">
               <video width="320" height="240" autoPlay loop muted>
-                <source src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/banner.mp4`} type="video/mp4" />
+                <source
+                  src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/banner.mp4`}
+                  type="video/mp4"
+                />
               </video>
             </div>
             <div className="bannerUnit__right">
@@ -75,9 +78,15 @@ const Home = async () => {
                   Data acquisition with annotation team
                 </div>
                 <div className="btn">
-                  <Link href="/teamList#tag3">
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag3`}
+                  >
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </Link>
                 </div>
               </div>
@@ -89,9 +98,15 @@ const Home = async () => {
                 </h3>
                 <div className="text">Core model training with RLHF group</div>
                 <div className="btn">
-                  <Link href="/teamList#tag4">
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag4`}
+                  >
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </Link>
                 </div>
               </div>
@@ -105,9 +120,15 @@ const Home = async () => {
                   High-speed computing resources and technical support team
                 </div>
                 <div className="btn">
-                  <Link href="/teamList#tag5">
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag5`}
+                  >
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </Link>
                 </div>
               </div>
@@ -121,9 +142,15 @@ const Home = async () => {
                   Application service platform construction and management team
                 </div>
                 <div className="btn">
-                  <Link href="/teamList#tag6">
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag6`}
+                  >
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </Link>
                 </div>
               </div>
@@ -143,9 +170,15 @@ const Home = async () => {
                   International observation with specification group
                 </div>
                 <div className="btn">
-                  <Link href="/teamList#tag7">
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag7`}
+                  >
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </Link>
                 </div>
               </div>
@@ -159,9 +192,15 @@ const Home = async () => {
                   Evaluation system and Testing Environment Team
                 </div>
                 <div className="btn">
-                  <Link href="/teamList#tag8">
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag8`}
+                  >
                     <span>了解更多</span>
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </Link>
                 </div>
               </div>
@@ -179,7 +218,9 @@ const Home = async () => {
             {issuePlanList.slice(2).map((e) => (
               <div className="newsListUnit__item" key={e.id}>
                 <div className="photo">
-                  <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}></Link>
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}
+                  ></Link>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_NEWS_IMG_URL}/${e.id}`}
                     alt={e.title}
@@ -187,12 +228,20 @@ const Home = async () => {
                     height={500}
                   />
                   <div className="btn">
-                    <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
                   </div>
                 </div>
                 <div className="infoCon">
                   <h3>
-                    <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}>{e.title}</Link>
+                    <Link
+                      href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}
+                    >
+                      {e.title}
+                    </Link>
                   </h3>
                   {e.issueDate && (
                     <div className="date">
