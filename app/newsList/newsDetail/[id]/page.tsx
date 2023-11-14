@@ -9,10 +9,6 @@ import NewsResType from "../../types";
 import { format } from "date-fns";
 import { newsListTypeMapping } from "~/utils/common";
 
-const SearchInput = dynamic(
-  () =>
-    import(/* webpackChunkName: 'SearchInput' */ "../../components/SearchInput")
-);
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "最新動態 - TAIDE推動臺灣可信任生成式AI發展計畫",
@@ -64,8 +60,9 @@ const NewsList = async ({
       <article className="newsList">
         <div className="newsList__body">
           <h1>最新動態</h1>
-          <SearchInput />
           <div className="newsDetail">
+            <hr />
+            <br />
             {newsListTypeMapping[type] && (
               <div className="tagUnit secondary solid">
                 {newsListTypeMapping[type]}

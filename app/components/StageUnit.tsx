@@ -122,7 +122,7 @@ const StageUnit = () => {
             </div>
           </div>
           <div className="stageUnit__right">
-            <video width="320" height="240" autoPlay loop muted>
+            <video width="320" height="240" autoPlay loop muted playsInline>
               <source src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/bg_stage.mp4`} type="video/mp4" />
             </video>
           </div>

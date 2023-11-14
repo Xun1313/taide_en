@@ -20,35 +20,65 @@ const Footer = () => {
             <div className="sitemapUnit__item">
               <h3>認識TAIDE</h3>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-overview`}>計畫背景</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-overview`}
+                >
+                  計畫背景
+                </Link>
               </p>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-outcome`}>預期效益</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-outcome`}
+                >
+                  預期效益
+                </Link>
               </p>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-progress`}>階段進展</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-progress`}
+                >
+                  階段進展
+                </Link>
               </p>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList`}>團隊陣容</Link>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList`}>
+                  團隊陣容
+                </Link>
               </h3>
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resourcesList`}>學習資源</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resourcesList`}
+                >
+                  學習資源
+                </Link>
               </h3>
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList`}>最新動態</Link>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList`}>
+                  最新動態
+                </Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data`}>訓練資料</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data`}
+                >
+                  訓練資料
+                </Link>
               </h3>
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-modal`}>TAIDE模型</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-modal`}
+                >
+                  TAIDE模型
+                </Link>
               </h3>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/terms`}>條款與許可協議</Link>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/terms`}>
+                  條款與許可協議
+                </Link>
               </p>
             </div>
           </div>
@@ -58,33 +88,63 @@ const Footer = () => {
             <div className="sitemapUnit__item">
               <h3>認識TAIDE</h3>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-overview`}>計畫背景</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-overview`}
+                >
+                  計畫背景
+                </Link>
               </p>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-outcome`}>預期效益</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-outcome`}
+                >
+                  預期效益
+                </Link>
               </p>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-progress`}>階段進展</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/about/project-progress`}
+                >
+                  階段進展
+                </Link>
               </p>
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList`}>團隊陣容</Link>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList`}>
+                  團隊陣容
+                </Link>
               </h3>
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resourcesList`}>學習資源</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/resourcesList`}
+                >
+                  學習資源
+                </Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList`}>最新動態</Link>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList`}>
+                  最新動態
+                </Link>
               </h3>
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data`}>訓練資料</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data`}
+                >
+                  訓練資料
+                </Link>
               </h3>
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-modal`}>TAIDE模型</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-modal`}
+                >
+                  TAIDE模型
+                </Link>
               </h3>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/terms`}>條款與許可協議</Link>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/terms`}>
+                  條款與許可協議
+                </Link>
               </p>
             </div>
           </div>
@@ -93,7 +153,7 @@ const Footer = () => {
           <div className="partnerUnit__item">
             <h3>指導單位</h3>
             <div>
-              <a style={{ cursor: "pointer" }}>
+              <a href="https://www.nstc.gov.tw/">
                 <Image src={logoNstc} style={{ width: "auto" }} alt="NSTC" />
               </a>
             </div>
@@ -101,14 +161,14 @@ const Footer = () => {
           <div className="partnerUnit__item">
             <h3>執行單位</h3>
             <div>
-              <a style={{ cursor: "pointer" }}>
+              <a href="https://www.narlabs.org.tw/">
                 <Image
                   src={logoNarlabs}
                   style={{ width: "auto" }}
                   alt="NARlabs"
                 />
               </a>
-              <a style={{ cursor: "pointer" }}>
+              <a href="https://moda.gov.tw/">
                 <Image src={logoModa} style={{ width: "auto" }} alt="moda" />
               </a>
             </div>

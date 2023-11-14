@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import Swiper from "swiper";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import NewsResType from "~/newsList/types";
 import { format } from "date-fns";
 import { newsListTypeMapping } from "~/utils/common";
@@ -25,8 +25,12 @@ const NewsListUnitSwiper = ({
   });
   useEffect(() => {
     swiperObj.current = new Swiper(swiperElement.current as HTMLDivElement, {
-      modules: [Pagination],
+      modules: [Pagination, Autoplay],
       loop: true,
+      autoplay: {
+        delay: 2500,
+        // disableOnInteraction: false
+      },
       pagination: {
         el: swiperPaginationElement.current,
         clickable: true,
@@ -42,7 +46,9 @@ const NewsListUnitSwiper = ({
         {bannerList.map((e) => (
           <div className="swiper-slide" key={e.id}>
             <div className="photo">
-              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}></Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}
+              ></Link>
               <Image
                 src={`${process.env.NEXT_PUBLIC_NEWS_IMG_URL}/${e.id}`}
                 alt={e.title}
@@ -55,7 +61,11 @@ const NewsListUnitSwiper = ({
             </div>
             <div className="infoCon">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}>{e.title}</Link>
+                <Link
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList/newsDetail/${e.id}`}
+                >
+                  {e.title}
+                </Link>
               </h3>
               {e.issueDate && (
                 <div className="date">
@@ -63,7 +73,9 @@ const NewsListUnitSwiper = ({
                 </div>
               )}
               {newsListTypeMapping[e.type] && (
-                <div className="tagUnit secondary">{newsListTypeMapping[e.type]}</div>
+                <div className="tagUnit secondary">
+                  {newsListTypeMapping[e.type]}
+                </div>
               )}
             </div>
           </div>

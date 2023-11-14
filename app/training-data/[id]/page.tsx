@@ -3,7 +3,7 @@ import { WithContext } from "schema-dts";
 import Image from "next/image";
 import Link from "next/link";
 import btnPrevArrow from "~/images/icon/btn_prevArrow.svg";
-import btnDownArrow from "~/images/icon/btn_downArrow.svg";
+import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
 import TrainDataResType from "../types";
 import {
   trainDataTypeMapping,
@@ -46,7 +46,6 @@ const TrainingDataDetail = async ({
     }
   );
   const {
-    id,
     title,
     type,
     supplyUnit,
@@ -91,7 +90,7 @@ const TrainingDataDetail = async ({
                 </Link>
               </div>
               <div className="row">
-                <div className="item">
+                <div className="item max">
                   <p>
                     <b>原始資料：</b>
                     <br />
@@ -137,7 +136,7 @@ const TrainingDataDetail = async ({
                   </p>
                   <p>{summary}</p>
                 </div>
-                <div className="item radius">
+                {/* <div className="item radius">
                   <Image
                     src={`${process.env.TRAIN_DATA_IMG_URL}/${id}`}
                     alt={title}
@@ -145,7 +144,7 @@ const TrainingDataDetail = async ({
                     height={500}
                     style={{ height: "auto" }}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="trainDataDetail__msg">
@@ -193,7 +192,7 @@ const TrainingDataDetail = async ({
             <a href="mailto:TAIDE@narlabs.org.tw">
               <span>Contact TAIDE</span>
               <Image
-                src={btnDownArrow}
+                src={btnNextArrow}
                 style={{ height: "auto" }}
                 alt="arrow"
               />

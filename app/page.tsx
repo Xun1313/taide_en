@@ -43,7 +43,7 @@ const Home = async () => {
         <div className="bannerUnit__body">
           <div className="bannerUnit__wrap">
             <div className="bannerUnit__left">
-              <video width="320" height="240" autoPlay loop muted>
+              <video width="320" height="240" autoPlay loop muted playsInline>
                 <source
                   src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/banner.mp4`}
                   type="video/mp4"
@@ -79,7 +79,7 @@ const Home = async () => {
                 </div>
                 <div className="btn">
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag3`}
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag2`}
                   >
                     <span>了解更多</span>
                     <Image
@@ -194,6 +194,47 @@ const Home = async () => {
                 <div className="btn">
                   <Link
                     href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag8`}
+                  >
+                    <span>了解更多</span>
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="cardTeam__item even">
+                <h3>
+                  計畫執行
+                  <br />
+                  管理
+                </h3>
+                <div className="text">Project Execution Management</div>
+                <div className="btn">
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag9`}
+                  >
+                    <span>了解更多</span>
+                    <Image
+                      src={btnNextArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
+                  </Link>
+                </div>
+              </div>
+              <div className="cardTeam__item even">
+                <h3>
+                  計畫督導
+                  <br />
+                  管理
+                </h3>
+                <div className="text">Project Supervision Management</div>
+                <div className="btn">
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag10`}
                   >
                     <span>了解更多</span>
                     <Image

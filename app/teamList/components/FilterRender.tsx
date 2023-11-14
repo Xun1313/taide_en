@@ -32,14 +32,14 @@ const FilterRender = () => {
   const menuList = useMemo(
     () => [
       "全部",
-      "督導管理",
-      "執行管理",
-      "資料組",
       "模型組",
+      "資料組",
       "算力組",
       "應用組",
       "觀測組",
       "評測組",
+      "督導管理",
+      "執行管理",
     ],
     []
   );
@@ -56,27 +56,27 @@ const FilterRender = () => {
       });
 
       const path = window.location.hash.split("/").pop();
-      if (path == "#tag3") {
+      if (path == "#tag2") {
         // path = 'index.html';
-        setActive(menuList[3]);
-        $grid.isotope({ filter: ".tag3" });
+        setActive(menuList[2]);
+        $grid.isotope({ filter: ".tag2" });
       } else if (path == "#tag4") {
         setActive(menuList[4]);
         $grid.isotope({ filter: ".tag4" });
       } else if (path == "#tag5") {
         setActive(menuList[5]);
         $grid.isotope({ filter: ".tag5" });
+        $(".element-item.tag5").hide();
       } else if (path == "#tag6") {
         setActive(menuList[6]);
         $grid.isotope({ filter: ".tag6" });
+        $(".element-item.tag6").hide();
       } else if (path == "#tag7") {
         setActive(menuList[7]);
         $grid.isotope({ filter: ".tag7" });
-        $(".element-item.tag7").hide();
       } else if (path == "#tag8") {
         setActive(menuList[8]);
         $grid.isotope({ filter: ".tag8" });
-        $(".element-item.tag8").hide();
       }
     });
 
@@ -88,8 +88,7 @@ const FilterRender = () => {
   }, [menuList]);
 
   useEffect(() => {
-    if (active === menuList[7] || active === menuList[8]) {
-      console.log(123);
+    if (active === menuList[5] || active === menuList[6]) {
       $(document).ready(function () {
         $(".grid").isotope({
           itemSelector: ".element-item",
@@ -126,16 +125,25 @@ const FilterRender = () => {
           >
             <div className="cardGroup__item max">
               <div className="photo">
-                <Image src={group_1} alt="計畫督導管理" />
+                <Image src={group_4} alt="計畫督導管理" />
               </div>
             </div>
             <div className="cardGroup__item">
-              <h2>計畫督導管理</h2>
+              <h2>
+                採用市面上以英文資料為主訓練出的現有模型作為基礎模型，並在臺灣本土語料上進行持續訓練和優化
+              </h2>
               <ul>
-                <li>負責計畫團隊進度監督及與外部團隊進行溝通。</li>
-                <li>負責計畫團隊成果發表及計畫團隊外部合作事宜溝通。</li>
-                <li>協助計畫團隊內部成員溝通及統整計畫團隊相關成果事宜。</li>
-                <li>統整計畫團隊相關成果並對外發表。</li>
+                <li>
+                  利用現有生成式人工智慧模型為基礎，增加本土可信任資訊，調整及訓練成為符合本團隊可運用之生成式人工智慧模型。
+                </li>
+                <li>
+                  蒐集政府機關QA與去個資化客服對答等對話語料、微調優化模型。
+                </li>
+                <li>
+                  建立RLHF(Reinforcement Learning with Human
+                  Feedback)流程，提升模型訓練能力。
+                </li>
+                <li>建立紅隊測試機制，持續關注 AI 倫理問題與政策規範。</li>
               </ul>
             </div>
           </div>
@@ -144,29 +152,6 @@ const FilterRender = () => {
               active === menuList[2] && "open"
             }`}
             id="cardGroup_2"
-          >
-            <div className="cardGroup__item max">
-              <div className="photo">
-                <Image src={group_2} alt="計畫督導管理" />
-              </div>
-            </div>
-            <div className="cardGroup__item">
-              <h2>計畫執行管理</h2>
-              <ul>
-                <li>針對計畫總體進行方向進行溝通並管理各團隊工作能量。</li>
-                <li>
-                  針對計畫團隊處理資料、模型擴散、合作廠商相關法律問題進行了解與溝通。
-                </li>
-                <li>針對國內外各生成式人工智慧法律條文進行關注與了解。</li>
-                <li>解決計畫相關重點問題及資料標註相關問題。</li>
-              </ul>
-            </div>
-          </div>
-          <div
-            className={`cardGroup cardGroup3 ${
-              active === menuList[3] && "open"
-            }`}
-            id="cardGroup_3"
           >
             <div className="cardGroup__item max">
               <div className="photo">
@@ -191,40 +176,10 @@ const FilterRender = () => {
             </div>
           </div>
           <div
-            className={`cardGroup cardGroup4 ${
-              active === menuList[4] && "open"
+            className={`cardGroup cardGroup3 ${
+              active === menuList[3] && "open"
             }`}
-            id="cardGroup_4"
-          >
-            <div className="cardGroup__item max">
-              <div className="photo">
-                <Image src={group_4} alt="計畫督導管理" />
-              </div>
-            </div>
-            <div className="cardGroup__item">
-              <h2>
-                採用市面上以英文資料為主訓練出的現有模型作為基礎模型，並在臺灣本土語料上進行持續訓練和優化
-              </h2>
-              <ul>
-                <li>
-                  利用現有生成式人工智慧模型為基礎，增加本土可信任資訊，調整及訓練成為符合本團隊可運用之生成式人工智慧模型。
-                </li>
-                <li>
-                  蒐集政府機關QA與去個資化客服對答等對話語料、微調優化模型。
-                </li>
-                <li>
-                  建立RLHF(Reinforcement Learning with Human
-                  Feedback)流程，提升模型訓練能力。
-                </li>
-                <li>建立紅隊測試機制，持續關注 AI 倫理問題與政策規範。</li>
-              </ul>
-            </div>
-          </div>
-          <div
-            className={`cardGroup cardGroup5 ${
-              active === menuList[5] && "open"
-            }`}
-            id="cardGroup_5"
+            id="cardGroup_3"
           >
             <div className="cardGroup__item max">
               <div className="photo">
@@ -241,10 +196,10 @@ const FilterRender = () => {
             </div>
           </div>
           <div
-            className={`cardGroup cardGroup6 ${
-              active === menuList[6] && "open"
+            className={`cardGroup cardGroup4 ${
+              active === menuList[4] && "open"
             }`}
-            id="cardGroup_6"
+            id="cardGroup_4"
           >
             <div className="cardGroup__item max">
               <div className="photo">
@@ -264,10 +219,10 @@ const FilterRender = () => {
             </div>
           </div>
           <div
-            className={`cardGroup cardGroup7 ${
-              active === menuList[7] && "open"
+            className={`cardGroup cardGroup5 ${
+              active === menuList[5] && "open"
             }`}
-            id="cardGroup_7"
+            id="cardGroup_5"
           >
             <div className="cardGroup__item max">
               <div className="photo">
@@ -281,10 +236,10 @@ const FilterRender = () => {
             </div>
           </div>
           <div
-            className={`cardGroup cardGroup8 ${
-              active === menuList[8] && "open"
+            className={`cardGroup cardGroup6 ${
+              active === menuList[6] && "open"
             }`}
-            id="cardGroup_8"
+            id="cardGroup_6"
           >
             <div className="cardGroup__item max">
               <div className="photo">
@@ -297,9 +252,53 @@ const FilterRender = () => {
               <h2>成立AI產品、系統評測中心與進行AI評測服務驗證試行</h2>
             </div>
           </div>
+          <div
+            className={`cardGroup cardGroup7 ${
+              active === menuList[7] && "open"
+            }`}
+            id="cardGroup_7"
+          >
+            <div className="cardGroup__item max">
+              <div className="photo">
+                <Image src={group_1} alt="計畫督導管理" />
+              </div>
+            </div>
+            <div className="cardGroup__item">
+              <h2>計畫督導管理</h2>
+              <ul>
+                <li>負責計畫團隊進度監督及與外部團隊進行溝通。</li>
+                <li>負責計畫團隊成果發表及計畫團隊外部合作事宜溝通。</li>
+                <li>協助計畫團隊內部成員溝通及統整計畫團隊相關成果事宜。</li>
+                <li>統整計畫團隊相關成果並對外發表。</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className={`cardGroup cardGroup8 ${
+              active === menuList[8] && "open"
+            }`}
+            id="cardGroup_8"
+          >
+            <div className="cardGroup__item max">
+              <div className="photo">
+                <Image src={group_2} alt="計畫督導管理" />
+              </div>
+            </div>
+            <div className="cardGroup__item">
+              <h2>計畫執行管理</h2>
+              <ul>
+                <li>針對計畫總體進行方向進行溝通並管理各團隊工作能量。</li>
+                <li>
+                  針對計畫團隊處理資料、模型擴散、合作廠商相關法律問題進行了解與溝通。
+                </li>
+                <li>針對國內外各生成式人工智慧法律條文進行關注與了解。</li>
+                <li>解決計畫相關重點問題及資料標註相關問題。</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="cardTeam grid">
-          <div className="cardTeam__item element-item tag1 tag3">
+          <div className="cardTeam__item element-item tag7">
             <div className="photo">
               <Image src={team_1} alt="林博文 Lin, Bou-Wen" />
             </div>
@@ -317,7 +316,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag1">
+          <div className="cardTeam__item element-item tag7">
             <div className="photo">
               <Image src={team_2} alt="許福添 Hsu, Fu-Tien" />
             </div>
@@ -334,7 +333,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag1">
+          <div className="cardTeam__item element-item tag7">
             <div className="photo">
               <Image src={team_3} alt="蕭景燈 Hsiao, Ching-Ten" />
             </div>
@@ -351,7 +350,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag1">
+          <div className="cardTeam__item element-item tag7">
             <div className="photo">
               <Image src={team_4} alt="李育杰 Lee, Yuh-Jye" />
             </div>
@@ -370,7 +369,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag2">
+          <div className="cardTeam__item element-item tag8">
             <div className="photo">
               <Image src={team_5} alt="許武龍 Hsu, Wuu-Long" />
             </div>
@@ -387,7 +386,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag2">
+          <div className="cardTeam__item element-item tag8">
             <div className="photo">
               <Image src={team_6} alt="蕭奕弘 Hsiao, Yi-Hon" />
             </div>
@@ -404,13 +403,17 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag3">
+          <div className="cardTeam__item element-item tag2">
             <div className="photo">
               <a href="https://lab.depositar.io/" target="_blank"></a>
               <Image src={team_7} alt="莊庭瑞 Chuang, Tyng-Ruey" />
 
               <div className="btn">
-                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
               </div>
             </div>
             <div className="infoCon">
@@ -426,7 +429,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag4">
+          <div className="cardTeam__item element-item tag1">
             <div className="photo">
               <a
                 href="https://www.iisr.csie.ncu.edu.tw/faculty"
@@ -435,7 +438,11 @@ const FilterRender = () => {
               <Image src={team_8} alt="蔡宗翰 Tsai, Tzong-Han" />
 
               <div className="btn">
-                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
               </div>
             </div>
             <div className="infoCon">
@@ -451,7 +458,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag4">
+          <div className="cardTeam__item element-item tag1">
             <div className="photo">
               <a
                 href="https://iagentntu.github.io/professor/Jane.html"
@@ -460,7 +467,11 @@ const FilterRender = () => {
               <Image src={team_9} alt="許永真 Hsu, Yung-Jen" />
 
               <div className="btn">
-                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
               </div>
             </div>
             <div className="infoCon">
@@ -476,13 +487,17 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag4">
+          <div className="cardTeam__item element-item tag1">
             <div className="photo">
               <a href="https://cgilab.nctu.edu.tw/~icwu/" target="_blank"></a>
               <Image src={team_10} alt="吳毅成 Wu, I-Chen" />
 
               <div className="btn">
-                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
               </div>
             </div>
             <div className="infoCon">
@@ -498,7 +513,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag4">
+          <div className="cardTeam__item element-item tag1">
             <div className="photo">
               <a
                 href="http://speech.ee.ntu.edu.tw/~tlkagk/index.html"
@@ -507,7 +522,11 @@ const FilterRender = () => {
               <Image src={team_11} alt="李宏毅 Lee, Hung-Yi" />
 
               <div className="btn">
-                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
               </div>
             </div>
             <div className="infoCon">
@@ -523,7 +542,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag4">
+          <div className="cardTeam__item element-item tag1">
             <div className="photo">
               <a
                 href="https://sites.google.com/nycu.edu.tw/speechlabx/prof-yuan-fu-liao?authuser=0"
@@ -532,7 +551,11 @@ const FilterRender = () => {
               <Image src={team_12} alt="廖元甫 Liao, Yuan-Fu" />
 
               <div className="btn">
-                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
               </div>
             </div>
             <div className="infoCon">
@@ -548,7 +571,7 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag1 tag5 tag6">
+          <div className="cardTeam__item element-item tag3">
             <div className="photo">
               <Image src={team_13} alt="張朝亮 Chang, Chau-Lyan" />
             </div>
@@ -567,13 +590,17 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
-          <div className="cardTeam__item element-item tag6">
+          <div className="cardTeam__item element-item tag4">
             <div className="photo">
               <a href="https://www.csie.nuk.edu.tw/~wuch/" target="_blank"></a>
               <Image src={team_14} alt="吳俊興 Wu, Chun-Hsin" />
 
               <div className="btn">
-                <Image src={btnNextArrow} style={{ height: "auto" }} alt="arrow" />
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
               </div>
             </div>
             <div className="infoCon">

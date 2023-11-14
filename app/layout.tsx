@@ -1,6 +1,6 @@
-import "./scss/all.scss";
-import "swiper/css";
-import "swiper/css/pagination";
+import "./css/all.min.css";
+// import "swiper/css";
+// import "swiper/css/pagination";
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import BackTop from "~/components/BackTop";
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     {
       rel: "apple-touch-icon",
       url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/apple-touch-icon.png`,
+      sizes: "152x152",
     },
   ],
   openGraph: {
@@ -64,24 +65,29 @@ export default function RootLayout({
         <link
           rel="mask-icon"
           href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/safari-pinned-tab.svg`}
-          color="#000"
+          color="#5bbad5"
         />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-PYNQDHHXCT"
-          async
-        ></Script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
+        <meta name="msapplication-TileColor" content="#f5f1ec" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-PYNQDHHXCT"></Script>
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-PYNQDHHXCT');`,
-          }}
-        ></script>
+          gtag('config', 'G-PYNQDHHXCT');
+          gtag('config', 'GTM-KTXM8L8T');`}
+        </Script>
       </head>
       <body>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KTXM8L8T"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <section className="wrapper">
           <Header />
           <main className="main" itemType="https://schema.org/Organization">
@@ -100,6 +106,10 @@ export default function RootLayout({
         ></script>
         <script
           src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/js/isotope-docs.min.js`}
+          defer={false}
+        ></script>
+        <script
+          src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/js/masonry.pkgd.min.js`}
           defer={false}
         ></script>
       </body>
