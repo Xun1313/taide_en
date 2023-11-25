@@ -61,7 +61,7 @@ const TrainingData = async ({
 
   const wordCloudListHandle = async () => {
     const wordCloudRes = await fetch(
-      `${process.env.API_URL}/wordCloud?accessToken=TAIDE_!@#456qwertyASDFGHzxcvbn&length=99999999&start=0`,
+      `${process.env.API_URL}/wordCloud?accessToken=TAIDE_!@%23456qwertyASDFGHzxcvbn&length=99999999&start=0`,
       {
         method: "POST",
         cache: "no-store",

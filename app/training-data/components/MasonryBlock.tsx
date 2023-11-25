@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
-
+import { useEffect, useState, useRef } from "react";
 import WorldCloudResType from "../worldCloudType";
 
 const MasonryBlock = ({ wordCloudList }: WorldCloudResType.WorldCloudType) => {
+  const [imgLoadedLength, setImgLoadedLength] = useState(0);
+  const imgRefList = useRef<HTMLImageElement[]>([]);
   useEffect(() => {
     $(document).ready(function () {
       // 獲取元素的父級容器
@@ -22,26 +23,35 @@ const MasonryBlock = ({ wordCloudList }: WorldCloudResType.WorldCloudType) => {
       items.forEach(function (item) {
         grid.appendChild(item);
       });
+    });
+  }, []);
+
+  useEffect(() => {
+    if (imgLoadedLength === wordCloudList.length) {
+      imgRefList.current.forEach((e) => (e.style.height = "auto"));
 
       $(".grid").masonry({
         itemSelector: ".grid-item",
         gutter: 10,
         fitWidth: true,
       });
-    });
-  }, []);
+    }
+
+  }, [imgLoadedLength, wordCloudList.length]);
 
   return (
     <div className="logoCloud">
       <div className="grid">
-        {wordCloudList.map((e) => (
+        {wordCloudList.map((e, i) => (
           <div className={`grid-item width-${e.proportion}`} key={e.id}>
             <Image
-              src={`${process.env.NEXT_PUBLIC_NEWS_IMG_URL}/${e.id}`}
+              src={`${process.env.NEXT_PUBLIC_WORD_CLOUD_IMG_URL}/${e.id}`}
               alt={e.title}
               width={500}
               height={500}
-              style={{ height: "auto" }}
+              style={{ height: 0 }}
+              onLoad={() => setImgLoadedLength((prev) => prev + 1)}
+              ref={(el) => (imgRefList.current[i] = el as HTMLImageElement)}
             />
           </div>
         ))}

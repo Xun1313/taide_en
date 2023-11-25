@@ -56,10 +56,15 @@ const FilterRender = () => {
       });
 
       const path = window.location.hash.split("/").pop();
-      if (path == "#tag2") {
-        // path = 'index.html';
+      if (path == "#tag1") {
+        setActive(menuList[1]);
+        $grid.isotope({ filter: ".tag1" });
+      } else if (path == "#tag2") {
         setActive(menuList[2]);
         $grid.isotope({ filter: ".tag2" });
+      } else if (path == "#tag3") {
+        setActive(menuList[3]);
+        $grid.isotope({ filter: ".tag3" });
       } else if (path == "#tag4") {
         setActive(menuList[4]);
         $grid.isotope({ filter: ".tag4" });

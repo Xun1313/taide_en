@@ -99,7 +99,7 @@ const Home = async () => {
                 <div className="text">Core model training with RLHF group</div>
                 <div className="btn">
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag4`}
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag1`}
                   >
                     <span>了解更多</span>
                     <Image
@@ -121,7 +121,7 @@ const Home = async () => {
                 </div>
                 <div className="btn">
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag5`}
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag3`}
                   >
                     <span>了解更多</span>
                     <Image
@@ -143,7 +143,7 @@ const Home = async () => {
                 </div>
                 <div className="btn">
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag6`}
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag4`}
                   >
                     <span>了解更多</span>
                     <Image
@@ -171,7 +171,7 @@ const Home = async () => {
                 </div>
                 <div className="btn">
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag7`}
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag5`}
                   >
                     <span>了解更多</span>
                     <Image
@@ -193,7 +193,7 @@ const Home = async () => {
                 </div>
                 <div className="btn">
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag8`}
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag6`}
                   >
                     <span>了解更多</span>
                     <Image
@@ -214,7 +214,7 @@ const Home = async () => {
                 <div className="text">Project Execution Management</div>
                 <div className="btn">
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag9`}
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag8`}
                   >
                     <span>了解更多</span>
                     <Image
@@ -234,7 +234,7 @@ const Home = async () => {
                 <div className="text">Project Supervision Management</div>
                 <div className="btn">
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag10`}
+                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/teamList#tag7`}
                   >
                     <span>了解更多</span>
                     <Image
