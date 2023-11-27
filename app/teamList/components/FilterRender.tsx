@@ -303,6 +303,25 @@ const FilterRender = () => {
           </div>
         </div>
         <div className="cardTeam grid">
+        <div className="cardTeam__item element-item tag7">
+            <div className="photo">
+              <Image src={team_4} alt="李育杰 Lee, Yuh-Jye" />
+            </div>
+            <div className="infoCon">
+              <h4>
+                <span>李育杰</span>
+                <span>Lee, Yuh-Jye</span>
+              </h4>
+              <div className="text">
+                <span>TWNIC財團法人臺灣網路資訊中心 董事</span>
+                <span>科技政策諮詢專家室-資通訊群組 召集人</span>
+                <span>中央研究院資訊科技創新研究中心 研究員</span>
+              </div>
+              <div className="tagList">
+                <div className="tagUnit secondary">督導管理</div>
+              </div>
+            </div>
+          </div>
           <div className="cardTeam__item element-item tag7">
             <div className="photo">
               <Image src={team_1} alt="林博文 Lin, Bou-Wen" />
@@ -349,25 +368,6 @@ const FilterRender = () => {
               </h4>
               <div className="text">
                 <span>國科會科技辦公室 組主任</span>
-              </div>
-              <div className="tagList">
-                <div className="tagUnit secondary">督導管理</div>
-              </div>
-            </div>
-          </div>
-          <div className="cardTeam__item element-item tag7">
-            <div className="photo">
-              <Image src={team_4} alt="李育杰 Lee, Yuh-Jye" />
-            </div>
-            <div className="infoCon">
-              <h4>
-                <span>李育杰</span>
-                <span>Lee, Yuh-Jye</span>
-              </h4>
-              <div className="text">
-                <span>TWNIC財團法人臺灣網路資訊中心 董事</span>
-                <span>科技政策諮詢專家室-資通訊群組 召集人</span>
-                <span>中央研究院資訊科技創新研究中心 研究員</span>
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">督導管理</div>

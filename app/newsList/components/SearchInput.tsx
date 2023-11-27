@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import type { Metadata } from "next";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, KeyboardEventHandler } from "react";
 import NewsResType from "../types";
 
 export const metadata: Metadata = {
@@ -21,9 +21,15 @@ const SearchInput = ({ keyword = "" }: NewsResType.QueryType) => {
   const handleSearch = () => {
     if (searchInput.current) {
       if (searchInput.current.value) {
-        router.push(`/newsList?keyword=${searchInput.current.value}`);
+        router.push(
+          `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/newsList?keyword=${searchInput.current.value}`
+        );
       }
     }
+  };
+
+  const performSearch = (e: any): void => {
+    if (e.which === 13) handleSearch();
   };
   return (
     <div className="searchUnit">
@@ -37,6 +43,7 @@ const SearchInput = ({ keyword = "" }: NewsResType.QueryType) => {
         name="q"
         placeholder="請輸入搜尋關鍵字..."
         ref={searchInput}
+        onKeyUp={performSearch}
       />
     </div>
   );

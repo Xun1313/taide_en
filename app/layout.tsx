@@ -13,10 +13,10 @@ export const metadata: Metadata = {
   description:
     "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
   icons: [
-    { rel: "icon", url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon.ico` },
+    { rel: "icon", url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon-1.ico` },
     {
       rel: "apple-touch-icon",
-      url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/apple-touch-icon.png`,
+      url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/apple-touch-icon-1.png`,
       sizes: "152x152",
     },
   ],
@@ -54,17 +54,17 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/favicon-32x32.png`}
+          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/favicon-32x32-1.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/favicon-16x16.png`}
+          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/favicon-16x16-1.png`}
         />
         <link
           rel="mask-icon"
-          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/safari-pinned-tab.svg`}
+          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/safari-pinned-tab-1.svg`}
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#f5f1ec" />

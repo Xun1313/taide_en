@@ -1,10 +1,10 @@
 {
-    "name": "TAIDE",
-    "short_name": "TAIDE",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
-            "src": "/android-chrome-96x96.png",
-            "sizes": "96x96",
+            "src": "/android-chrome-144x144-1.png",
+            "sizes": "144x144",
             "type": "image/png"
         }
     ],
