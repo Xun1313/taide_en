@@ -336,7 +336,6 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">督導管理</div>
-                <div className="tagUnit secondary">資料組</div>
               </div>
             </div>
           </div>
@@ -589,9 +588,7 @@ const FilterRender = () => {
                 <span>國家高速網路與計算中心 主任</span>
               </div>
               <div className="tagList">
-                <div className="tagUnit secondary">計畫共同主持人</div>
                 <div className="tagUnit secondary">算力組</div>
-                <div className="tagUnit secondary">應用組</div>
               </div>
             </div>
           </div>
