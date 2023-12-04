@@ -49,7 +49,7 @@ const DownloadModal = () => {
                 <h2>·使用政策與許可協議</h2>
                 <div className="article__con">
                   <p>
-                    TAIDE模型為LLAMA2模型結合臺灣文化與正體中文語料之衍生模型。
+                    TAIDE模型為Llama2模型結合臺灣文化與正體中文語料之衍生模型。
                   </p>
                   <p>
                     本TAIDE模型許可協議（下稱本協議）載明並確保使用者（下稱「您」）使用TAIDE模型時遵守下述行為。
@@ -66,19 +66,19 @@ const DownloadModal = () => {
                   <div className="ml-1">
                     <p>(1) TAIDE授權與使用條款</p>
                     <p>
-                      (2) LLAMA2許可協議 (META AI LLAMA2 Community License
+                      (2) Llama2許可協議 (META AI Llama2 Community License
                       Agreement)
                     </p>
                     <p>
-                      (3) LLAMA2使用條款 (META AI LLAMA2 Acceptable Use Policy)
+                      (3) Llama2使用條款 (META AI Llama2 Acceptable Use Policy)
                     </p>
                   </div>
                   <p className="desc">
-                    其中(2) LLAMA2許可協議 (META AI LLAMA2 Community License
-                    Agreement)、 (3) LLAMA使用條款 (META AI LLAMA2 Acceptable
+                    其中(2) Llama2許可協議 (META AI Llama2 Community License
+                    Agreement)、 (3) Llama使用條款 (META AI Llama2 Acceptable
                     Use Policy) 係參照©Meta Platforms,
-                    Inc.（下稱為Meta）公布之META AI LLAMA2 Community License
-                    Agreement、 META AI LLAMA2 Acceptable Use
+                    Inc.（下稱為Meta）公布之META AI Llama2 Community License
+                    Agreement、 META AI Llama2 Acceptable Use
                     Policy。本協議之內容為中譯版本，以便參照說明。
                   </p>
 
@@ -96,7 +96,7 @@ const DownloadModal = () => {
                       <span>1.1.2</span>
                       <span>
                         不得為任何非法目的使用TAIDE模型（包含但不限於中華民國法律和法規與
-                        LLAMA2 使用條款之內容）。
+                        Llama2 使用條款之內容）。
                       </span>
                     </p>
                     <p>
@@ -186,25 +186,25 @@ const DownloadModal = () => {
                     </p>
                   </div>
                   <h3>
-                    2. LLAMA2 許可協議(META AI LLAMA2 Community License
+                    2. Llama2 許可協議(META AI Llama2 Community License
                     Agreement)
                   </h3>
                   <p>
                     <span>2.1</span>
                     <span>
-                      「LLAMA2
-                      許可協議」係指此處規範LLAMA素材之使用、複製、發布和修改的條款和條件。
+                      「Llama2
+                      許可協議」係指此處規範Llama素材之使用、複製、發布和修改的條款和條件。
                     </span>
                   </p>
                   <p>
                     <span>2.2</span>
                     <span>
-                      「LLAMA相關文件」係指Meta一同與LLAMA2發布於
+                      「Llama相關文件」係指Meta一同與Llama2發布於
                       <a
-                        href="https://ai.meta.com/resources/models-and-libraries/LLAMA-downloads/"
+                        href="https://ai.meta.com/resources/models-and-libraries/Llama-downloads/"
                         target="_blank"
                       >
-                        ai.meta.com/resources/models-and-libraries/LLAMA-downloads/
+                        ai.meta.com/resources/models-and-libraries/Llama-downloads/
                       </a>
                       之規格、手冊和文件。
                     </span>
@@ -212,24 +212,24 @@ const DownloadModal = () => {
                   <p>
                     <span>2.3</span>
                     <span>
-                      「被授權人」或「您」係指您，或若您代表您的雇主或其他人或法人簽訂本LLAMA2
-                      許可協議，則代表人及被代表人必須符合適用法規範要求的法定年齡；且若您代表您的雇主或其他人或法人簽署本LLAMA2
+                      「被授權人」或「您」係指您，或若您代表您的雇主或其他人或法人簽訂本Llama2
+                      許可協議，則代表人及被代表人必須符合適用法規範要求的法定年齡；且若您代表您的雇主或其他人或法人簽署本Llama2
                       許可協議，表示於適用法規範下，您獲得被代表人之合法授權。
                     </span>
                   </p>
                   <p>
                     <span>2.4</span>
                     <span>
-                      「LLAMA
+                      「Llama
                       2」係指由Meta發布的基礎大型語言模型和軟體以及相關演算法，包括機器學習模型代碼、訓練模型權重、推斷啟用代碼、訓練啟用代碼、微調啟用代碼以及前述各項元素的其他部分，可於
-                      ai.meta.com/resources/models-and-libraries/LLAMA-downloads/取得。
+                      ai.meta.com/resources/models-and-libraries/Llama-downloads/取得。
                     </span>
                   </p>
                   <p>
                     <span>2.5</span>
                     <span>
-                      「LLAMA素材」係指本LLAMA2 許可協議提供之Meta專有LLAMA 2
-                      和LLAMA 相關文件（或其中之任何部分）。
+                      「Llama素材」係指本Llama2 許可協議提供之Meta專有Llama 2
+                      和Llama 相關文件（或其中之任何部分）。
                       <br />
                       「Meta」或「我們」係指Meta Platforms Ireland
                       Limited（若您（自然人）位於歐洲經濟區或瑞士，或者法人之主要營業地點位於歐洲經濟區或瑞士）和Meta
@@ -245,7 +245,7 @@ const DownloadModal = () => {
                       <span>a.</span>
                       <span>
                         權利授予：根據 Meta
-                        的智慧財產權及其他權利，您被授予非專有、全球性、不可轉讓和免版稅的有限許可，以使用、再製、發布、複製、創建衍生作品和對LLAMA素材進行修改。
+                        的智慧財產權及其他權利，您被授予非專有、全球性、不可轉讓和免版稅的有限許可，以使用、再製、發布、複製、創建衍生作品和對Llama素材進行修改。
                       </span>
                     </p>
                     <p>b. 再發布和使用：</p>
@@ -253,22 +253,22 @@ const DownloadModal = () => {
                       <p>
                         <span>Ⅰ.</span>
                         <span>
-                          若您發布或將LLAMA素材或其任何衍生作品供第三方使用，您應向該第三方提供本LLAMA2
+                          若您發布或將Llama素材或其任何衍生作品供第三方使用，您應向該第三方提供本Llama2
                           許可協議之副本。
                         </span>
                       </p>
                       <p>
                         <span>Ⅱ.</span>
                         <span>
-                          若您作為整合最終使用者，從被授權人處接收之產品有部分使用了LLAMA素材或其任何衍生作品，則本LLAMA2
+                          若您作為整合最終使用者，從被授權人處接收之產品有部分使用了Llama素材或其任何衍生作品，則本Llama2
                           許可協議第2條將不適用於您。
                         </span>
                       </p>
                       <p>
                         <span>Ⅲ.</span>
                         <span>
-                          您必須在您發布所有含有LLAMA素材之副本中，提供以下「須知文件」，其中應包含下述歸屬聲明：「LLAMA
-                          2 係根據 LLAMA 2社群授權下使用，版權由© Meta
+                          您必須在您發布所有含有Llama素材之副本中，提供以下「須知文件」，其中應包含下述歸屬聲明：「Llama
+                          2 係根據 Llama 2社群授權下使用，版權由© Meta
                           Platforms, Inc. 所有，Meta並保留所有權利。」
                         </span>
                       </p>
@@ -276,15 +276,15 @@ const DownloadModal = () => {
                         <span>Ⅳ.</span>
                         <span>
                           您在使用
-                          LLAMA素材時，必須遵守適用之法規（包括貿易相關法規範），並遵守LLAMA素材之使用政策（可在
-                          https://ai.meta.com/LLAMA/use-policy取得），特此透過引用將其納入本LLAMA2
+                          Llama素材時，必須遵守適用之法規（包括貿易相關法規範），並遵守Llama素材之使用政策（可在
+                          https://ai.meta.com/Llama/use-policy取得），特此透過引用將其納入本Llama2
                           許可協議。
                         </span>
                       </p>
                       <p>
                         <span>Ⅴ.</span>
                         <span>
-                          您不得使用LLAMA素材或LLAMA素材之任何輸出或結果來改進任何其他大型語言模型（不包括LLAMA
+                          您不得使用Llama素材或Llama素材之任何輸出或結果來改進任何其他大型語言模型（不包括Llama
                           2或其衍生作品）。
                         </span>
                       </p>
@@ -296,10 +296,10 @@ const DownloadModal = () => {
                   </p>
                   <div className="ml-2">
                     <p>
-                      若在LLAMA 2
+                      若在Llama 2
                       版本發布之日，被授權人或被授權人之關聯公司提供的產品或服務，於前一個日曆月中之每月活躍用戶數超過7億，您必須向
                       Meta 申請許可，Met得決定是否授予您此類權利，除非 Meta
-                      明確授權，否則您無權行使本LLAMA2 許可協議下的任何權利。
+                      明確授權，否則您無權行使本Llama2 許可協議下的任何權利。
                     </p>
                   </div>
                   <p>
@@ -308,7 +308,7 @@ const DownloadModal = () => {
                   </p>
                   <div className="ml-2">
                     <p>
-                      除非適用法律要求，否則LLAMA素材及其任何輸出和結果均以「原樣」提供，不為任何明示或默示的擔保，包括但不限於，所有權擔保、不侵權擔保、品質擔保、適銷性擔保、適用於特定用途或目的之擔保、任何專利有效性或不侵犯第三方智慧財產權之任何擔保。對於使用或重新發布LLAMA素材之適當性，您需全權負責，並承擔使用LLAMA素材以及任何輸出和結果所涉及之任何風險。
+                      除非適用法律要求，否則Llama素材及其任何輸出和結果均以「原樣」提供，不為任何明示或默示的擔保，包括但不限於，所有權擔保、不侵權擔保、品質擔保、適銷性擔保、適用於特定用途或目的之擔保、任何專利有效性或不侵犯第三方智慧財產權之任何擔保。對於使用或重新發布Llama素材之適當性，您需全權負責，並承擔使用Llama素材以及任何輸出和結果所涉及之任何風險。
                     </p>
                   </div>
                   <p>
@@ -317,7 +317,7 @@ const DownloadModal = () => {
                   </p>
                   <div className="ml-2">
                     <p>
-                      在任何情況下，Meta或其關聯公司對於本LLAMA2許可協議引起之，不論係契約責任、侵權責任、過失責任、產品責任或其他責任產生之損失，或任何間接性、特殊性、後果性、附帶性利潤損失及懲罰性損害均不負責。即便Meta或其關聯公司已被告知可能發生前述情況，亦同。
+                      在任何情況下，Meta或其關聯公司對於本Llama2許可協議引起之，不論係契約責任、侵權責任、過失責任、產品責任或其他責任產生之損失，或任何間接性、特殊性、後果性、附帶性利潤損失及懲罰性損害均不負責。即便Meta或其關聯公司已被告知可能發生前述情況，亦同。
                     </p>
                   </div>
                   <p>
@@ -328,21 +328,21 @@ const DownloadModal = () => {
                     <p>
                       <span>a.</span>
                       <span>
-                        本 LLAMA2
-                        許可協議未授權任何商標之使用許可，且在使用LLAMA素材方面，Meta和被許可方均不得使用對方或其任何關聯公司擁有或相關之名稱或標記，除非於描述和再發布LLAMA素材時，為了合理且符合慣例需求之使用。
+                        本 Llama2
+                        許可協議未授權任何商標之使用許可，且在使用Llama素材方面，Meta和被許可方均不得使用對方或其任何關聯公司擁有或相關之名稱或標記，除非於描述和再發布Llama素材時，為了合理且符合慣例需求之使用。
                       </span>
                     </p>
                     <p>
                       <span>b.</span>
                       <span>
-                        就使用Meta擁有之LLAMA素材製作之衍生作品方面，您將成為上述衍生作品和改作之所有權人。
+                        就使用Meta擁有之Llama素材製作之衍生作品方面，您將成為上述衍生作品和改作之所有權人。
                       </span>
                     </p>
                     <p>
                       <span>c.</span>
                       <span>
                         若您對 Meta
-                        任何實體提起訴訟或其他法律程序（包括訴訟中之交叉請求或反訴），主張LLAMA素材或LLAMA2之輸出或結果，或任何前述內容之任何部分侵害您的知識財產權或您擁有或得處分之其他權利，則本LLAMA2許可協議授權予您之權利將自訴訟提起之日或法律程序提起之日自動終止。而對於因您使用或發布LLAMA素材所引起或與之相關的任何第三方提出的任何賠償請求，您將對Meta進行賠償並使其免受損害。
+                        任何實體提起訴訟或其他法律程序（包括訴訟中之交叉請求或反訴），主張Llama素材或Llama2之輸出或結果，或任何前述內容之任何部分侵害您的知識財產權或您擁有或得處分之其他權利，則本Llama2許可協議授權予您之權利將自訴訟提起之日或法律程序提起之日自動終止。而對於因您使用或發布Llama素材所引起或與之相關的任何第三方提出的任何賠償請求，您將對Meta進行賠償並使其免受損害。
                       </span>
                     </p>
                   </div>
@@ -352,12 +352,12 @@ const DownloadModal = () => {
                   </p>
                   <div className="ml-2">
                     <p>
-                      本LLAMA2 許可協議之生效日期將自您接受本LLAMA2
-                      許可協議或存取LLAMA素材之日起，依本LLAMA2
-                      許可協議之條款內容生效；而本LLAMA2
-                      許可協議之終止亦依據本LLAMA2許可協議之條款內容。若您違反本LLAMA2
-                      許可協議之任何條款，Meta得隨時終止本LLAMA2
-                      許可協議。本LLAMA2許可協議經終止後，您應立即刪除並停止使用LLAMA素材，惟本LLAMA2
+                      本Llama2 許可協議之生效日期將自您接受本Llama2
+                      許可協議或存取Llama素材之日起，依本Llama2
+                      許可協議之條款內容生效；而本Llama2
+                      許可協議之終止亦依據本Llama2許可協議之條款內容。若您違反本Llama2
+                      許可協議之任何條款，Meta得隨時終止本Llama2
+                      許可協議。本Llama2許可協議經終止後，您應立即刪除並停止使用Llama素材，惟本Llama2
                       許可協議之第3條、第4條和第7條將於終止後繼續有效。
                     </p>
                   </div>
@@ -367,21 +367,21 @@ const DownloadModal = () => {
                   </p>
                   <div className="ml-2">
                     <p>
-                      本LLAMA2
-                      許可協議受加州法律管轄並根據加州法律進行解釋，而不考慮法律選擇原則；且《聯合國國際貨物銷售合約公約》不適用於本LLAMA2
-                      許可協議。加州法院對因本LLAMA2
+                      本Llama2
+                      許可協議受加州法律管轄並根據加州法律進行解釋，而不考慮法律選擇原則；且《聯合國國際貨物銷售合約公約》不適用於本Llama2
+                      許可協議。加州法院對因本Llama2
                       許可協議引起之任何爭議擁有專屬管轄權。
                     </p>
                   </div>
                   <br />
                   <h3>
-                    3. LLAMA2 使用條款(META AI LLAMA2 Acceptable Use Policy)
+                    3. Llama2 使用條款(META AI Llama2 Acceptable Use Policy)
                   </h3>
                   <p>
                     <span>3.1</span>
                     <span>
-                      我們希望每個人都能安全、負責任地使用LLAMA
-                      2，您同意您不會使用或允許他人使用 LLAMA 2作為以下之用途：
+                      我們希望每個人都能安全、負責任地使用Llama
+                      2，您同意您不會使用或允許他人使用 Llama 2作為以下之用途：
                     </span>
                   </p>
 
@@ -443,7 +443,7 @@ const DownloadModal = () => {
                     <p>
                       <span>g.</span>
                       <span>
-                        從事或促使任何侵犯、盜用或違反任何第三方權利之行為，包括使用LLAMA
+                        從事或促使任何侵犯、盜用或違反任何第三方權利之行為，包括使用Llama
                         2素材的產品或服務的輸出或結果所導致。
                       </span>
                     </p>
@@ -459,7 +459,7 @@ const DownloadModal = () => {
                     <span>3.1.2</span>
                     <span>
                       參與、宣傳、生成、促進、鼓勵、策劃、煽動、協助規劃或進行對個人造成死亡或傷害風險之行為，包括使用
-                      LLAMA 2 進行：
+                      Llama 2 進行：
                     </span>
                   </p>
                   <div className="ml-2">
@@ -478,7 +478,7 @@ const DownloadModal = () => {
                   </div>
                   <p>
                     <span>3.1.3</span>
-                    <span>故意欺騙或誤導他人，包括使用LLAMA 2進行：</span>
+                    <span>故意欺騙或誤導他人，包括使用Llama 2進行：</span>
                   </p>
                   <div className="ml-2">
                     <p>a. 生成、宣傳或促進詐騙，或創建、宣傳虛假資訊。</p>
@@ -488,7 +488,7 @@ const DownloadModal = () => {
                     </p>
                     <p>c. 生成、宣傳或促進發布垃圾郵件。</p>
                     <p>d. 未經同意、授權或非法冒充他人。</p>
-                    <p>e. 表示使用LLAMA 2之衍生作品係由人類生成的。</p>
+                    <p>e. 表示使用Llama 2之衍生作品係由人類生成的。</p>
                     <p>
                       f.
                       生成或促進虛假之網絡活動，包含虛假留言和其他虛假之網絡參與方式。
@@ -504,21 +504,21 @@ const DownloadModal = () => {
                   <br />
                   <p>參考來源：</p>
                   <div className="sources">
-                    META AI LLAMA2 Acceptable Use Policy{" "}
+                    META AI Llama2 Acceptable Use Policy{" "}
                     <a
-                      href="https://ai.meta.com/LLAMA/use-policy/"
+                      href="https://ai.meta.com/Llama/use-policy/"
                       target="_blank"
                     >
-                      https://ai.meta.com/LLAMA/use-policy/
+                      https://ai.meta.com/Llama/use-policy/
                     </a>
                   </div>
                   <div className="sources">
-                    META AI LLAMA2 Community License Agreement{" "}
+                    META AI Llama2 Community License Agreement{" "}
                     <a
-                      href="https://ai.meta.com/LLAMA/license/"
+                      href="https://ai.meta.com/Llama/license/"
                       target="_blank"
                     >
-                      https://ai.meta.com/LLAMA/license/
+                      https://ai.meta.com/Llama/license/
                     </a>
                   </div>
                 </div>
@@ -534,9 +534,9 @@ const DownloadModal = () => {
                         <th>Tokens</th>
                       </tr>
                       <tr>
-                        <td>b-1-0-0</td>
                         <td>-</td>
-                        <td>1.7B</td>
+                        <td>-</td>
+                        <td>-</td>
                       </tr>
                       <tr>
                         <td></td>
@@ -638,7 +638,7 @@ const DownloadModal = () => {
                   <tbody>
                     <tr>
                       <th>模型版本</th>
-                      <td>b-1-0-0</td>
+                      <td>-</td>
                     </tr>
                     <tr>
                       <th>釋出日期</th>
@@ -646,7 +646,7 @@ const DownloadModal = () => {
                     </tr>
                     <tr>
                       <th>Tokens</th>
-                      <td>1.7B</td>
+                      <td>-</td>
                     </tr>
                   </tbody>
                 </table>

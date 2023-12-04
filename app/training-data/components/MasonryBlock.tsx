@@ -32,7 +32,7 @@ const MasonryBlock = ({ wordCloudList }: WorldCloudResType.WorldCloudType) => {
 
       $(".grid").masonry({
         itemSelector: ".grid-item",
-        gutter: 10,
+        gutter: 5,
         fitWidth: true,
       });
     }
