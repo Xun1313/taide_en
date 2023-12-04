@@ -66,19 +66,19 @@ const DownloadModal = () => {
                   <div className="ml-1">
                     <p>(1) TAIDE授權與使用條款</p>
                     <p>
-                      (2) Llama2許可協議 (META AI Llama2 Community License
+                      (2) Llama2許可協議 (Meta AI Llama2 Community License
                       Agreement)
                     </p>
                     <p>
-                      (3) Llama2使用條款 (META AI Llama2 Acceptable Use Policy)
+                      (3) Llama2使用條款 (Meta AI Llama2 Acceptable Use Policy)
                     </p>
                   </div>
                   <p className="desc">
-                    其中(2) Llama2許可協議 (META AI Llama2 Community License
-                    Agreement)、 (3) Llama使用條款 (META AI Llama2 Acceptable
+                    其中(2) Llama2許可協議 (Meta AI Llama2 Community License
+                    Agreement)、 (3) Llama使用條款 (Meta AI Llama2 Acceptable
                     Use Policy) 係參照©Meta Platforms,
-                    Inc.（下稱為Meta）公布之META AI Llama2 Community License
-                    Agreement、 META AI Llama2 Acceptable Use
+                    Inc.（下稱為Meta）公布之Meta AI Llama2 Community License
+                    Agreement、 Meta AI Llama2 Acceptable Use
                     Policy。本協議之內容為中譯版本，以便參照說明。
                   </p>
 
@@ -186,7 +186,7 @@ const DownloadModal = () => {
                     </p>
                   </div>
                   <h3>
-                    2. Llama2 許可協議(META AI Llama2 Community License
+                    2. Llama2 許可協議(Meta AI Llama2 Community License
                     Agreement)
                   </h3>
                   <p>
@@ -375,7 +375,7 @@ const DownloadModal = () => {
                   </div>
                   <br />
                   <h3>
-                    3. Llama2 使用條款(META AI Llama2 Acceptable Use Policy)
+                    3. Llama2 使用條款(Meta AI Llama2 Acceptable Use Policy)
                   </h3>
                   <p>
                     <span>3.1</span>
@@ -504,7 +504,7 @@ const DownloadModal = () => {
                   <br />
                   <p>參考來源：</p>
                   <div className="sources">
-                    META AI Llama2 Acceptable Use Policy{" "}
+                    Meta AI Llama2 Acceptable Use Policy{" "}
                     <a
                       href="https://ai.meta.com/Llama/use-policy/"
                       target="_blank"
@@ -513,7 +513,7 @@ const DownloadModal = () => {
                     </a>
                   </div>
                   <div className="sources">
-                    META AI Llama2 Community License Agreement{" "}
+                    Meta AI Llama2 Community License Agreement{" "}
                     <a
                       href="https://ai.meta.com/Llama/license/"
                       target="_blank"
