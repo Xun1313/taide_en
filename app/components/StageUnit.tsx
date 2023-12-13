@@ -42,14 +42,19 @@ const StageUnit = () => {
                   </div>
                   <div className="date">2023年6月</div>
                   <h3>
-                    <span>階段ㄧ 展示中模型</span>
+                    <span>階段ㄧ</span>
+                    <span>展示中模型</span>
                   </h3>
                   <div className="text">
                     <span>
-                      此階段為開發第一期目的為生成對抗網絡的深度學習技術
+                      五大功能 : 自動摘要、寫信、寫文章、中翻英、英翻中等任務
+                      <br />
+                      系統測試 : 建置完成模型測試平台
                     </span>
                     <div className="btn">
-                      <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/firstStage`}>
+                      <Link
+                        href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/firstStage`}
+                      >
                         <span>了解更多 </span>
                         <Image src={btnNextArrow} alt="arrow" />
                       </Link>
@@ -62,11 +67,19 @@ const StageUnit = () => {
                   </div>
                   <div className="date">2023年9月</div>
                   <h3>
-                    <span>階段二 展示大模型</span>
+                    <h3>
+                      <span>階段二</span>
+                      <span>展示大模型</span>
+                    </h3>
                   </h3>
                   <div className="text">
                     <span>
-                      此階段透過反覆生成並調整參數鑑別器則不斷辨別真假數據提高辨識且進化
+                      任務導向功能:
+                      如「認識臺灣」、「臺灣考試」、「事實查核」等任務 系統測試
+                      : <br />
+                      委由外部單位進行驗證測試（如標註公司或研究機構）
+                      釋出中模型給TAIDE合作夥伴 釋出第一批正體中文資料集
+                      協助三家業者基於TAIDE開發應用
                     </span>
                     {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
@@ -82,12 +95,19 @@ const StageUnit = () => {
                   </div>
                   <div className="date">2023年12月</div>
                   <h3>
-                    <span>階段三 展示</span>
-                    <span>可信大模型</span>
+                    <span>階段三</span>
+                    <span>展示可信大模型</span>
                   </h3>
                   <div className="text">
                     <span>
-                      此階段為展示強大的神經網絡模型用於自然語言、圖像、音頻處理等生成式任務
+                      任務導向功能 :
+                      有考慮倫理因素的問答，備阻絕產生不適當回應能力
+                      <br />
+                      系統測試 :
+                      委由外部單位進行驗證測試(如標註公司或研究機構)；
+                      邀請應用發展合作夥伴(如公部門人員進行測試)
+                      釋出大模型給TAIDE合作夥伴
+                      協助國科會發展內部應用(如申請計畫Q/A)
                     </span>
                     {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
@@ -103,12 +123,15 @@ const StageUnit = () => {
                   </div>
                   <div className="date">2024年3月</div>
                   <h3>
-                    <span>階段四 展示</span>
-                    <span>多輪問答</span>
+                    <span>階段四</span>
+                    <span>展示多輪問答</span>
                   </h3>
                   <div className="text">
                     <span>
-                      此階段為開發第一期目的為生成對抗網絡的深度學習技術
+                      任務導向功能 :
+                      前幾階段任務做到更好的水準，整理完成程式碼、資料集、文件、發展過程
+                      <br />
+                      系統測試 : 提供第二批正體中文資料集
                     </span>
                     {/* <div className="btn">
                       <a style={{ cursor: "pointer" }}>
@@ -123,7 +146,10 @@ const StageUnit = () => {
           </div>
           <div className="stageUnit__right">
             <video width="320" height="240" autoPlay loop muted playsInline>
-              <source src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/bg_stage.mp4`} type="video/mp4" />
+              <source
+                src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/bg_stage.mp4`}
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>

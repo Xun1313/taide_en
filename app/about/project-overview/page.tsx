@@ -139,7 +139,7 @@ const ProjectOverview = async () => {
                   <span>社會福祉</span>
                 </h3>
                 <p>
-                  有了生程式AI，能夠幫助我們輕鬆且快速完成更多的事務與工作，有效率的提升生活的品質。
+                  有了生成式AI，能夠幫助我們輕鬆且快速完成更多的事務與工作，有效率的提升生活的品質。
                 </p>
                 <div className="tagList2">
                   <div className="tagUnit about2">高速運算環境整備</div>
