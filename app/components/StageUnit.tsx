@@ -67,10 +67,8 @@ const StageUnit = () => {
                   </div>
                   <div className="date">2023年9月</div>
                   <h3>
-                    <h3>
-                      <span>階段二</span>
-                      <span>展示大模型</span>
-                    </h3>
+                    <span>階段二</span>
+                    <span>展示大模型</span>
                   </h3>
                   <div className="text">
                     <span>

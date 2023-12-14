@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Nodejs 版本
 
-## Getting Started
+16.18.x
 
-First, run the development server:
+## 本地運行
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. npm install
+
+2. 在跟目錄建立 .env.development 並貼上以下內容
+
+WEBSITE_DOMAIN=https://taidetest.stpi.narl.org.tw
+#前台domain
+
+API_URL=https://taidetest.stpi.narl.org.tw/public/api
+#api domain + 固定路徑前綴
+
+NEXT_PUBLIC_NEWS_IMG_URL=https://taidetest.stpi.narl.org.tw/myImg/show/ISSUE_PLAN
+#前台放上動態圖片的domain + 固定路徑前綴
+
+TRAIN_DATA_IMG_URL=https://taidetest.stpi.narl.org.tw/myImg/show/TRAIN_DATA
+#前台放上動態圖片的domain + 固定路徑前綴
+
+NEXT_PUBLIC_WORD_CLOUD_IMG_URL=https://taidetest.stpi.narl.org.tw/myImg/show/WORD_CLOUD
+#前台放上動態圖片的domain + 固定路徑前綴
+
+NEXT_PUBLIC_ASSET_PREFIX=""
+#配合 server 路由前綴
+
+3. npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 測試站環境運行
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+1. npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. pm2 delete taide
 
-## Learn More
+3. 在跟目錄建立 .env.production 並貼上以下內容
 
-To learn more about Next.js, take a look at the following resources:
+WEBSITE_DOMAIN=https://taidetest.stpi.narl.org.tw
+#前台domain
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+API_URL=https://taidetest.stpi.narl.org.tw/public/api
+#api domain + 固定路徑前綴
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+NEXT_PUBLIC_NEWS_IMG_URL=https://taidetest.stpi.narl.org.tw/myImg/show/ISSUE_PLAN
+#前台放上動態圖片的domain + 固定路徑前綴
 
-## Deploy on Vercel
+TRAIN_DATA_IMG_URL=https://taidetest.stpi.narl.org.tw/myImg/show/TRAIN_DATA
+#前台放上動態圖片的domain + 固定路徑前綴
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+NEXT_PUBLIC_WORD_CLOUD_IMG_URL=https://taidetest.stpi.narl.org.tw/myImg/show/WORD_CLOUD
+#前台放上動態圖片的domain + 固定路徑前綴
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+NEXT_PUBLIC_ASSET_PREFIX="/index"
+#配合 server 路由前綴
+
+4. npm run build
+
+5. pm2 start buildFile.js --name "taide"
+```
+
+## 正式站環境運行
+
+```bash
+1. npm install
+
+2. pm2 delete taide
+
+3. 在跟目錄建立 .env.production 並貼上以下內容
+
+WEBSITE_DOMAIN=https://taide.tw
+#前台domain
+
+API_URL=https://taide.tw/public/api
+#api domain + 固定路徑前綴
+
+NEXT_PUBLIC_NEWS_IMG_URL=https://taide.tw/myImg/show/ISSUE_PLAN
+#前台放上動態圖片的domain + 固定路徑前綴
+
+TRAIN_DATA_IMG_URL=https://taide.tw/myImg/show/TRAIN_DATA
+#前台放上動態圖片的domain + 固定路徑前綴
+
+NEXT_PUBLIC_WORD_CLOUD_IMG_URL=https://taide.tw/myImg/show/WORD_CLOUD
+#前台放上動態圖片的domain + 固定路徑前綴
+
+NEXT_PUBLIC_ASSET_PREFIX="/index"
+#配合 server 路由前綴
+
+4. npm run build
+
+5. pm2 start buildFile.js --name "taide"
+```
