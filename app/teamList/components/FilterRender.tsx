@@ -303,7 +303,7 @@ const FilterRender = () => {
           </div>
         </div>
         <div className="cardTeam grid">
-        <div className="cardTeam__item element-item tag7">
+          <div className="cardTeam__item element-item tag7">
             <div className="photo">
               <Image src={team_4} alt="李育杰 Lee, Yuh-Jye" />
             </div>
@@ -319,117 +319,6 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">督導管理</div>
-              </div>
-            </div>
-          </div>
-          <div className="cardTeam__item element-item tag7">
-            <div className="photo">
-              <Image src={team_1} alt="林博文 Lin, Bou-Wen" />
-            </div>
-            <div className="infoCon">
-              <h4>
-                <span>林博文</span>
-                <span>Lin, Bou-Wen</span>
-              </h4>
-              <div className="text">
-                <span>國家實驗研究院 副院長</span>
-              </div>
-              <div className="tagList">
-                <div className="tagUnit secondary">督導管理</div>
-              </div>
-            </div>
-          </div>
-          <div className="cardTeam__item element-item tag7">
-            <div className="photo">
-              <Image src={team_2} alt="許福添 Hsu, Fu-Tien" />
-            </div>
-            <div className="infoCon">
-              <h4>
-                <span>許福添</span>
-                <span>Hsu, Fu-Tien</span>
-              </h4>
-              <div className="text">
-                <span>數位發展部數位產業署平臺經濟組組長</span>
-              </div>
-              <div className="tagList">
-                <div className="tagUnit secondary">督導管理</div>
-              </div>
-            </div>
-          </div>
-          <div className="cardTeam__item element-item tag7">
-            <div className="photo">
-              <Image src={team_3} alt="蕭景燈 Hsiao, Ching-Ten" />
-            </div>
-            <div className="infoCon">
-              <h4>
-                <span>蕭景燈</span>
-                <span>Hsiao, Ching-Teng</span>
-              </h4>
-              <div className="text">
-                <span>國科會科技辦公室 組主任</span>
-              </div>
-              <div className="tagList">
-                <div className="tagUnit secondary">督導管理</div>
-              </div>
-            </div>
-          </div>
-          <div className="cardTeam__item element-item tag8">
-            <div className="photo">
-              <Image src={team_5} alt="許武龍 Hsu, Wuu-Long" />
-            </div>
-            <div className="infoCon">
-              <h4>
-                <span>許武龍</span>
-                <span>Hsu, Wuu-Long</span>
-              </h4>
-              <div className="text">
-                <span>LASS開源環境感測網路創辦人</span>
-              </div>
-              <div className="tagList">
-                <div className="tagUnit secondary">執行管理</div>
-              </div>
-            </div>
-          </div>
-          <div className="cardTeam__item element-item tag8">
-            <div className="photo">
-              <Image src={team_6} alt="蕭奕弘 Hsiao, Yi-Hon" />
-            </div>
-            <div className="infoCon">
-              <h4>
-                <span>蕭奕弘</span>
-                <span>Hsiao, Yi-Hon</span>
-              </h4>
-              <div className="text">
-                <span>蕭奕弘律師事務所主持律師</span>
-              </div>
-              <div className="tagList">
-                <div className="tagUnit secondary">執行管理</div>
-              </div>
-            </div>
-          </div>
-          <div className="cardTeam__item element-item tag2">
-            <div className="photo">
-              <a href="https://lab.depositar.io/" target="_blank"></a>
-              <Image src={team_7} alt="莊庭瑞 Chuang, Tyng-Ruey" />
-
-              <div className="btn">
-                <Image
-                  src={btnNextArrow}
-                  style={{ height: "auto" }}
-                  alt="arrow"
-                />
-              </div>
-            </div>
-            <div className="infoCon">
-              <h4>
-                <span>莊庭瑞</span>
-                <span>Chuang, Tyng-Ruey</span>
-              </h4>
-              <div className="text">
-                <span>中央研究院資訊科學研究所 副研究員</span>
-              </div>
-              <div className="tagList">
-                <div className="tagUnit secondary">資料組</div>
               </div>
             </div>
           </div>
@@ -575,6 +464,32 @@ const FilterRender = () => {
               </div>
             </div>
           </div>
+          <div className="cardTeam__item element-item tag2">
+            <div className="photo">
+              <a href="https://lab.depositar.io/" target="_blank"></a>
+              <Image src={team_7} alt="莊庭瑞 Chuang, Tyng-Ruey" />
+
+              <div className="btn">
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
+              </div>
+            </div>
+            <div className="infoCon">
+              <h4>
+                <span>莊庭瑞</span>
+                <span>Chuang, Tyng-Ruey</span>
+              </h4>
+              <div className="text">
+                <span>中央研究院資訊科學研究所 副研究員</span>
+              </div>
+              <div className="tagList">
+                <div className="tagUnit secondary">資料組</div>
+              </div>
+            </div>
+          </div>
           <div className="cardTeam__item element-item tag3">
             <div className="photo">
               <Image src={team_13} alt="張朝亮 Chang, Chau-Lyan" />
@@ -615,6 +530,91 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">應用組</div>
+              </div>
+            </div>
+          </div>
+          <div className="cardTeam__item element-item tag7">
+            <div className="photo">
+              <Image src={team_1} alt="林博文 Lin, Bou-Wen" />
+            </div>
+            <div className="infoCon">
+              <h4>
+                <span>林博文</span>
+                <span>Lin, Bou-Wen</span>
+              </h4>
+              <div className="text">
+                <span>國家實驗研究院 副院長</span>
+              </div>
+              <div className="tagList">
+                <div className="tagUnit secondary">督導管理</div>
+              </div>
+            </div>
+          </div>
+          <div className="cardTeam__item element-item tag7">
+            <div className="photo">
+              <Image src={team_2} alt="許福添 Hsu, Fu-Tien" />
+            </div>
+            <div className="infoCon">
+              <h4>
+                <span>許福添</span>
+                <span>Hsu, Fu-Tien</span>
+              </h4>
+              <div className="text">
+                <span>數位發展部數位產業署平臺經濟組組長</span>
+              </div>
+              <div className="tagList">
+                <div className="tagUnit secondary">督導管理</div>
+              </div>
+            </div>
+          </div>
+          <div className="cardTeam__item element-item tag7">
+            <div className="photo">
+              <Image src={team_3} alt="蕭景燈 Hsiao, Ching-Ten" />
+            </div>
+            <div className="infoCon">
+              <h4>
+                <span>蕭景燈</span>
+                <span>Hsiao, Ching-Teng</span>
+              </h4>
+              <div className="text">
+                <span>國科會科技辦公室 組主任</span>
+              </div>
+              <div className="tagList">
+                <div className="tagUnit secondary">督導管理</div>
+              </div>
+            </div>
+          </div>
+          <div className="cardTeam__item element-item tag8">
+            <div className="photo">
+              <Image src={team_5} alt="許武龍 Hsu, Wuu-Long" />
+            </div>
+            <div className="infoCon">
+              <h4>
+                <span>許武龍</span>
+                <span>Hsu, Wuu-Long</span>
+              </h4>
+              <div className="text">
+                <span>LASS開源環境感測網路創辦人</span>
+              </div>
+              <div className="tagList">
+                <div className="tagUnit secondary">執行管理</div>
+              </div>
+            </div>
+          </div>
+          <div className="cardTeam__item element-item tag8">
+            <div className="photo">
+              <Image src={team_6} alt="蕭奕弘 Hsiao, Yi-Hon" />
+            </div>
+            <div className="infoCon">
+              <h4>
+                <span>蕭奕弘</span>
+                <span>Hsiao, Yi-Hon</span>
+              </h4>
+              <div className="text">
+                <span>蕭奕弘律師事務所主持律師</span>
+              </div>
+              <div className="tagList">
+                <div className="tagUnit secondary">執行管理</div>
               </div>
             </div>
           </div>

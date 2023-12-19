@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
   icons: [
-    { rel: "icon", url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon-1.ico` },
+    { rel: "icon", url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon.ico` },
     {
       rel: "apple-touch-icon",
       url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/apple-touch-icon-1.png`,
