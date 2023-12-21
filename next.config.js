@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 // const CopyPlugin = require("copy-webpack-plugin");
 // const path = require("path");
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 const nextConfig = {
   assetPrefix: process.env.NEXT_PUBLIC_ASSET_PREFIX,
   images: {
