@@ -546,7 +546,15 @@ const DownloadModal = () => {
                     </tbody>
                   </table>
                   <div className="btn">
-                    <a href="https://huggingface.co/taide" target="_blank">
+                    {/* <a href="https://huggingface.co/taide" target="_blank">
+                      <span>Huggingface 連結</span>
+                      <Image
+                        src={btnDownArrow}
+                        style={{ height: "auto" }}
+                        alt="arrow"
+                      />
+                    </a> */}
+                    <a>
                       <span>Huggingface 連結</span>
                       <Image
                         src={btnDownArrow}
@@ -651,7 +659,15 @@ const DownloadModal = () => {
                   </tbody>
                 </table>
                 <div className="btn">
-                  <a href="https://huggingface.co/taide" target="_blank">
+                  {/* <a href="https://huggingface.co/taide" target="_blank">
+                    <span>Huggingface 連結</span>
+                    <Image
+                      src={btnDownArrow}
+                      style={{ height: "auto" }}
+                      alt="arrow"
+                    />
+                  </a> */}
+                  <a>
                     <span>Huggingface 連結</span>
                     <Image
                       src={btnDownArrow}
