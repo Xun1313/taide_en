@@ -3,9 +3,9 @@ import { WithContext } from "schema-dts";
 import Image from "next/image";
 import Link from "next/link";
 import btnNextArrow from "~/images/icon/btn_nextArrow.svg";
-import btnDownArrow from "~/images/icon/btn_downArrow.svg";
-import iconData from "~/images/icon/icon_data.svg";
+
 import MasonryBlock from "./components/MasonryBlock";
+import CardItem from "./components/CardItem";
 import TrainDataResType from "./types";
 import WorldCloudResType from "./worldCloudType";
 import { trainDataTypeMapping } from "~/utils/common";
@@ -46,7 +46,7 @@ const TrainingData = async ({
         process.env.API_URL
       }/trainData?accessToken=TAIDE_7ujm*IK9LP*UIOPJKL@wsx!qaz&type=${
         Number(searchParams.type) || ""
-      }&length=99999999&start=0`,
+      }&length=${searchParams.length || "8"}&start=0`,
       {
         method: "POST",
         cache: "no-store",
@@ -188,6 +188,7 @@ const TrainingData = async ({
               >
                 <Link
                   href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data?type=${e}`}
+                  scroll={false}
                 >
                   {trainDataTypeList[e]}
                 </Link>
@@ -196,37 +197,23 @@ const TrainingData = async ({
           </div>
           <div className="cardTrainData">
             {trainDataList.map((e) => (
-              <div className="cardTrainData__item" key={e.id}>
-                <div className="title">{e.supplyUnit}</div>
-                <h3>{e.title}</h3>
-                <div className="dataCard">
-                  <Image src={iconData} alt="data" />
-                </div>
-                {e.url && (
-                  <a
-                    className="tagUnit secondary"
-                    href={e.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    資料來源網站
-                  </a>
-                )}
-                <div className="btn">
-                  <Link
-                    href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data/${e.id}`}
-                  >
-                    <span>更多資料</span>
-                    <Image
-                      src={btnDownArrow}
-                      style={{ height: "auto" }}
-                      alt="arrow"
-                    />
-                  </Link>
-                </div>
-              </div>
+              <CardItem
+                id={e.id}
+                supplyUnit={e.supplyUnit}
+                title={e.title}
+                url={e.url}
+                key={e.id}
+              />
             ))}
           </div>
+
+          <Link
+            href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/training-data?type=${searchParams.type}&length=16`}
+            scroll={false}
+            className="resourcesUnit__more jsLoadMore"
+          >
+            載入更多 Load More
+          </Link>
         </div>
       </article>
       <article className="contactUnit trainData">

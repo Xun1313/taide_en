@@ -30,6 +30,7 @@ namespace TrainDataResType {
 
   export type QueryType = {
     type?: string;
+    length?: string;
   };
 }
 
