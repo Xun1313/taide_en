@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import logo from "~/images/logo.svg";
+import logo from "~/images/logo.png";
 
 // 標籤 hover 效果
 // 選到該頁面亮起

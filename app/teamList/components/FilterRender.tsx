@@ -319,6 +319,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">督導管理</div>
+                <div className="tagUnit secondary">顧問</div>
               </div>
             </div>
           </div>
@@ -348,6 +349,8 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">模型組</div>
+                <div className="tagUnit secondary">顧問</div>
+                <div className="tagUnit secondary">召集人</div>
               </div>
             </div>
           </div>
@@ -377,6 +380,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">模型組</div>
+                <div className="tagUnit secondary">顧問</div>
               </div>
             </div>
           </div>
@@ -403,6 +407,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">模型組</div>
+                <div className="tagUnit secondary">顧問</div>
               </div>
             </div>
           </div>
@@ -432,6 +437,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">模型組</div>
+                <div className="tagUnit secondary">計畫內專家</div>
               </div>
             </div>
           </div>
@@ -461,6 +467,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">模型組</div>
+                <div className="tagUnit secondary">顧問</div>
               </div>
             </div>
           </div>
@@ -487,6 +494,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">資料組</div>
+                <div className="tagUnit secondary">顧問</div>
               </div>
             </div>
           </div>
@@ -504,6 +512,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">算力組</div>
+                <div className="tagUnit secondary">計畫共同主持人</div>
               </div>
             </div>
           </div>
@@ -530,6 +539,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">應用組</div>
+                <div className="tagUnit secondary">顧問</div>
               </div>
             </div>
           </div>
@@ -547,6 +557,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">督導管理</div>
+                <div className="tagUnit secondary">計畫主持人</div>
               </div>
             </div>
           </div>
@@ -564,6 +575,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">督導管理</div>
+                <div className="tagUnit secondary">計畫共同主持人</div>
               </div>
             </div>
           </div>
@@ -581,6 +593,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">督導管理</div>
+                <div className="tagUnit secondary">國科會科技辦公室總協調</div>
               </div>
             </div>
           </div>
@@ -598,6 +611,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">執行管理</div>
+                <div className="tagUnit secondary">專案經理</div>
               </div>
             </div>
           </div>
@@ -615,6 +629,7 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">執行管理</div>
+                <div className="tagUnit secondary">顧問</div>
               </div>
             </div>
           </div>

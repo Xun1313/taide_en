@@ -2,6 +2,7 @@ namespace TrainDataResType {
   export type TrainDataType = {
     trainDataList: TrainDataListType;
     pageNo: number;
+    totalPages: number;
   };
 
   export type TrainDataListType = ItemType[];
