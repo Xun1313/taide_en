@@ -91,7 +91,7 @@ const Header = () => {
         </div>
         <nav
           className={`nav ${handleHoverNavigation(
-            ["download-modal"],
+            ["download-model"],
             "hover2"
           )}`}
         >
@@ -155,11 +155,11 @@ const Header = () => {
             </li>
             <li
               className={`btnDownload ${handleHoverNavigation([
-                "download-modal",
+                "download-model",
               ])}`}
             >
               <Link
-                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-modal`}
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-model`}
               >
                 TAIDE模型
               </Link>

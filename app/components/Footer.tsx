@@ -70,13 +70,13 @@ const Footer = () => {
               </h3>
               <h3>
                 <Link
-                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-modal`}
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-model`}
                 >
                   TAIDE模型
                 </Link>
               </h3>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/terms`}>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-model`}>
                   條款與許可協議
                 </Link>
               </p>
@@ -136,13 +136,13 @@ const Footer = () => {
               </h3>
               <h3>
                 <Link
-                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-modal`}
+                  href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-model`}
                 >
                   TAIDE模型
                 </Link>
               </h3>
               <p>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/terms`}>
+                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/download-model`}>
                   條款與許可協議
                 </Link>
               </p>
