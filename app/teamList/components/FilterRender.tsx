@@ -26,6 +26,7 @@ import team_13 from "~/images/team/team_13.png";
 import team_14 from "~/images/team/team_14.png";
 import team_15 from "~/images/team/team_15.png";
 import team_16 from "~/images/team/team_16.png";
+import team_17 from "~/images/team/team_17.png";
 import { useState, useEffect, useMemo } from "react";
 const FilterRender = () => {
   const [active, setActive] = useState("全部");
@@ -629,6 +630,37 @@ const FilterRender = () => {
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">執行管理</div>
+                <div className="tagUnit secondary">顧問</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="cardTeam__item element-item tag1">
+            <div className="photo">
+              <a
+                href="https://homepage.iis.sinica.edu.tw/pages/hhhuang/contact_zh.html"
+                target="_blank"
+              ></a>
+              <Image src={team_17} alt="黃瀚萱 Huang, Hen-Hsen" />
+
+              <div className="btn">
+                <Image
+                  src={btnNextArrow}
+                  style={{ height: "auto" }}
+                  alt="arrow"
+                />
+              </div>
+            </div>
+            <div className="infoCon">
+              <h4>
+                <span>黃瀚萱</span>
+                <span>Huang, Hen-Hsen</span>
+              </h4>
+              <div className="text">
+                <span>中央研究院資訊科學研究所 助研究員</span>
+              </div>
+              <div className="tagList">
+                <div className="tagUnit secondary">模型組</div>
                 <div className="tagUnit secondary">顧問</div>
               </div>
             </div>
