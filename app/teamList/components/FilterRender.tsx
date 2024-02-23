@@ -564,15 +564,15 @@ const FilterRender = () => {
           </div>
           <div className="cardTeam__item element-item tag7">
             <div className="photo">
-              <Image src={team_2} alt="許福添 Hsu, Fu-Tien" />
+              <Image src={team_2} alt="林青嶔 Lin, Ching-Chin" />
             </div>
             <div className="infoCon">
               <h4>
-                <span>許福添</span>
-                <span>Hsu, Fu-Tien</span>
+                <span>林青嶔</span>
+                <span>Lin, Ching-Chin</span>
               </h4>
               <div className="text">
-                <span>數位發展部數位產業署平臺經濟組組長</span>
+                <span>數位發展部數位產業署 組長</span>
               </div>
               <div className="tagList">
                 <div className="tagUnit secondary">督導管理</div>

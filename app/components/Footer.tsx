@@ -176,7 +176,7 @@ const Footer = () => {
         </div>
         <div className="copyright">
           <span>© 財團法人國家實驗研究院科技政策研究與資訊中心</span>
-          <span>2023 All Rights Reserved.</span>
+          <span>{new Date().getFullYear()} All Rights Reserved.</span>
         </div>
       </article>
     </footer>
