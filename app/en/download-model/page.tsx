@@ -55,8 +55,8 @@ const DownloadModel = () => {
                   <p>
                     This TAIDE Usage Policy and License Agreement (referred to
                     as <b>{`"this Agreement"`}</b>) outlines and mandates user
-                    (referred to as <b>{`"You"`}</b>) compliance with the specified
-                    conduct while utilizing TAIDE.
+                    (referred to as <b>{`"You"`}</b>) compliance with the
+                    specified conduct while utilizing TAIDE.
                   </p>
                   <p>
                     This Agreement applies to anyone using TAIDE. Accessing and
@@ -237,7 +237,7 @@ const DownloadModel = () => {
                   </div>
 
                   <h3>2. META AI Llama2 Community License Agreement</h3>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.1</span>
                     <span>
                       <b>「Agreement」</b> means the terms and conditions for
@@ -245,7 +245,7 @@ const DownloadModel = () => {
                       Llama Materials set forth herein.
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.2</span>
                     <span>
                       <b>「Documentation」</b> means the specifications, manuals
@@ -260,7 +260,7 @@ const DownloadModel = () => {
                       .
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.3</span>
                     <span>
                       <b>「Licensee」</b> or <b>「you」</b> means you, or your
@@ -273,7 +273,7 @@ const DownloadModel = () => {
                       behalf.
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.4</span>
                     <span>
                       <b>「Llama 2」</b> means the foundational large language
@@ -291,15 +291,13 @@ const DownloadModel = () => {
                       .
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.5</span>
                     <span>
                       <b>「Llama Materials」</b> means, collectively, Meta’s
                       proprietary Llama 2 and Documentation (and any portion
                       thereof) made available under this Agreement.
-                    </span>
-                    <br />
-                    <span>
+                      <br />
                       <b>「Meta」</b> or <b>「we」</b> means Meta Platforms
                       Ireland Limited (if you are located in or, if you are an
                       entity, your principal place of business is in the EEA or

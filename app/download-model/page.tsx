@@ -189,14 +189,14 @@ const DownloadModel = () => {
                     2. Llama2 許可協議(Meta AI Llama2 Community License
                     Agreement)
                   </h3>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.1</span>
                     <span>
                       「Llama2
                       許可協議」係指此處規範Llama素材之使用、複製、發布和修改的條款和條件。
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.2</span>
                     <span>
                       「Llama相關文件」係指Meta一同與Llama2發布於
@@ -209,7 +209,7 @@ const DownloadModel = () => {
                       之規格、手冊和文件。
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.3</span>
                     <span>
                       「被授權人」或「您」係指您，或若您代表您的雇主或其他人或法人簽訂本Llama2
@@ -217,7 +217,7 @@ const DownloadModel = () => {
                       許可協議，表示於適用法規範下，您獲得被代表人之合法授權。
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.4</span>
                     <span>
                       「Llama
@@ -225,7 +225,7 @@ const DownloadModel = () => {
                       ai.meta.com/resources/models-and-libraries/Llama-downloads/取得。
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.5</span>
                     <span>
                       「Llama素材」係指本Llama2 許可協議提供之Meta專有Llama 2
@@ -236,7 +236,7 @@ const DownloadModel = () => {
                       Platforms, Inc.（若您位於歐洲經濟區或瑞士外）。
                     </span>
                   </p>
-                  <p>
+                  <p className="displayFlex">
                     <span>2.5.1</span>
                     <span>許可權和再發布：</span>
                   </p>
