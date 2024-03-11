@@ -1,11 +1,7 @@
 import { WithContext } from "schema-dts";
 
-import Image from "next/image";
-import icon_anything_1 from "~/images/en/icon_anything_1.svg";
-import icon_anything_2 from "~/images/en/icon_anything_2.svg";
-import icon_anything_3 from "~/images/en/icon_anything_3.svg";
 
-
+import PlanSwiper from "~/en/components/PlanSwiper";
 import StageUnit from "~/en/components/StageUnit";
 import TeamUnit from "~/en/components/TeamUnit";
 import NewsListUnit from "~/en/components/NewsListUnit";
@@ -47,62 +43,12 @@ const Home = async () => {
         </div>
       </article>
 
-      <article className="planList">
-        <h2>TAIDE CAN HELP ANYTHING</h2>
-        <div className="planSwiper">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide slide1">
-              <div className="infoCon">
-                <h3>
-                  <span>Write a content</span>
-                </h3>
-                <div className="icon">
-                  <Image
-                    src={icon_anything_1}
-                    style={{ height: "auto" }}
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide slide2">
-              <div className="infoCon">
-                <h3>
-                  <span>Translate inbetween</span>
-                  <span>Chinese and English</span>
-                </h3>
-                <div className="icon">
-                  <Image
-                    src={icon_anything_2}
-                    style={{ height: "auto" }}
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide slide3">
-              <div className="infoCon">
-                <h3>
-                  <span>Summarize some</span>
-                  <span>keypoints</span>
-                </h3>
-                <div className="icon">
-                  <Image
-                    src={icon_anything_3}
-                    style={{ height: "auto" }}
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-      
+      <PlanSwiper />
+
       <StageUnit />
 
       <TeamUnit />
-      
+
       <NewsListUnit />
 
       <script

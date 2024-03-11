@@ -279,11 +279,17 @@ const TeamUnit = () => {
                       <h4>
                         <span>Tsai, Tzong-Han</span>
                       </h4>
+                      <div className="title">
+                        <span>Professor</span>
+                      </div>
                       <div className="text">
                         <span>
                           Department of Computer Science & Information
-                          Engineering, National Central University
+                          Engineering, National Central University.
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Coordinator</div>
                       </div>
                     </div>
                   </div>
@@ -307,11 +313,17 @@ const TeamUnit = () => {
                       <h4>
                         <span>Hsu, Yung-Jen</span>
                       </h4>
+                      <div className="title">
+                        <span>Professor</span>
+                      </div>
                       <div className="text">
                         <span>
                           Department of Computer Science and Information
                           Engineering, National Taiwan University
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Consultant</div>
                       </div>
                     </div>
                   </div>
@@ -335,11 +347,17 @@ const TeamUnit = () => {
                       <h4>
                         <span>Wu, I-Chen</span>
                       </h4>
+                      <div className="title">
+                        <span>Distinguished Professor</span>
+                      </div>
                       <div className="text">
                         <span>
                           College of Computer Science, National Yang Ming Chiao
                           Tung University
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Consultant</div>
                       </div>
                     </div>
                   </div>
@@ -363,11 +381,17 @@ const TeamUnit = () => {
                       <h4>
                         <span>Lee, Hung-Yi</span>
                       </h4>
+                      <div className="title">
+                        <span>Associate Professor</span>
+                      </div>
                       <div className="text">
                         <span>
                           Department of Electrical Engineering, National Taiwan
                           University
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Expert</div>
                       </div>
                     </div>
                   </div>
@@ -391,12 +415,18 @@ const TeamUnit = () => {
                       <h4>
                         <span>Liao, Yuan-Fu</span>
                       </h4>
+                      <div className="title">
+                        <span>Professor</span>
+                      </div>
                       <div className="text">
                         <span>
                           Institute of Artificial Intelligence Innovation,
                           Industry Academia Innovation School, National Yang
                           Ming Chiao Tung University
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Consultant</div>
                       </div>
                     </div>
                   </div>
@@ -422,8 +452,11 @@ const TeamUnit = () => {
                       </h4>
                       <div className="text">
                         <span>
-                          Institute of Information Science, Academia Sinica
+                          Institute of Information Science, Academia Sinica,
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Consultant</div>
                       </div>
                     </div>
                   </div>
@@ -469,10 +502,16 @@ const TeamUnit = () => {
                       <h4>
                         <span>Chuang, Tyng-Ruey</span>
                       </h4>
+                      <div className="title">
+                        <span>Associate Research Fellow</span>
+                      </div>
                       <div className="text">
                         <span>
                           Institute of Information Science, Academia Sinica
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Consultant</div>
                       </div>
                     </div>
                   </div>
@@ -509,11 +548,17 @@ const TeamUnit = () => {
                       <h4>
                         <span>Chang, Chau-Lyan</span>
                       </h4>
+                      <div className="title">
+                        <span>Director General</span>
+                      </div>
                       <div className="text">
                         <span>
                           National Center for High-performance Computing,
                           NARLabs
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Coordinator</div>
                       </div>
                     </div>
                   </div>
@@ -562,11 +607,17 @@ const TeamUnit = () => {
                       <h4>
                         <span>Wu, Chun-Hsin</span>
                       </h4>
+                      <div className="title">
+                        <span>Associate Professor</span>
+                      </div>
                       <div className="text">
                         <span>
                           Department of Computer Science & Information
                           Engineering, Kaohsiung University
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Consultant</div>
                       </div>
                     </div>
                   </div>
@@ -603,11 +654,17 @@ const TeamUnit = () => {
                       <h4>
                         <span>Lee, Yuh-Jye</span>
                       </h4>
+                      <div className="title">
+                        <span>Research Fellow</span>
+                      </div>
                       <div className="text">
                         <span>
                           Research Center for Information Technology Innovation,
                           Academia Sinica
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Consultant</div>
                       </div>
                     </div>
                   </div>
@@ -619,8 +676,14 @@ const TeamUnit = () => {
                       <h4>
                         <span>Lin, Bou-Wen</span>
                       </h4>
+                      <div className="title">
+                        <span>Vice President</span>
+                      </div>
                       <div className="text">
                         <span>National Applied Research Laboratories</span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Coordinator</div>
                       </div>
                     </div>
                   </div>
@@ -632,8 +695,16 @@ const TeamUnit = () => {
                       <h4>
                         <span>Lin, Ching-Chin</span>
                       </h4>
+                      <div className="title">
+                        <span>Supervisor</span>
+                      </div>
                       <div className="text">
                         <span>Administration for Digital Industries, moda</span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">
+                          Co-Principal Investigator
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -645,10 +716,18 @@ const TeamUnit = () => {
                       <h4>
                         <span>Hsiao, Ching-Teng</span>
                       </h4>
+                      <div className="title">
+                        <span>Director General</span>
+                      </div>
                       <div className="text">
                         <span>
                           Office of Science and Technology Policy, NSTC
                         </span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">
+                          OSTP Coordinator
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -685,8 +764,14 @@ const TeamUnit = () => {
                       <h4>
                         <span>Hsu, Wuu-Long</span>
                       </h4>
+                      <div className="title">
+                        <span>Founder</span>
+                      </div>
                       <div className="text">
                         <span>Location Aware Sensing System</span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Project Manager</div>
                       </div>
                     </div>
                   </div>
@@ -698,8 +783,14 @@ const TeamUnit = () => {
                       <h4>
                         <span>Hsiao, Yi-Hon</span>
                       </h4>
+                      <div className="title">
+                        <span>Attorney-at-Law</span>
+                      </div>
                       <div className="text">
                         <span>Hsiao, Yi-Hon Law Firm</span>
+                      </div>
+                      <div className="tagList">
+                        <div className="tagUnit secondary">Consultant</div>
                       </div>
                     </div>
                   </div>
