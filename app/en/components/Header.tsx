@@ -9,6 +9,10 @@ import logo from "~/images/logo.png";
 const Header = () => {
 
   useEffect(() => {
+    document.querySelector("#toAbout")?.setAttribute("name", "toAbout");
+    document.querySelector("#toTeam")?.setAttribute("name", "toTeam");
+    document.querySelector("#toProject")?.setAttribute("name", "toProject");
+
     $(document).ready(function () {
       $(".btnSubNav").click(function () {
         if ($(this).hasClass("on")) {
