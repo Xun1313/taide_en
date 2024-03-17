@@ -2,15 +2,17 @@ import "./css/all.min.css";
 // import "swiper/css";
 // import "swiper/css/pagination";
 
-import MainLayout from "~/components/MainLayout";
+import BackTop from "~/en/components/BackTop";
+import Header from "~/en/components/Header";
+import Footer from "~/en/components/Footer";
 import Script from "next/script";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_DOMAIN as string),
-  title: "TAIDE - 推動臺灣可信任生成式AI發展計畫",
+  title: "TAIDE - TAIDE Taiwanese Native Large Language Model",
   description:
-    "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
+    "Complete guide to unlock download and application secrets of TAIDE model version. Upgrade your AI skills and quickly get started and practice!",
   icons: [
     { rel: "icon", url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon.ico` },
     {
@@ -24,14 +26,14 @@ export const metadata: Metadata = {
     url: process.env.WEBSITE_DOMAIN,
     title: "TAIDE",
     description:
-      "深入了解TAIDE計畫的背後策略、目標和里程碑。臺灣如何透過生成式AI技術，開創新的科技未來。",
+      "Complete guide to unlock download and application secrets of TAIDE model version. Upgrade your AI skills and quickly get started and practice!",
     siteName: "TAIDE",
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/ogimg.png`,
       },
     ],
-    locale: "zh-TW",
+    locale: "en",
   },
   themeColor: "#ffffff",
   manifest: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/site.webmanifest`,
@@ -43,10 +45,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh">
+    <html lang="en">
       <head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta httpEquiv="Content-Language" content="zh-tw" />
+        <meta httpEquiv="Content-Language" content="en-US" />
         <meta name="format-detection" content="telephone=no" />
 
         <link
@@ -88,7 +90,15 @@ export default function RootLayout({
           ></iframe>
         </noscript>
 
-        <MainLayout>{children}</MainLayout>
+        <section className="wrapper enPage">
+          <Header />
+          <main className="main" itemType="https://schema.org/Organization">
+            {children}
+          </main>
+          <Footer />
+          <BackTop />
+        </section>
+
         <script
           src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/js/jquery.min.js`}
           defer={false}

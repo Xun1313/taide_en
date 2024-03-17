@@ -1,18 +1,9 @@
 import { WithContext } from "schema-dts";
 
-
 import PlanSwiper from "~/en/components/PlanSwiper";
 import StageUnit from "~/en/components/StageUnit";
 import TeamUnit from "~/en/components/TeamUnit";
 import NewsListUnit from "~/en/components/NewsListUnit";
-// import Link from "next/link";
-
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "TAIDE - TAIDE Taiwanese Native Large Language Model",
-  description:
-    "Complete guide to unlock download and application secrets of TAIDE model version. Upgrade your AI skills and quickly get started and practice!",
-};
 
 const Home = async () => {
   const jsonLd: WithContext<any> = {

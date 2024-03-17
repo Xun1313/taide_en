@@ -115,18 +115,6 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <ol>
-            <li>
-              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/`}>
-                中文
-              </Link>
-            </li>
-            <li className="active">
-              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en`}>
-                EN
-              </Link>
-            </li>
-          </ol>
         </nav>
       </div>
     </header>
