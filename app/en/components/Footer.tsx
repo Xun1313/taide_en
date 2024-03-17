@@ -20,28 +20,28 @@ const Footer = () => {
           <div className="sitemapUnit__body">
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toAbout`}>
+                <Link href={`/en#toAbout`}>
                   About TAIDE
                 </Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toTeam`}>
+                <Link href={`/en#toTeam`}>
                   Team
                 </Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toProject`}>
+                <Link href={`/en#toProject`}>
                   Project Info
                 </Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en/download-model`}>
+                <Link href={`/en/download-model`}>
                   TAIDE Model
                 </Link>
               </h3>
@@ -52,28 +52,28 @@ const Footer = () => {
           <div className="sitemapUnit__body">
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toAbout`}>
+                <Link href={`/en#toAbout`}>
                   About TAIDE
                 </Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toTeam`}>
+                <Link href={`/en#toTeam`}>
                   Team
                 </Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toProject`}>
+                <Link href={`/en#toProject`}>
                   Project Info
                 </Link>
               </h3>
             </div>
             <div className="sitemapUnit__item">
               <h3>
-                <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en/download-model`}>
+                <Link href={`/en/download-model`}>
                   TAIDE Model
                 </Link>
               </h3>

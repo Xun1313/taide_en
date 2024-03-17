@@ -25,7 +25,7 @@ const Home = async () => {
             <div className="bannerUnit__left">
               <video width="320" height="240" autoPlay loop muted>
                 <source
-                  src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/video/en/banner.mp4`}
+                  src={`/video/en/banner.mp4`}
                   type="video/mp4"
                 />
               </video>
