@@ -42,7 +42,7 @@ const NewsListUnit = () => {
                 Creating a trustworthy generative AI dialogue engine
                 foundational model specifically for Taiwan, the government and
                 industry can select the model size by computational power
-                according to their needs, to train the model themselves and
+                according to their services, to train the model themselves and
                 establish internal applications.
               </p>
             </div>
