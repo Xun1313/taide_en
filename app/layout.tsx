@@ -69,21 +69,19 @@ export default function RootLayout({
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#f5f1ec" />
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-PYNQDHHXCT"></Script>
         <Script id="google-analytics">
           {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-PYNQDHHXCT');
-          gtag('config', 'GTM-KTXM8L8T');`}
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NQTZMVPL');`}
         </Script>
       </head>
       <body>
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-KTXM8L8T"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NQTZMVPL"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
@@ -99,22 +97,10 @@ export default function RootLayout({
           <BackTop />
         </section>
 
-        <script
-          src={`/js/jquery.min.js`}
-          defer={false}
-        ></script>
-        <script
-          src={`/js/jquery.ui.min.js`}
-          defer={false}
-        ></script>
-        <script
-          src={`/js/isotope-docs.min.js`}
-          defer={false}
-        ></script>
-        <script
-          src={`/js/masonry.pkgd.min.js`}
-          defer={false}
-        ></script>
+        <script src={`/js/jquery.min.js`} defer={false}></script>
+        <script src={`/js/jquery.ui.min.js`} defer={false}></script>
+        <script src={`/js/isotope-docs.min.js`} defer={false}></script>
+        <script src={`/js/masonry.pkgd.min.js`} defer={false}></script>
       </body>
     </html>
   );
