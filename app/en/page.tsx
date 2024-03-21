@@ -23,7 +23,7 @@ const Home = async () => {
         <div className="bannerUnit__body">
           <div className="bannerUnit__wrap">
             <div className="bannerUnit__left">
-              <video width="320" height="240" autoPlay loop muted>
+              <video width="320" height="240" autoPlay loop muted playsInline>
                 <source
                   src={`/video/en/banner.mp4`}
                   type="video/mp4"
