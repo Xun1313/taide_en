@@ -45,675 +45,501 @@ const DownloadModel = () => {
           <div className="downloadDetail">
             <div className="downloadDetail__left">
               <div className="article__item terms">
-                <h2>·Usage Policy and License Agreement</h2>
+                <h2>·TAIDE L Models Community License Agreement</h2>
+                <div className="article_＿date">
+                  Release Date: April 15 , 2024
+                </div>
                 <div className="article__con">
+                  <p>Preambles.</p>
                   <p>
-                    TAIDE is a model derivative that amalgamates the Llama2
-                    model with Taiwanese culture and a Traditional Chinese
-                    language corpus.
+                    National Applied Research Laboratories (hereinafter referred
+                    to as {'"NARLabs"'}) has developed and implemented TAIDE L
+                    models. When You obtain or start using TAIDE L models and
+                    its materials (hereinafter collectively referred to as the{" "}
+                    {'"TAIDE L models"'}), it means that You have read,
+                    understood, and agreed to accept all the contents of this
+                    Agreement. If You do not agree with the contents of this
+                    Agreement, or if Your country or region excludes all or part
+                    of the contents of this Agreement, You should immediately
+                    stop using TAIDE L models.
+                    <p>This Agreement mainly includes:</p>
                   </p>
-                  <p>
-                    This TAIDE Usage Policy and License Agreement (referred to
-                    as <b>{`"this Agreement"`}</b>) outlines and mandates user
-                    (referred to as <b>{`"You"`}</b>) compliance with the
-                    specified conduct while utilizing TAIDE.
-                  </p>
-                  <p>
-                    This Agreement applies to anyone using TAIDE. Accessing and
-                    using TAIDE (including software, services, and derivative
-                    works) are required to comply with this Agreement. TAIDE
-                    reserves the right to update these guidelines at any time,
-                    and this Agreement may not comprehensively cover all
-                    instances of TAIDE usage. TAIDE reserves the right to amend,
-                    append, delete, or supplement this Agreement at any time,
-                    with the revised version made available on this website.
-                  </p>
-                  <p>
-                    If there is any ambiguity in this Agreement, the final
-                    interpretation of any and all policies stated herein is at
-                    the sole discretion of TAIDE.
-                  </p>
-                  <p>
-                    Any violation of this Agreement, or any authorization or
-                    assistance in such violation by you, may lead to the
-                    immediate suspension or termination of your complete or
-                    partial usage of TAIDE.
-                  </p>
-                  <p>This Agreement mainly includes:</p>
-                  <div className="ml-1">
-                    <p>(1) TAIDE Terms of use </p>
-                    <p>(2) META AI Llama2 Community License Agreement</p>
-                    <p>(3) META AI Llama2 Acceptable Use Policy</p>
-                  </div>
 
-                  <h3>1. Terms of Use</h3>
+                  <h3>1. Definitions.</h3>
                   <p>
                     <span>1.1 </span>
                     <span>
-                      During your use of TAIDE service, it is imperative to
-                      adhere to the following principles:
-                    </span>
-                  </p>
-                  <div className="ml-1">
-                    <p>
-                      <span>1.1.1</span>
-                      <span>
-                        Comply with the laws and regulations of the Republic of
-                        China (TAIWAN).
-                      </span>
-                    </p>
-                    <p>
-                      <span>1.1.2</span>
-                      <span>
-                        Do not employ TAIDE for any illicit purposes (including
-                        but not limited to the laws and regulations of the
-                        Republic of China and the content of the Llama2 Usage
-                        Terms).
-                      </span>
-                    </p>
-                    <p>
-                      <span>1.1.3</span>
-                      <span>
-                        Refrain from utilizing any devices, software, or
-                        programs to disrupt or attempt to disrupt the normal
-                        operation of TAIDE.
-                      </span>
-                    </p>
-                    <p>
-                      <span>1.1.4</span>
-                      <span>
-                        Avoid unauthorized invasion, access, usage, or attempts
-                        to invade, access, or use the servers of TAIDE and any
-                        data area not sanctioned by TAIDE or TAIDE.
-                      </span>
-                    </p>
-                    <p>
-                      <span>1.1.5 </span>
-                      <span>
-                        Do not restrict or prohibit other users from using
-                        TAIDE.
-                      </span>
-                    </p>
-                    <p>
-                      <span>1.1.6 </span>
-                      <span>
-                        If you identify any illegal use of accounts or any
-                        security vulnerabilities, you shall immediately inform
-                        TAIDE of such incidents.
-                      </span>
-                    </p>
-                  </div>
-                  <p>
-                    <span>1.2</span>
-                    <span>Indemnity</span>
-                  </p>
-                  <div className="ml-1">
-                    <p>
-                      You agree to indemnify and hold harmless TAIDE and any
-                      other third parties. In the event that TAIDE or any other
-                      third party incurs losses as a result of a breach of laws,
-                      regulations, or this Agreement, you commit to assuming the
-                      responsibility for compensating for the damages caused.
-                    </p>
-                  </div>
-                  <p>
-                    <span>1.3</span>
-                    <span>Limitation of Liability</span>
-                  </p>
-                  <div className="ml-1">
-                    <p>
-                      <span>1.3.1</span>
-                      <span>
-                        TAIDE reserves the right to suspend or interrupt either
-                        specific components or the entirety of TAIDE services
-                        under the following circumstances:
-                      </span>
-                    </p>
-                    <div className="ml-2">
-                      <p>
-                        a. Migration, replacement, or maintenance of TAIDE
-                        model-related system equipment.
-                      </p>
-                      <p>
-                        b. Service interruption or suspension caused by any
-                        reason not attributable to TAIDE.
-                      </p>
-                      <p>
-                        c. Natural disasters or other force majeure events
-                        causing the service interruption or suspension of TAIDE.
-                      </p>
-                    </div>
-                    <p>
-                      <span>1.3.2</span>
-                      <span>
-                        In any case, TAIDE shall not be liable for any losses
-                        incurred by you or any other third party due to the use
-                        or inability to use TAIDE, whether contractual
-                        liability, tort liability, negligence liability, product
-                        liability, or other liability, including any indirect,
-                        special, consequential, incidental, or punitive damages,
-                        even if TAIDE has been advised of the possibility of
-                        such situations.
-                      </span>
-                    </p>
-                  </div>
-                  <p>
-                    <span>1.4</span>
-                    <span>
-                      Service Modifications, Interruptions, or Termination
-                    </span>
-                  </p>
-                  <div className="ml-1">
-                    <p>
-                      You acknowledge that TAIDE reserves the right to modify,
-                      interrupt, or terminate part or all of TAIDE services at
-                      any time.
-                    </p>
-                  </div>
-                  <p>
-                    <span>1.5</span>
-                    <span>Miscellaneous</span>
-                  </p>
-                  <div className="ml-1">
-                    <p>
-                      If any portion of this Agreement is completely or
-                      partially invalid, terminated, or unenforceable due to any
-                      reasons, the remaining portions of this Agreement shall
-                      remain valid and binding.
-                    </p>
-                  </div>
-                  <p>
-                    <span>1.6</span>
-                    <span>Governing Law and Jurisdiction</span>
-                  </p>
-                  <div className="ml-1">
-                    <p>
-                      The establishment, execution, interpretation, and dispute
-                      resolution of this Agreement shall be governed by the laws
-                      of the Republic of China (TAIWAN), and Taiwan Taipei
-                      District Court shall be the first-instance court of
-                      jurisdiction.
-                    </p>
-                  </div>
-
-                  <h3>2. META AI Llama2 Community License Agreement</h3>
-                  <p className="displayFlex">
-                    <span>2.1</span>
-                    <span>
-                      <b>「Agreement」</b> means the terms and conditions for
-                      use, reproduction, distribution and modification of the
-                      Llama Materials set forth herein.
-                    </span>
-                  </p>
-                  <p className="displayFlex">
-                    <span>2.2</span>
-                    <span>
-                      <b>「Documentation」</b> means the specifications, manuals
-                      and documentation accompanying Llama 2 distributed by Meta
-                      at
-                      <a
-                        href="https://ai.meta.com/resources/models-and-libraries/Llama-downloads/"
-                        target="_blank"
-                      >
-                        ai.meta.com/resources/models-and-libraries/Llama-downloads/
-                      </a>
-                      .
-                    </span>
-                  </p>
-                  <p className="displayFlex">
-                    <span>2.3</span>
-                    <span>
-                      <b>「Licensee」</b> or <b>「you」</b> means you, or your
-                      employer or any other person or entity (if you are
-                      entering into this Agreement on such person or entity’s
-                      behalf), of the age required under applicable laws, rules
-                      or regulations to provide legal consent and that has legal
-                      authority to bind your employer or such other person or
-                      entity if you are entering in this Agreement on their
-                      behalf.
-                    </span>
-                  </p>
-                  <p className="displayFlex">
-                    <span>2.4</span>
-                    <span>
-                      <b>「Llama 2」</b> means the foundational large language
-                      models and software and algorithms, including
-                      machine-learning model code, trained model weights,
-                      inference-enabling code, training-enabling code,
-                      fine-tuning enabling code and other elements of the
-                      foregoing distributed by Meta at
-                      <a
-                        href="https://ai.meta.com/resources/models-and-libraries/Llama-downloads/"
-                        target="_blank"
-                      >
-                        ai.meta.com/resources/models-and-libraries/Llama-downloads/
-                      </a>
-                      .
-                    </span>
-                  </p>
-                  <p className="displayFlex">
-                    <span>2.5</span>
-                    <span>
-                      <b>「Llama Materials」</b> means, collectively, Meta’s
-                      proprietary Llama 2 and Documentation (and any portion
-                      thereof) made available under this Agreement.
-                      <br />
-                      <b>「Meta」</b> or <b>「we」</b> means Meta Platforms
-                      Ireland Limited (if you are located in or, if you are an
-                      entity, your principal place of business is in the EEA or
-                      Switzerland) and Meta Platforms, Inc. (if you are located
-                      outside of the EEA or Switzerland).
+                      License: means NARLabs agrees that You may use, reproduce,
+                      modify, and distribute TAIDE L models, subject to the
+                      terms of this Agreement.
                     </span>
                   </p>
                   <p>
-                    <span>2.5.1</span>
-                    <span>License Rights and Redistribution：</span>
-                  </p>
-                  <div className="ml-1">
-                    <p>
-                      <span>a.</span>
-                      <span>
-                        Grant of Rights. You are granted a non-exclusive,
-                        worldwide, non-transferable and royalty-free limited
-                        license under Meta’s intellectual property or other
-                        rights owned by Meta embodied in the Llama Materials to
-                        use, reproduce, distribute, copy, create derivative
-                        works of, and make modifications to the Llama Materials.
-                      </span>
-                    </p>
-                    <p>b. Redistribution and Use.</p>
-                    <div className="ml-1">
-                      <p>
-                        <span>Ⅰ.</span>
-                        <span>
-                          If you distribute or make the Llama Materials, or any
-                          derivative works thereof, available to a third party,
-                          you shall provide a copy of this Agreement to such
-                          third party.
-                        </span>
-                      </p>
-                      <p>
-                        <span>Ⅱ.</span>
-                        <span>
-                          If you receive Llama Materials, or any derivative
-                          works thereof, from a Licensee as part of an
-                          integrated end user product, then Section 2 of this
-                          Agreement will not apply to you.
-                        </span>
-                      </p>
-                      <p>
-                        <span>Ⅲ.</span>
-                        <span>
-                          You must retain in all copies of the Llama Materials
-                          that you distribute the following attribution notice
-                          within a「Notice」 text file distributed as a part of
-                          such copies:「Llama 2 is licensed under the LLAMA 2
-                          Community License, Copyright © Meta Platforms, Inc.
-                          All Rights Reserved.」
-                        </span>
-                      </p>
-                      <p>
-                        <span>Ⅳ.</span>
-                        <span>
-                          Your use of the Llama Materials must comply with
-                          applicable laws and regulations (including trade
-                          compliance laws and regulations) and adhere to the
-                          Acceptable Use Policy for the Llama Materials
-                          (available at
-                          <a
-                            href="https://ai.meta.com/llama/use-policy"
-                            target="_blank"
-                          >
-                            https://ai.meta.com/llama/use-policy
-                          </a>
-                          ), which is hereby incorporated by reference into this
-                          Agreement.
-                        </span>
-                      </p>
-                      <p>
-                        <span>Ⅴ.</span>
-                        <span>
-                          You will not use the Llama Materials or any output or
-                          results of the Llama Materials to improve any other
-                          large language model (excluding Llama 2 or derivative
-                          works thereof).
-                        </span>
-                      </p>
-                    </div>
-                  </div>
-                  <p>
-                    <span>2.5.2</span>
-                    <span>Additional Commercial Terms.</span>
-                  </p>
-                  <div className="ml-2">
-                    <p>
-                      If, on the Llama 2 version release date, the monthly
-                      active users of the products or services made available by
-                      or for Licensee, or Licensee’s affiliates, is greater than
-                      700 million monthly active users in the preceding calendar
-                      month, you must request a license from Meta, which Meta
-                      may grant to you in its sole discretion, and you are not
-                      authorized to exercise any of the rights under this
-                      Agreement unless or until Meta otherwise expressly grants
-                      you such rights.
-                    </p>
-                  </div>
-                  <p>
-                    <span>2.5.3</span>
-                    <span>Disclaimer of Warranty.</span>
-                  </p>
-                  <div className="ml-2">
-                    <p>
-                      UNLESS REQUIRED BY APPLICABLE LAW, THE LLAMA MATERIALS AND
-                      ANY OUTPUT AND RESULTS THEREFROM ARE PROVIDED ON AN “AS
-                      IS” BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS
-                      OR IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES
-                      OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS
-                      FOR A PARTICULAR PURPOSE. YOU ARE SOLELY RESPONSIBLE FOR
-                      DETERMINING THE APPROPRIATENESS OF USING OR REDISTRIBUTING
-                      THE LLAMA MATERIALS AND ASSUME ANY RISKS ASSOCIATED WITH
-                      YOUR USE OF THE LLAMA MATERIALS AND ANY OUTPUT AND
-                      RESULTS.
-                    </p>
-                  </div>
-                  <p>
-                    <span>2.5.4</span>
-                    <span>Limitation of Liability.</span>
-                  </p>
-                  <div className="ml-2">
-                    <p>
-                      IN NO EVENT WILL META OR ITS AFFILIATES BE LIABLE UNDER
-                      ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, TORT,
-                      NEGLIGENCE, PRODUCTS LIABILITY, OR OTHERWISE, ARISING OUT
-                      OF THIS AGREEMENT, FOR ANY LOST PROFITS OR ANY INDIRECT,
-                      SPECIAL, CONSEQUENTIAL, INCIDENTAL, EXEMPLARY OR PUNITIVE
-                      DAMAGES, EVEN IF META OR ITS AFFILIATES HAVE BEEN ADVISED
-                      OF THE POSSIBILITY OF ANY OF THE FOREGOING.
-                    </p>
-                  </div>
-                  <p>
-                    <span>2.5.5</span>
-                    <span>Intellectual Property.</span>
-                  </p>
-                  <div className="ml-2">
-                    <p>
-                      <span>a.</span>
-                      <span>
-                        No trademark licenses are granted under this Agreement,
-                        and in connection with the Llama Materials, neither Meta
-                        nor Licensee may use any name or mark owned by or
-                        associated with the other or any of its affiliates,
-                        except as required for reasonable and customary use in
-                        describing and redistributing the Llama Materials.
-                      </span>
-                    </p>
-                    <p>
-                      <span>b.</span>
-                      <span>
-                        Subject to Meta’s ownership of Llama Materials and
-                        derivatives made by or for Meta, with respect to any
-                        derivative works and modifications of the Llama
-                        Materials that are made by you, as between you and Meta,
-                        you are and will be the owner of such derivative works
-                        and modifications.
-                      </span>
-                    </p>
-                    <p>
-                      <span>c.</span>
-                      <span>
-                        If you institute litigation or other proceedings against
-                        Meta or any entity (including a cross-claim or
-                        counterclaim in a lawsuit) alleging that the Llama
-                        Materials or Llama 2 outputs or results, or any portion
-                        of any of the foregoing, constitutes infringement of
-                        intellectual property or other rights owned or
-                        licensable by you, then any licenses granted to you
-                        under this Agreement shall terminate as of the date such
-                        litigation or claim is filed or instituted. You will
-                        indemnify and hold harmless Meta from and against any
-                        claim by any third party arising out of or related to
-                        your use or distribution of the Llama Materials.
-                      </span>
-                    </p>
-                  </div>
-                  <p>
-                    <span>2.5.6</span>
-                    <span>Term and Termination.</span>
-                  </p>
-                  <div className="ml-2">
-                    <p>
-                      The term of this Agreement will commence upon your
-                      acceptance of this Agreement or access to the Llama
-                      Materials and will continue in full force and effect until
-                      terminated in accordance with the terms and conditions
-                      herein. Meta may terminate this Agreement if you are in
-                      breach of any term or condition of this Agreement. Upon
-                      termination of this Agreement, you shall delete and cease
-                      use of the Llama Materials. Sections 3, 4 and 7 shall
-                      survive the termination of this Agreement.
-                    </p>
-                  </div>
-                  <p>
-                    <span>2.5.7</span>
-                    <span>Governing Law and Jurisdiction.</span>
-                  </p>
-                  <div className="ml-2">
-                    <p>
-                      This Agreement will be governed and construed under the
-                      laws of the State of California without regard to choice
-                      of law principles, and the UN Convention on Contracts for
-                      the International Sale of Goods does not apply to this
-                      Agreement. The courts of California shall have exclusive
-                      jurisdiction of any dispute arising out of this Agreement.
-                    </p>
-                  </div>
-
-                  <br />
-                  <h3>3. META AI Llama2 Acceptable Use Policy</h3>
-                  <p>
-                    <span>3.1</span>
+                    <span>1.2 </span>
                     <span>
-                      We want everyone to use Llama 2 safely and responsibly.
-                      You agree you will not use, or allow others to use, Llama
-                      2 to:
+                      Licensor: means the legal entity that owns all rights and
+                      intellectual property rights to TAIDE L models. The
+                      licensor under this Agreement is NARLabs or the
+                      individuals or other legal entities authorized by NARLabs
+                      to sublicense to Third Parties.
+                    </span>
+                  </p>
+                  <p>
+                    <span>1.3 </span>
+                    <span>
+                      You (or {'"Your"'}): means the authorized person under
+                      this Agreement, namely individuals or other legal entities
+                      who may exercise the rights granted in this Agreement
+                      and/or use or access TAIDE L models for any purpose, in
+                      any field.
+                    </span>
+                  </p>
+                  <p>
+                    <span>1.4 </span>
+                    <span>
+                      Third Party: means any individual or legal entity other
+                      than the {'"Licensor"'} or {'"You."'}
+                    </span>
+                  </p>
+                  <p>
+                    <span>1.5 </span>
+                    <span>
+                      TAIDE L models: mean artificial intelligence-based
+                      language and dialogue model, software, and algorithm,
+                      including machine learning model code, parameters of the
+                      trained model, driver code, etc. You may adjust or modify
+                      TAIDE L models by using the content or data that You own
+                      or that You are authorized to use, in order to develop
+                      systems or models that meet Your requirements.
+                    </span>
+                  </p>
+                  <p>
+                    <span>1.6 </span>
+                    <span>
+                      Derived Model: means a model built by transferring the
+                      parameters or output modes of TAIDE L models, a model
+                      trained by using synthetic data generated by using TAIDE L
+                      models, or a model built by modifying or altering TAIDE L
+                      models and having similar performance to TAIDE L models.
+                    </span>
+                  </p>
+                  <p>
+                    <span>1.7 </span>
+                    <span>
+                      Personal Data: means data that can directly or indirectly
+                      identify a specific natural person. The processing of
+                      personal data includes but is not limited to recording,
+                      inputting, storing, editing, correcting, duplicating,
+                      retrieving, deleting, outputting, connecting, or
+                      internally transferring.
                     </span>
                   </p>
 
+                  <h3>2. License Grant and Restrictions.</h3>
                   <p>
-                    <span>3.1.1</span>
+                    <span>2.1 </span>
                     <span>
-                      Violate the law or others’ rights, including to:
+                      Subject to the terms and conditions of this Agreement,
+                      NARLabs hereby grants You a non-exclusive, worldwide,
+                      non-transferable, non-sublicensable, and free-of-charge
+                      license.
                     </span>
                   </p>
-                  <div className="ml-2">
+                  <p>
+                    <span>2.2 </span>
+                    <span>
+                      You acknowledge that TAIDE L models are based on Meta{" "}
+                      {"AI's"} {'"Llama 2 models."'} Terms, conditions, and
+                      agreements relevant to Llama 2 models (including but not
+                      limited to the META AI Llama 2 Community License
+                      Agreement, META AI Llama 2 Acceptable Use Policy), please
+                      refer to: https://ai.meta.com/llama/. You shall go online
+                      to review the agreements and agree to comply with them.
+                    </span>
+                  </p>
+                  <p>
+                    <span>2.3 </span>
+                    <span>
+                      You may add new intellectual property statements to the
+                      derived models You build, and You may also provide
+                      conditions different from those in this Agreement for Your
+                      derived models, under the circumstances that You must
+                      ensure that the conditions such as use and reproduction of
+                      such derived models do not conflict with this Agreement.
+                    </span>
+                  </p>
+                  <p>
+                    <span>2.4 </span>
+                    <span>
+                      You may have relevant rights to Your derived models under
+                      applicable laws, however, You must meet the following
+                      conditions. In the event that You breach any of the
+                      following conditions, the license granted to You under
+                      this Agreement shall immediately be terminated:
+                    </span>
+                  </p>
+                  <div className="ml-1">
                     <p>
-                      <span>a.</span>
+                      <span>2.4.1</span>
                       <span>
-                        Engage in, promote, generate, contribute to, encourage,
-                        plan, incite, or further illegal or unlawful activity or
-                        content, such as:
-                      </span>
-                    </p>
-                    <div className="ml-1">
-                      <p>Ⅰ. Violence or terrorism</p>
-                      <p>
-                        Ⅱ. Exploitation or harm to children, including the
-                        solicitation, creation, acquisition, or dissemination of
-                        child exploitative content or failure to report Child
-                        Sexual Abuse Material.
-                      </p>
-                    </div>
-                    <p>
-                      <span>b.</span>
-                      <span>
-                        Human trafficking, exploitation, and sexual violence
-                      </span>
-                    </p>
-                    <div className="ml-1">
-                      <p>
-                        Ⅰ. The illegal distribution of information or materials
-                        to minors, including obscene materials, or failure to
-                        employ legally required age-gating in connection with
-                        such information or materials.
-                      </p>
-                      <p>Ⅱ. Sexual solicitation</p>
-                      <p>Ⅲ. Any other criminal activity</p>
-                    </div>
-
-                    <p>
-                      <span>c.</span>
-                      <span>
-                        Engage in, promote, incite, or facilitate the
-                        harassment, abuse, threatening, or bullying of
-                        individuals or groups of individuals.
-                      </span>
-                    </p>
-                    <p>
-                      <span>d.</span>
-                      <span>
-                        Engage in, promote, incite, or facilitate discrimination
-                        or other unlawful or harmful conduct in the provision of
-                        employment, employment benefits, credit, housing, other
-                        economic benefits, or other essential goods and
-                        services.
+                        You shall not use, reproduce, modify, alter, or build
+                        any derived models related to all or part of TAIDE L
+                        models for any military or illegal purposes.
                       </span>
                     </p>
                     <p>
-                      <span>e.</span>
+                      <span>2.4.2</span>
                       <span>
-                        Engage in the unauthorized or unlicensed practice of any
-                        profession including, but not limited to, financial,
-                        legal, medical/health, or related professional
-                        practices.
+                        Shall there be any derived models obtained through
+                        modification or alteration of TAIDE L models, You must
+                        prominently indicate or specify the modifications made,
+                        and such modifications must not violate the terms and
+                        conditions under this Agreement.
                       </span>
                     </p>
                     <p>
-                      <span>f.</span>
+                      <span>2.4.3</span>
                       <span>
-                        Collect, process, disclose, generate, or infer health,
-                        demographic, or other sensitive personal or private
-                        information about individuals without rights and
-                        consents required by applicable laws.
+                        Your modification or any use of TAIDE L models
+                        (including but not limited to the use of derived models
+                        obtained through TAIDE L models ) shall not violate the
+                        requirements of the laws of the Republic of China or
+                        laws of other countries or applicable regulations of
+                        international organizations (including but not limited
+                        to the EU Artificial Intelligence Act), nor shall such
+                        modification or use infringe upon the rights of NARLabs
+                        or any Third Party (including but not limited to
+                        personality rights such as rights of portrait,
+                        reputation, privacy, intellectual property rights such
+                        as copyright, patent, trade secret, or other property
+                        rights).
                       </span>
                     </p>
                     <p>
-                      <span>g.</span>
+                      <span>2.4.4</span>
                       <span>
-                        Engage in or facilitate any action or generate any
-                        content that infringes, misappropriates, or otherwise
-                        violates any third-party rights, including the outputs
-                        or results of any products or services using the Llama 2
-                        Materials.
+                        If You reproduce, publicly recite, publicly broadcast,
+                        publicly perform, publicly transmit, publicly display,
+                        adapt, edit, distribute, or rent Your derived models to
+                        Your users or recipients, You shall provide them with a
+                        copy of this Agreement and ensure their compliance with
+                        all the terms and conditions of this Agreement.
                       </span>
                     </p>
                     <p>
-                      <span>h.</span>
+                      <span>2.4.5</span>
                       <span>
-                        Create, generate, or facilitate the creation of
-                        malicious code, malware, computer viruses or do anything
-                        else that could disable, overburden, interfere with or
-                        impair the proper working, integrity, operation or
-                        appearance of a website or computer system.
+                        Without the prior written consent of NARLabs, You shall
+                        not claim to be NARLabs or {"NARLabs'"} agents,
+                        employees, partners, or any other identity without{" "}
+                        {"NARLabs'"} express consent, nor shall You claim to be
+                        the owner of TAIDE L models. Furthermore.
+                      </span>
+                    </p>
+                    <p>
+                      <span>2.4.6</span>
+                      <span>
+                        You agree to access TAIDE L models only through{" "}
+                        {"NARLabs'"}
+                        website or the websites authorized by NARLabs.
+                      </span>
+                    </p>
+                    <p>
+                      <span>2.4.7</span>
+                      <span>
+                        You shall not, in any way, directly or indirectly, allow
+                        or assist any Third Party to violate the terms and
+                        conditions under this Agreement.
                       </span>
                     </p>
                   </div>
 
+                  <h3>3. Intellectual Property Rights.</h3>
                   <p>
-                    <span>3.1.2</span>
+                    <span>3.1 </span>
                     <span>
-                      Engage in, promote, incite, facilitate, or assist in the
-                      planning or development of activities that present a risk
-                      of death or bodily harm to individuals, including use of
-                      Llama 2 related to the following:
+                      The intellectual property rights (including but not
+                      limited to moral rights and economic rights) of the
+                      derived models built by You through the use of TAIDE L
+                      models shall belong to You, in accordance with applicable
+                      laws. However, You also acknowledge that the protection of
+                      such derivative work shall not affect the existing rights
+                      owned by NARLabs in the pre-existing work, namely TAIDE L
+                      models.
                     </span>
                   </p>
-                  <div className="ml-2">
-                    <p>
-                      a. Military, warfare, nuclear industries or applications,
-                      espionage, use for materials or activities that are
-                      subject to the International Traffic Arms Regulations
-                      (ITAR) maintained by the United States Department of
-                      State.
-                    </p>
-                    <p>
-                      b. Guns and illegal weapons (including weapon
-                      development).
-                    </p>
-                    <p>c. Illegal drugs and regulated/controlled substances.</p>
-                    <p>
-                      d. Operation of critical infrastructure, transportation
-                      technologies, or heavy machinery.
-                    </p>
-                    <p>
-                      e. Self-harm or harm to others, including suicide,
-                      cutting, and eating disorders.
-                    </p>
-                    <p>
-                      f. Any content intended to incite or promote violence,
-                      abuse, or any infliction of bodily harm to an individual.
-                    </p>
-                  </div>
                   <p>
-                    <span>3.1.3</span>
+                    <span>3.2 </span>
                     <span>
-                      Intentionally deceive or mislead others, including use of
-                      Llama 2 related to the following:
+                      You understand and agree that in case of any legal
+                      disputes (including but not limited to defamation,
+                      plagiarism, or other infringements of {"others'"}{" "}
+                      copyright or other rights), or lawsuits, consumer disputes
+                      or similar matters brought against You by Your users or
+                      Third Parties, due to Your use, adaptation, or alteration
+                      of the content, form, or name of TAIDE L models, You shall
+                      solely bear all relevant legal liabilities. On the other
+                      hand, if NARLabs suffers any damages as a result, NARLabs
+                      may also seek compensation from You.
                     </span>
                   </p>
-                  <div className="ml-2">
+
+                  <h3>4. Trademarks.</h3>
+                  <p>
+                    Except for reasonable use, You should not arbitrarily use
+                    any trademarks, service marks, website names, or other names
+                    of works of NARLabs (hereinafter collectively referred to as
+                    the {'"Logos"'}). You should not, without the prior written
+                    consent of NARLabs, display, use, or apply for trademark
+                    registration of the aforementioned Logos, either separately
+                    or collectively, in any country or region; nor should You
+                    explicitly or implicitly indicate to others that You have
+                    the right to display, use, or dispose of the aforementioned
+                    Logos. If You violate this article and cause damage to
+                    NARLabs or any Third Party, You shall bear the relevant
+                    legal liabilities.
+                  </p>
+
+                  <h3>5. Disclaimer and Limitation of Liability.</h3>
+                  <p>
+                    <span>5.1 </span>
+                    <span>
+                      Unless required by applicable law, the services provided
+                      by NARLabs under this Agreement are on an {'"as-is"'} and{" "}
+                      {'"as available"'} basis. NARLabs explicitly disclaims all
+                      kinds of express or implied warranties or conditions,
+                      including but not limited to merchantability, fitness for
+                      a particular purpose, non-infringement, or ownership. You
+                      understand and agree that You should bear all risks
+                      associated with the use and modification of TAIDE L
+                      models, and You should confirm the legality of using TAIDE
+                      L models or distributing derived models and assume all
+                      legal liabilities related thereto on Your own.
+                    </span>
+                  </p>
+                  <p>
+                    <span>5.2 </span>
+                    <span>
+                      You understand and agree that NARLabs, its agents,
+                      employees, affiliated units, or partners shall not be
+                      liable for any damages or losses incurred by You from the
+                      use or modification of TAIDE L models, even if NARLabs has
+                      been notified or is aware of the possibility of such
+                      damages or losses. On the other hand, if NARLabs suffers
+                      any damages or losses due to Your illegal use or any
+                      violation of the terms and conditions under this
+                      Agreement, NARLabs reserves the right to seek full
+                      compensation from You.
+                    </span>
+                  </p>
+                  <p>
+                    <span>5.3 </span>
+                    <span>
+                      Despite {"NARLabs'"} efforts to maintain the legality and
+                      accuracy of TAIDE L models throughout its training stages,
+                      limitations in detection and protection mechanisms may
+                      compromise the accuracy of TAIDE L {"models'"} output
+                      results. Therefore, NARLabs explicitly states that it does
+                      not assume any risk or liability for data security issues
+                      resulting from Your use of TAIDE L models and its source
+                      code or any risks and liabilities arising from TAIDE L
+                      {"models'"} misuse, abuse, unauthorized or illegal use.
+                    </span>
+                  </p>
+                  <p>
+                    <span>5.4 </span>
+                    <span>
+                      You understand and agree that NARLabs does not guarantee
+                      or promise that TAIDE L models shall meet Your
+                      requirements. You must train, improve, or optimize Your
+                      derived models on Your own and bear any risks and
+                      consequences that may arise from doing so.
+                    </span>
+                  </p>
+                  <p>
+                    <span>5.5 </span>
+                    <span>
+                      You understand and agree to comply with all applicable
+                      laws in processing personal data, especially complying
+                      with the Personal Data Protection Act. Please be advised
+                      that even though NARLabs grants You the right to use TAIDE
+                      L models under this Agreement, it does not mean that You
+                      have been authorized to process related personal data. As
+                      an independent data processor, You must confirm and comply
+                      with the requirements of relevant laws on Your own.
+                    </span>
+                  </p>
+                  <p>
+                    <span>5.6 </span>
+                    <span>
+                      You understand and agree that apart from the
+                      aforementioned terms, NARLabs reserves the right to
+                      determine whether You have engaged in other acts that
+                      violate relevant laws or this Agreement and to take
+                      appropriate legal measures accordingly. In addition,
+                      NARLabs has the right to notify relevant government
+                      agencies. If such situations arise, You shall bear all
+                      legal liabilities arising therefrom.
+                    </span>
+                  </p>
+                  <p>
+                    <span>5.7 </span>
+                    <span>
+                      You understand and agree that You shall be responsible for
+                      the intellectual property risks associated with the use of
+                      TAIDE L models and Your derived models or any damages or
+                      losses related thereto.
+                    </span>
+                  </p>
+                  <p>
+                    <span>5.8 </span>
+                    <span>
+                      {'"Damages or losses"'} in this Agreement include:
+                    </span>
+                  </p>
+                  <div className="ml-1">
                     <p>
-                      a. Generating, promoting, or furthering fraud or the
-                      creation or promotion of disinformation.
+                      <span>5.8.1</span>
+                      <span>loss of income;</span>
                     </p>
                     <p>
-                      b. Generating, promoting, or furthering defamatory
-                      content, including the creation of defamatory statements,
-                      images, or other content.
+                      <span>5.8.2</span>
+                      <span>actual or anticipated profit loss;</span>
                     </p>
                     <p>
-                      c. Generating, promoting, or further distributing spam.
+                      <span>5.8.3</span>
+                      <span>anticipated savings loss;</span>
                     </p>
                     <p>
-                      d. Impersonating another individual without consent,
-                      authorization, or legal right.
+                      <span>5.8.4</span>
+                      <span>business loss;</span>
                     </p>
                     <p>
-                      e. Representing that the use of Llama 2 or outputs are
-                      human-generated.
+                      <span>5.8.5</span>
+                      <span>loss of opportunities;</span>
                     </p>
                     <p>
-                      f. Generating or facilitating false online engagement,
-                      including fake reviews and other means of fake online
-                      engagement.
+                      <span>5.8.6</span>
+                      <span>loss of goodwill or reputation; or</span>
+                    </p>
+                    <p>
+                      <span>5.8.7</span>
+                      <span>
+                        any indirect or consequential damages or losses.
+                      </span>
                     </p>
                   </div>
+                  <h3>6. Voluntary acceptance of additional obligations.</h3>
                   <p>
-                    <span>3.1.4</span>
+                    When You distribute Your derived models, You may provide
+                    warranties, technical support, guarantees, indemnities, or
+                    other contractual obligations to Your users or recipients,
+                    and You may charge fees to Your users or recipients.
+                    However, You understand and agree that You are not
+                    authorized to represent NARLabs while accepting such
+                    obligations. NARLabs shall not assume any obligation or
+                    liability due to Your voluntary acceptance of such
+                    additional obligations, agreement to indemnify, or other
+                    similar circumstances.
+                  </p>
+                  <h3>
+                    7. Brand Exposure and Brand Identity of TAIDE L models.
+                  </h3>
+                  <p>
+                    If You grant permission for the use of Your derived models
+                    built based on TAIDE L models, whether within or outside the
+                    territory of the Republic of China, or participate in any
+                    ranking competition organized by organizations or
+                    individuals (including but not limited to evaluating aspects
+                    such as accuracy in algorithms, performance, etc.), whether
+                    within or outside the territory of the Republic of China,
+                    You should prominently indicate in the model description
+                    that Your derived model is based on TAIDE L models and is a
+                    derivative work thereof.
+                  </p>
+                  <h3>8. Term and Termination.</h3>
+                  <p>
+                    Upon Your acceptance, use or access to TAIDE L models, this
+                    Agreement shall become effective and shall remain in effect
+                    thereafter. In the event that you breach any term or
+                    condition of this Agreement, NARLabs reserves the right to
+                    terminate this Agreement. Upon termination of this
+                    Agreement, You should delete and stop using TAIDE L models,
+                    the provisions of Article 3 under this Agreement, however,
+                    shall remain in full force and effect.
+                  </p>
+                  <h3>9. Miscellaneous.</h3>
+                  <p>
+                    Upon Your acceptance, use or access to TAIDE L models, this
+                    Agreement shall become effective and shall remain in effect
+                    thereafter. In the event that you breach any term or
+                    condition of this Agreement, NARLabs reserves the right to
+                    terminate this Agreement. Upon termination of this
+                    Agreement, You should delete and stop using TAIDE L models,
+                    the provisions of Article 3 under this Agreement, however,
+                    shall remain in full force and effect.
+                  </p>
+                  <p>
+                    <span>9.1 </span>
                     <span>
-                      Fail to appropriately disclose to end users any known
-                      dangers of your AI system
+                      You may review the latest version of this Agreement at any
+                      time. Amendments to this Agreement shall take effect
+                      immediately upon publication. If You continue to use TAIDE
+                      L models after the effective date of such amendment, it
+                      means that You agree to comply with all the terms and
+                      conditions as amended.
+                    </span>
+                  </p>
+                  <p>
+                    <span>9.2 </span>
+                    <span>
+                      If You institute litigation against NARLabs or any Third
+                      Party due to disputes arising from this Agreement or the
+                      use of TAIDE L models, the license granted to You under
+                      this Agreement shall automatically terminate as of the
+                      date such litigation is filed.
+                    </span>
+                  </p>
+                  <p>
+                    <span>9.3 </span>
+                    <span>
+                      Governing Law and Jurisdiction. Shall there be any
+                      disputes arising from or in connection with the
+                      performance or execution of this Agreement, such disputes
+                      shall be governed by the laws of the Republic of China
+                      (Taiwan), and Taiwan Taipei District Court shall be the
+                      first-instance court of jurisdiction.
                     </span>
                   </p>
                   <br />
                   <br />
-                  <p>Reference sources:</p>
+                  <p>Reference:</p>
                   <div className="sources">
-                    Meta AI Llama2 Acceptable Use Policy
+                    Meta AI Llama2 Acceptable Use Policy{" "}
                     <a
-                      href="https://ai.meta.com/Llama/use-policy/"
+                      href="https://ai.meta.com/llama/use-policy/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      https://ai.meta.com/Llama/use-policy/
+                      https://ai.meta.com/llama/use-policy/
                     </a>
                   </div>
                   <div className="sources">
-                    Meta AI Llama2 Community License Agreement
+                    Meta AI Llama2 Community License Agreement{" "}
                     <a
-                      href="https://ai.meta.com/Llama/license/"
+                      href="https://ai.meta.com/llama/license/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      https://ai.meta.com/Llama/license/
+                      https://ai.meta.com/llama/license/
                     </a>
+                  </div>
+                  <br />
+                  <br />
+                  <p>notes:</p>
+                  <div className="sources">
+                    TAIDE L Models Community License Agreement applies to the
+                    released model : TAIDE-LX-7B
                   </div>
                 </div>
               </div>

@@ -61,7 +61,7 @@ const Navigation = () => {
     <ul>
       <li>
         <a style={{ cursor: "pointer" }} className="toTerms">
-          ·Usage Policy and License Agreement
+          ·TAIDE L Models Community License Agreement
         </a>
       </li>
       <li>

@@ -264,6 +264,7 @@ const TeamUnit = () => {
                       <a
                         href="https://www.iisr.csie.ncu.edu.tw/faculty"
                         target="_blank"
+                        rel="noopener noreferrer"
                       ></a>
                       <Image src={team_8} alt="蔡宗翰 Tsai, Tzong-Han" />
 
@@ -298,6 +299,7 @@ const TeamUnit = () => {
                       <a
                         href="https://iagentntu.github.io/professor/Jane.html"
                         target="_blank"
+                        rel="noopener noreferrer"
                       ></a>
                       <Image src={team_9} alt="許永真 Hsu, Yung-Jen" />
 
@@ -332,6 +334,7 @@ const TeamUnit = () => {
                       <a
                         href="https://cgilab.nctu.edu.tw/~icwu/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       ></a>
                       <Image src={team_10} alt="吳毅成 Wu, I-Chen" />
 
@@ -366,6 +369,7 @@ const TeamUnit = () => {
                       <a
                         href="http://speech.ee.ntu.edu.tw/~tlkagk/index.html"
                         target="_blank"
+                        rel="noopener noreferrer"
                       ></a>
                       <Image src={team_11} alt="李宏毅 Lee, Hung-Yi" />
 
@@ -400,6 +404,7 @@ const TeamUnit = () => {
                       <a
                         href="https://sites.google.com/nycu.edu.tw/speechlabx/prof-yuan-fu-liao?authuser=0"
                         target="_blank"
+                        rel="noopener noreferrer"
                       ></a>
                       <Image src={team_12} alt="廖元甫 Liao, Yuan-Fu" />
 
@@ -435,6 +440,7 @@ const TeamUnit = () => {
                       <a
                         href="https://homepage.iis.sinica.edu.tw/pages/hhhuang/contact_zh.html"
                         target="_blank"
+                        rel="noopener noreferrer"
                       ></a>
                       <Image src={team_17} alt="黃瀚萱 Huang, Hen-Hsen" />
 
@@ -487,7 +493,11 @@ const TeamUnit = () => {
                 <div className="cardTeam">
                   <div className="cardTeam__item">
                     <div className="photo">
-                      <a href="https://lab.depositar.io/" target="_blank"></a>
+                      <a
+                        href="https://lab.depositar.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      ></a>
                       <Image src={team_7} alt="莊庭瑞 Chuang, Tyng-Ruey" />
 
                       <div className="btn">
@@ -592,6 +602,7 @@ const TeamUnit = () => {
                       <a
                         href="https://www.csie.nuk.edu.tw/~wuch/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       ></a>
                       <Image src={team_14} alt="吳俊興 Wu, Chun-Hsin" />
 
