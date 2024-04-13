@@ -62,7 +62,6 @@ const DownloadModel = () => {
                     Agreement, or if Your country or region excludes all or part
                     of the contents of this Agreement, You should immediately
                     stop using TAIDE L models.
-                    <p>This Agreement mainly includes:</p>
                   </p>
 
                   <h3>1. Definitions.</h3>
@@ -469,16 +468,6 @@ const DownloadModel = () => {
                     shall remain in full force and effect.
                   </p>
                   <h3>9. Miscellaneous.</h3>
-                  <p>
-                    Upon Your acceptance, use or access to TAIDE L models, this
-                    Agreement shall become effective and shall remain in effect
-                    thereafter. In the event that you breach any term or
-                    condition of this Agreement, NARLabs reserves the right to
-                    terminate this Agreement. Upon termination of this
-                    Agreement, You should delete and stop using TAIDE L models,
-                    the provisions of Article 3 under this Agreement, however,
-                    shall remain in full force and effect.
-                  </p>
                   <p>
                     <span>9.1 </span>
                     <span>
