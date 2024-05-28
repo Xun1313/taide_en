@@ -80,7 +80,7 @@ const Header = () => {
     <header className="header">
       <div className="header__body">
         <div className="logo">
-          <Link href={`/en`}>
+          <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en`}>
             <Image src={logo} alt="logo" style={{ height: "auto" }} />
           </Link>
         </div>
@@ -90,26 +90,26 @@ const Header = () => {
         <nav className={`nav`}>
           <ul>
             <li>
-              <Link href={`/en#toAbout`}>
+              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toAbout`}>
                 About TAIDE
               </Link>
             </li>
 
             <li>
-              <Link href={`/en#toTeam`}>
+              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toTeam`}>
                 Team
               </Link>
             </li>
 
             <li>
-              <Link href={`/en#toProject`}>
+              <Link href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en#toProject`}>
                 Project Info
               </Link>
             </li>
 
             <li className={`btnDownload`}>
               <Link
-                href={`/en/download-model`}
+                href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/en/download-model`}
               >
                 TAIDE Model
               </Link>

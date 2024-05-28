@@ -14,10 +14,10 @@ export const metadata: Metadata = {
   description:
     "Complete guide to unlock download and application secrets of TAIDE model version. Upgrade your AI skills and quickly get started and practice!",
   icons: [
-    { rel: "icon", url: `/favicon.ico` },
+    { rel: "icon", url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon.ico` },
     {
       rel: "apple-touch-icon",
-      url: `/apple-touch-icon-1.png`,
+      url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/apple-touch-icon-1.png`,
       sizes: "152x152",
     },
   ],
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     siteName: "TAIDE",
     images: [
       {
-        url: `/ogimg.png`,
+        url: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/ogimg.png`,
       },
     ],
     locale: "en",
   },
   themeColor: "#ffffff",
-  manifest: `/favicon/site.webmanifest`,
+  manifest: `${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/site.webmanifest`,
 };
 
 export default function RootLayout({
@@ -55,17 +55,17 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`/favicon/favicon-32x32-1.png`}
+          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/favicon-32x32-1.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`/favicon/favicon-16x16-1.png`}
+          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/favicon-16x16-1.png`}
         />
         <link
           rel="mask-icon"
-          href={`/favicon/safari-pinned-tab-1.svg`}
+          href={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/favicon/safari-pinned-tab-1.svg`}
           color="#5bbad5"
         />
         <meta name="msapplication-TileColor" content="#f5f1ec" />
@@ -97,10 +97,22 @@ export default function RootLayout({
           <BackTop />
         </section>
 
-        <script src={`/js/jquery.min.js`} defer={false}></script>
-        <script src={`/js/jquery.ui.min.js`} defer={false}></script>
-        <script src={`/js/isotope-docs.min.js`} defer={false}></script>
-        <script src={`/js/masonry.pkgd.min.js`} defer={false}></script>
+        <script
+          src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/js/jquery.min.js`}
+          defer={false}
+        ></script>
+        <script
+          src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/js/jquery.ui.min.js`}
+          defer={false}
+        ></script>
+        <script
+          src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/js/isotope-docs.min.js`}
+          defer={false}
+        ></script>
+        <script
+          src={`${process.env.NEXT_PUBLIC_ASSET_PREFIX}/js/masonry.pkgd.min.js`}
+          defer={false}
+        ></script>
       </body>
     </html>
   );
